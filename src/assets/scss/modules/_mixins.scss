@@ -221,7 +221,7 @@
       @include media($s) {
         padding: .5rem;
       }
-      @include breakpoint(600px, 768px) {
+      @include breakpoint(568px, 768px) {
         padding: 1.5rem;
       }
       @include breakpoint(769px, 899px) {
@@ -242,7 +242,7 @@
           left: .5rem;
           bottom: .5rem;
         }
-        @include breakpoint(600px, 768px) {
+        @include breakpoint(568px, 768px) {
           left: 1.5rem;
           bottom: 1.5rem;
         }
@@ -270,7 +270,7 @@
     @include media($s) {
       padding: .5rem;
     }
-    @include breakpoint(600px, 768px) {
+    @include breakpoint(568px, 768px) {
       padding: 1.5rem;
     }
     @include breakpoint(769px, 899px) {
@@ -280,29 +280,29 @@
       padding: 1.5rem;
     }
     h2 {
-      @include media($s-up) {
+      @include breakpoint(300px, 499px) {
         font-size: .75rem;
         margin-top: .5em;
       }
-      @include breakpoint(500px, 768px) {
-        font-size: 3vw;
+      @include breakpoint(500px, 767px) {
+        font-size: 1.1rem;
       }
       @include breakpoint(769px, 999px) {
-        font-size: 1.5vw;
+        font-size: 1rem;
       }
       @include breakpoint(1000px) {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
     }
     p {
-      @include media($s-up) {
+      @include breakpoint(300px, 499px) {
         font-size: .75rem;
       }
-      @include breakpoint(500px, 768px) {
-        font-size: 2.5vw;
+      @include breakpoint(500px, 767px) {
+        font-size: 1rem;
       }
       @include breakpoint(769px, 999px) {
-        font-size: 1.25vw;
+        font-size: 1rem;
       }
       @include breakpoint(1000px) {
         font-size: 1rem;
@@ -317,7 +317,7 @@
         left: .5rem;
         bottom: .5rem;
       }
-      @include breakpoint(600px, 768px) {
+      @include breakpoint(568px, 768px) {
         left: 1.5rem;
         bottom: 1.5rem;
       }

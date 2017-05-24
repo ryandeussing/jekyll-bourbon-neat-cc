@@ -836,7 +836,7 @@ main {
       @media screen and (min-width: 6.25em) {
         main section.body .square-index a .block-inner {
           padding: .5rem; } }
-      @media (min-width: 600px) and (max-width: 768px) {
+      @media (min-width: 568px) and (max-width: 768px) {
         main section.body .square-index a .block-inner {
           padding: 1.5rem; } }
       @media (min-width: 769px) and (max-width: 899px) {
@@ -858,7 +858,7 @@ main {
           main section.body .square-index a .block-inner .more {
             left: .5rem;
             bottom: .5rem; } }
-        @media (min-width: 600px) and (max-width: 768px) {
+        @media (min-width: 568px) and (max-width: 768px) {
           main section.body .square-index a .block-inner .more {
             left: 1.5rem;
             bottom: 1.5rem; } }
@@ -879,7 +879,7 @@ main {
       @media screen and (min-width: 6.25em) {
         main section.body .square-index .block-inner {
           padding: .5rem; } }
-      @media (min-width: 600px) and (max-width: 768px) {
+      @media (min-width: 568px) and (max-width: 768px) {
         main section.body .square-index .block-inner {
           padding: 1.5rem; } }
       @media (min-width: 769px) and (max-width: 899px) {
@@ -888,31 +888,31 @@ main {
       @media (min-width: 900px) {
         main section.body .square-index .block-inner {
           padding: 1.5rem; } }
-      @media screen and (min-width: 6.25em) {
+      @media (min-width: 300px) and (max-width: 499px) {
         main section.body .square-index .block-inner h2 {
           font-size: .75rem;
           margin-top: .5em; } }
-      @media (min-width: 500px) and (max-width: 768px) {
+      @media (min-width: 500px) and (max-width: 767px) {
         main section.body .square-index .block-inner h2 {
-          font-size: 3vw; } }
+          font-size: 1.1rem; } }
       @media (min-width: 769px) and (max-width: 999px) {
         main section.body .square-index .block-inner h2 {
-          font-size: 1.5vw; } }
+          font-size: 1rem; } }
       @media (min-width: 1000px) {
         main section.body .square-index .block-inner h2 {
-          font-size: 1.2rem; } }
+          font-size: 1.1rem; } }
       main section.body .square-index .block-inner p {
         margin-top: 0;
         margin-bottom: 0; }
-        @media screen and (min-width: 6.25em) {
+        @media (min-width: 300px) and (max-width: 499px) {
           main section.body .square-index .block-inner p {
             font-size: .75rem; } }
-        @media (min-width: 500px) and (max-width: 768px) {
+        @media (min-width: 500px) and (max-width: 767px) {
           main section.body .square-index .block-inner p {
-            font-size: 2.5vw; } }
+            font-size: 1rem; } }
         @media (min-width: 769px) and (max-width: 999px) {
           main section.body .square-index .block-inner p {
-            font-size: 1.25vw; } }
+            font-size: 1rem; } }
         @media (min-width: 1000px) {
           main section.body .square-index .block-inner p {
             font-size: 1rem; } }
@@ -924,7 +924,7 @@ main {
           main section.body .square-index .block-inner .more {
             left: .5rem;
             bottom: .5rem; } }
-        @media (min-width: 600px) and (max-width: 768px) {
+        @media (min-width: 568px) and (max-width: 768px) {
           main section.body .square-index .block-inner .more {
             left: 1.5rem;
             bottom: 1.5rem; } }
@@ -1125,7 +1125,7 @@ main {
     @media screen and (min-width: 6.25em) {
       .about .square-index a .block-inner {
         padding: .5rem; } }
-    @media (min-width: 600px) and (max-width: 768px) {
+    @media (min-width: 568px) and (max-width: 768px) {
       .about .square-index a .block-inner {
         padding: 1.5rem; } }
     @media (min-width: 769px) and (max-width: 899px) {
@@ -1147,7 +1147,7 @@ main {
         .about .square-index a .block-inner .more {
           left: .5rem;
           bottom: .5rem; } }
-      @media (min-width: 600px) and (max-width: 768px) {
+      @media (min-width: 568px) and (max-width: 768px) {
         .about .square-index a .block-inner .more {
           left: 1.5rem;
           bottom: 1.5rem; } }
@@ -1168,7 +1168,7 @@ main {
     @media screen and (min-width: 6.25em) {
       .about .square-index .block-inner {
         padding: .5rem; } }
-    @media (min-width: 600px) and (max-width: 768px) {
+    @media (min-width: 568px) and (max-width: 768px) {
       .about .square-index .block-inner {
         padding: 1.5rem; } }
     @media (min-width: 769px) and (max-width: 899px) {
@@ -1177,31 +1177,31 @@ main {
     @media (min-width: 900px) {
       .about .square-index .block-inner {
         padding: 1.5rem; } }
-    @media screen and (min-width: 6.25em) {
+    @media (min-width: 300px) and (max-width: 499px) {
       .about .square-index .block-inner h2 {
         font-size: .75rem;
         margin-top: .5em; } }
-    @media (min-width: 500px) and (max-width: 768px) {
+    @media (min-width: 500px) and (max-width: 767px) {
       .about .square-index .block-inner h2 {
-        font-size: 3vw; } }
+        font-size: 1.1rem; } }
     @media (min-width: 769px) and (max-width: 999px) {
       .about .square-index .block-inner h2 {
-        font-size: 1.5vw; } }
+        font-size: 1rem; } }
     @media (min-width: 1000px) {
       .about .square-index .block-inner h2 {
-        font-size: 1.2rem; } }
+        font-size: 1.1rem; } }
     .about .square-index .block-inner p {
       margin-top: 0;
       margin-bottom: 0; }
-      @media screen and (min-width: 6.25em) {
+      @media (min-width: 300px) and (max-width: 499px) {
         .about .square-index .block-inner p {
           font-size: .75rem; } }
-      @media (min-width: 500px) and (max-width: 768px) {
+      @media (min-width: 500px) and (max-width: 767px) {
         .about .square-index .block-inner p {
-          font-size: 2.5vw; } }
+          font-size: 1rem; } }
       @media (min-width: 769px) and (max-width: 999px) {
         .about .square-index .block-inner p {
-          font-size: 1.25vw; } }
+          font-size: 1rem; } }
       @media (min-width: 1000px) {
         .about .square-index .block-inner p {
           font-size: 1rem; } }
@@ -1213,7 +1213,7 @@ main {
         .about .square-index .block-inner .more {
           left: .5rem;
           bottom: .5rem; } }
-      @media (min-width: 600px) and (max-width: 768px) {
+      @media (min-width: 568px) and (max-width: 768px) {
         .about .square-index .block-inner .more {
           left: 1.5rem;
           bottom: 1.5rem; } }
@@ -1538,7 +1538,7 @@ main {
     @media screen and (min-width: 6.25em) {
       .clients .square-index a .block-inner {
         padding: .5rem; } }
-    @media (min-width: 600px) and (max-width: 768px) {
+    @media (min-width: 568px) and (max-width: 768px) {
       .clients .square-index a .block-inner {
         padding: 1.5rem; } }
     @media (min-width: 769px) and (max-width: 899px) {
@@ -1560,7 +1560,7 @@ main {
         .clients .square-index a .block-inner .more {
           left: .5rem;
           bottom: .5rem; } }
-      @media (min-width: 600px) and (max-width: 768px) {
+      @media (min-width: 568px) and (max-width: 768px) {
         .clients .square-index a .block-inner .more {
           left: 1.5rem;
           bottom: 1.5rem; } }
@@ -1581,7 +1581,7 @@ main {
     @media screen and (min-width: 6.25em) {
       .clients .square-index .block-inner {
         padding: .5rem; } }
-    @media (min-width: 600px) and (max-width: 768px) {
+    @media (min-width: 568px) and (max-width: 768px) {
       .clients .square-index .block-inner {
         padding: 1.5rem; } }
     @media (min-width: 769px) and (max-width: 899px) {
@@ -1590,31 +1590,31 @@ main {
     @media (min-width: 900px) {
       .clients .square-index .block-inner {
         padding: 1.5rem; } }
-    @media screen and (min-width: 6.25em) {
+    @media (min-width: 300px) and (max-width: 499px) {
       .clients .square-index .block-inner h2 {
         font-size: .75rem;
         margin-top: .5em; } }
-    @media (min-width: 500px) and (max-width: 768px) {
+    @media (min-width: 500px) and (max-width: 767px) {
       .clients .square-index .block-inner h2 {
-        font-size: 3vw; } }
+        font-size: 1.1rem; } }
     @media (min-width: 769px) and (max-width: 999px) {
       .clients .square-index .block-inner h2 {
-        font-size: 1.5vw; } }
+        font-size: 1rem; } }
     @media (min-width: 1000px) {
       .clients .square-index .block-inner h2 {
-        font-size: 1.2rem; } }
+        font-size: 1.1rem; } }
     .clients .square-index .block-inner p {
       margin-top: 0;
       margin-bottom: 0; }
-      @media screen and (min-width: 6.25em) {
+      @media (min-width: 300px) and (max-width: 499px) {
         .clients .square-index .block-inner p {
           font-size: .75rem; } }
-      @media (min-width: 500px) and (max-width: 768px) {
+      @media (min-width: 500px) and (max-width: 767px) {
         .clients .square-index .block-inner p {
-          font-size: 2.5vw; } }
+          font-size: 1rem; } }
       @media (min-width: 769px) and (max-width: 999px) {
         .clients .square-index .block-inner p {
-          font-size: 1.25vw; } }
+          font-size: 1rem; } }
       @media (min-width: 1000px) {
         .clients .square-index .block-inner p {
           font-size: 1rem; } }
@@ -1626,7 +1626,7 @@ main {
         .clients .square-index .block-inner .more {
           left: .5rem;
           bottom: .5rem; } }
-      @media (min-width: 600px) and (max-width: 768px) {
+      @media (min-width: 568px) and (max-width: 768px) {
         .clients .square-index .block-inner .more {
           left: 1.5rem;
           bottom: 1.5rem; } }
@@ -1818,7 +1818,7 @@ main {
     @media screen and (min-width: 6.25em) {
       .category .square-index a .block-inner {
         padding: .5rem; } }
-    @media (min-width: 600px) and (max-width: 768px) {
+    @media (min-width: 568px) and (max-width: 768px) {
       .category .square-index a .block-inner {
         padding: 1.5rem; } }
     @media (min-width: 769px) and (max-width: 899px) {
@@ -1840,7 +1840,7 @@ main {
         .category .square-index a .block-inner .more {
           left: .5rem;
           bottom: .5rem; } }
-      @media (min-width: 600px) and (max-width: 768px) {
+      @media (min-width: 568px) and (max-width: 768px) {
         .category .square-index a .block-inner .more {
           left: 1.5rem;
           bottom: 1.5rem; } }
@@ -1861,7 +1861,7 @@ main {
     @media screen and (min-width: 6.25em) {
       .category .square-index .block-inner {
         padding: .5rem; } }
-    @media (min-width: 600px) and (max-width: 768px) {
+    @media (min-width: 568px) and (max-width: 768px) {
       .category .square-index .block-inner {
         padding: 1.5rem; } }
     @media (min-width: 769px) and (max-width: 899px) {
@@ -1870,31 +1870,31 @@ main {
     @media (min-width: 900px) {
       .category .square-index .block-inner {
         padding: 1.5rem; } }
-    @media screen and (min-width: 6.25em) {
+    @media (min-width: 300px) and (max-width: 499px) {
       .category .square-index .block-inner h2 {
         font-size: .75rem;
         margin-top: .5em; } }
-    @media (min-width: 500px) and (max-width: 768px) {
+    @media (min-width: 500px) and (max-width: 767px) {
       .category .square-index .block-inner h2 {
-        font-size: 3vw; } }
+        font-size: 1.1rem; } }
     @media (min-width: 769px) and (max-width: 999px) {
       .category .square-index .block-inner h2 {
-        font-size: 1.5vw; } }
+        font-size: 1rem; } }
     @media (min-width: 1000px) {
       .category .square-index .block-inner h2 {
-        font-size: 1.2rem; } }
+        font-size: 1.1rem; } }
     .category .square-index .block-inner p {
       margin-top: 0;
       margin-bottom: 0; }
-      @media screen and (min-width: 6.25em) {
+      @media (min-width: 300px) and (max-width: 499px) {
         .category .square-index .block-inner p {
           font-size: .75rem; } }
-      @media (min-width: 500px) and (max-width: 768px) {
+      @media (min-width: 500px) and (max-width: 767px) {
         .category .square-index .block-inner p {
-          font-size: 2.5vw; } }
+          font-size: 1rem; } }
       @media (min-width: 769px) and (max-width: 999px) {
         .category .square-index .block-inner p {
-          font-size: 1.25vw; } }
+          font-size: 1rem; } }
       @media (min-width: 1000px) {
         .category .square-index .block-inner p {
           font-size: 1rem; } }
@@ -1906,7 +1906,7 @@ main {
         .category .square-index .block-inner .more {
           left: .5rem;
           bottom: .5rem; } }
-      @media (min-width: 600px) and (max-width: 768px) {
+      @media (min-width: 568px) and (max-width: 768px) {
         .category .square-index .block-inner .more {
           left: 1.5rem;
           bottom: 1.5rem; } }
@@ -2108,7 +2108,7 @@ main {
     @media screen and (min-width: 6.25em) {
       .post .square-index a .block-inner {
         padding: .5rem; } }
-    @media (min-width: 600px) and (max-width: 768px) {
+    @media (min-width: 568px) and (max-width: 768px) {
       .post .square-index a .block-inner {
         padding: 1.5rem; } }
     @media (min-width: 769px) and (max-width: 899px) {
@@ -2130,7 +2130,7 @@ main {
         .post .square-index a .block-inner .more {
           left: .5rem;
           bottom: .5rem; } }
-      @media (min-width: 600px) and (max-width: 768px) {
+      @media (min-width: 568px) and (max-width: 768px) {
         .post .square-index a .block-inner .more {
           left: 1.5rem;
           bottom: 1.5rem; } }
@@ -2151,7 +2151,7 @@ main {
     @media screen and (min-width: 6.25em) {
       .post .square-index .block-inner {
         padding: .5rem; } }
-    @media (min-width: 600px) and (max-width: 768px) {
+    @media (min-width: 568px) and (max-width: 768px) {
       .post .square-index .block-inner {
         padding: 1.5rem; } }
     @media (min-width: 769px) and (max-width: 899px) {
@@ -2160,31 +2160,31 @@ main {
     @media (min-width: 900px) {
       .post .square-index .block-inner {
         padding: 1.5rem; } }
-    @media screen and (min-width: 6.25em) {
+    @media (min-width: 300px) and (max-width: 499px) {
       .post .square-index .block-inner h2 {
         font-size: .75rem;
         margin-top: .5em; } }
-    @media (min-width: 500px) and (max-width: 768px) {
+    @media (min-width: 500px) and (max-width: 767px) {
       .post .square-index .block-inner h2 {
-        font-size: 3vw; } }
+        font-size: 1.1rem; } }
     @media (min-width: 769px) and (max-width: 999px) {
       .post .square-index .block-inner h2 {
-        font-size: 1.5vw; } }
+        font-size: 1rem; } }
     @media (min-width: 1000px) {
       .post .square-index .block-inner h2 {
-        font-size: 1.2rem; } }
+        font-size: 1.1rem; } }
     .post .square-index .block-inner p {
       margin-top: 0;
       margin-bottom: 0; }
-      @media screen and (min-width: 6.25em) {
+      @media (min-width: 300px) and (max-width: 499px) {
         .post .square-index .block-inner p {
           font-size: .75rem; } }
-      @media (min-width: 500px) and (max-width: 768px) {
+      @media (min-width: 500px) and (max-width: 767px) {
         .post .square-index .block-inner p {
-          font-size: 2.5vw; } }
+          font-size: 1rem; } }
       @media (min-width: 769px) and (max-width: 999px) {
         .post .square-index .block-inner p {
-          font-size: 1.25vw; } }
+          font-size: 1rem; } }
       @media (min-width: 1000px) {
         .post .square-index .block-inner p {
           font-size: 1rem; } }
@@ -2196,7 +2196,7 @@ main {
         .post .square-index .block-inner .more {
           left: .5rem;
           bottom: .5rem; } }
-      @media (min-width: 600px) and (max-width: 768px) {
+      @media (min-width: 568px) and (max-width: 768px) {
         .post .square-index .block-inner .more {
           left: 1.5rem;
           bottom: 1.5rem; } }
@@ -2478,7 +2478,7 @@ main {
     @media screen and (min-width: 6.25em) {
       .blog .square-index a .block-inner {
         padding: .5rem; } }
-    @media (min-width: 600px) and (max-width: 768px) {
+    @media (min-width: 568px) and (max-width: 768px) {
       .blog .square-index a .block-inner {
         padding: 1.5rem; } }
     @media (min-width: 769px) and (max-width: 899px) {
@@ -2500,7 +2500,7 @@ main {
         .blog .square-index a .block-inner .more {
           left: .5rem;
           bottom: .5rem; } }
-      @media (min-width: 600px) and (max-width: 768px) {
+      @media (min-width: 568px) and (max-width: 768px) {
         .blog .square-index a .block-inner .more {
           left: 1.5rem;
           bottom: 1.5rem; } }
@@ -2521,7 +2521,7 @@ main {
     @media screen and (min-width: 6.25em) {
       .blog .square-index .block-inner {
         padding: .5rem; } }
-    @media (min-width: 600px) and (max-width: 768px) {
+    @media (min-width: 568px) and (max-width: 768px) {
       .blog .square-index .block-inner {
         padding: 1.5rem; } }
     @media (min-width: 769px) and (max-width: 899px) {
@@ -2530,31 +2530,31 @@ main {
     @media (min-width: 900px) {
       .blog .square-index .block-inner {
         padding: 1.5rem; } }
-    @media screen and (min-width: 6.25em) {
+    @media (min-width: 300px) and (max-width: 499px) {
       .blog .square-index .block-inner h2 {
         font-size: .75rem;
         margin-top: .5em; } }
-    @media (min-width: 500px) and (max-width: 768px) {
+    @media (min-width: 500px) and (max-width: 767px) {
       .blog .square-index .block-inner h2 {
-        font-size: 3vw; } }
+        font-size: 1.1rem; } }
     @media (min-width: 769px) and (max-width: 999px) {
       .blog .square-index .block-inner h2 {
-        font-size: 1.5vw; } }
+        font-size: 1rem; } }
     @media (min-width: 1000px) {
       .blog .square-index .block-inner h2 {
-        font-size: 1.2rem; } }
+        font-size: 1.1rem; } }
     .blog .square-index .block-inner p {
       margin-top: 0;
       margin-bottom: 0; }
-      @media screen and (min-width: 6.25em) {
+      @media (min-width: 300px) and (max-width: 499px) {
         .blog .square-index .block-inner p {
           font-size: .75rem; } }
-      @media (min-width: 500px) and (max-width: 768px) {
+      @media (min-width: 500px) and (max-width: 767px) {
         .blog .square-index .block-inner p {
-          font-size: 2.5vw; } }
+          font-size: 1rem; } }
       @media (min-width: 769px) and (max-width: 999px) {
         .blog .square-index .block-inner p {
-          font-size: 1.25vw; } }
+          font-size: 1rem; } }
       @media (min-width: 1000px) {
         .blog .square-index .block-inner p {
           font-size: 1rem; } }
@@ -2566,7 +2566,7 @@ main {
         .blog .square-index .block-inner .more {
           left: .5rem;
           bottom: .5rem; } }
-      @media (min-width: 600px) and (max-width: 768px) {
+      @media (min-width: 568px) and (max-width: 768px) {
         .blog .square-index .block-inner .more {
           left: 1.5rem;
           bottom: 1.5rem; } }
