@@ -13,13 +13,12 @@ class: home
 
     <h1>Latest</h1>
 
+    {% for project in site.projects | limit:4 %}
 
-    {% for post in site.posts limit:4 %}
-
-      <div class="square" style="background-image:url({{ post.image_path }});background-size:cover">
+      <div class="square" style="background-image:url({{ project.image_path }});background-size:cover">
         <div class="block-inner">
-        <a href="{{ post.url }}">
-        <h2>{{ post.title }}</h2>
+        <a href="{{ project.url }}">
+        <h2>{{ project.title }}</h2>
         </a>
         </div>
       </div>

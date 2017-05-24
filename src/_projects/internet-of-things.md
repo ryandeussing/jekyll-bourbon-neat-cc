@@ -1,6 +1,7 @@
 ---
 title: Internet of Things (IoT)
 client: BNY Mellon
+project_category: Design
 draft: false
 order: 8
 thumbnail_image: 'https://source.unsplash.com/random/500x500'

@@ -9,6 +9,12 @@ source: src
 destination: dist
 exclude:
 
+project_types:
+  - Design
+  - Naming
+  - Naming and Design
+  - Strategy and Design
+
 collections:
   projects:
     output: true
