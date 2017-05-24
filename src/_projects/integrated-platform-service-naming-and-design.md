@@ -1,7 +1,7 @@
 ---
 title: Integrated Platform Service Naming and Design
 client: KPMG
-project_category: Design
+project_type: Design
 draft: false
 order: 6
 thumbnail_image: 'https://source.unsplash.com/random/500x500'

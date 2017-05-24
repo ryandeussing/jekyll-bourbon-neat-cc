@@ -1,7 +1,7 @@
 ---
 title: An Accenture and GE Aviation Joint Venture
 client: Taleris
-project_category: Design
+project_type: Design
 draft: false
 order: 1
 thumbnail_image: 'https://source.unsplash.com/random/500x500'
