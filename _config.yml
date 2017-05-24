@@ -1,274 +1,37 @@
 # Title, decription, tagline and URL for your site
 # Can be used in your theme by calling 'site.title' and so on
-title: Merritt Woodwork
-description: Luxury woodwork and joinery for the modern age.
-url: https://www.merrittwoodwork.com
-localurl: https://www.merrittwoodwork.com
+title: PS212
+description: We are a strategic brand consultancy with big agency experience, operating at start-up speed.
+url: http://www.ps212.com
 
 # CloudCannon uses these:
 source: src
 destination: dist
 exclude:
 
-work-types:
-  - superyacht
-  - contemporary
-  - traditional
-  - transitional
-
-job-locations:
-  - california
-  - florida
-  - germany
-  - new jersey
-  - ohio
-  - utah
-  - wisconsin
-
-job-types:
-  - full time
-  - part time
-
-# multi-language
-portfolio-link:
-  en: portfolio
-  de: portfolio
-capabilities-link:
-  en: capabilities
-  de: LEISTUNGEN
-about-link:
-  en: about
-  de: INFORMATIONEN
-clients-link:
-  en: clients
-  de: KUNDEN
-press-link:
-  en: press
-  de: PRESSE
-careers-link:
-  en: careers
-  de: STELLENANGEBOTE
-contact-link:
-  en: contact
-  de: KONTAKT
-copyright:
-  en: all rights reserved
-  de: ALLE RECHTE VORBEHALTEN
-
-
 collections:
-  case_studies:
+  projects:
     output: true
-    permalink: /portfolio/:slug/
-    _hide_content: true
-  staff:
-    output: false
-    _hide_content: true
-  jobs:
+    permalink: /work/:slug/
+  people:
     output: true
-    permalink: /careers/:slug/
-    _hide_content: true
-  internships:
-    output: true
-    permalink: /careers/:slug/
-    _hide_content: true
-  press:
-    output: false
-    _hide_content: true
-  portfolio:
-    output: false
-    _hide_content: true
-  german:
-    output: false
-    _hide_content: true
+    permalink: /about/:slug/
 
 defaults:
   -
     scope:
-      path: "index.html"
+      path: ""
+      type: projects
     values:
-      layout: "default"
-      class: "home"
-      permalink: "/"
-  -
-    scope:
-      path: "index.de.html"
-    values:
-      layout: "default"
-      class: "home"
-      permalink: ""
-      _hide_content: true
-  -
-    scope:
-      path: "portfolio.html"
-    values:
-      layout: "default"
-      class: "portfolio"
-      permalink: "/portfolio/"
-  -
-    scope:
-      path: "portfolio.de.html"
-    values:
-      layout: "default"
-      class: "portfolio"
-      permalink: "portfolio/"
-      _hide_content: true
-  -
-    scope:
-      path: "about.html"
-    values:
-      layout: "default"
-      class: "about"
-      permalink: "/about/"
-  -
-    scope:
-      path: "about.de.html"
-    values:
-      layout: "default"
-      class: "about"
-      permalink: "/about/"
-      _hide_content: true
-  -
-    scope:
-      path: "capabilities.html"
-    values:
-      layout: "default"
-      class: "capabilities"
-      permalink: "/capabilities/"
-  -
-    scope:
-      path: "capabilities.de.html"
-    values:
-      layout: "default"
-      class: "capabilities"
-      permalink: "/capabilities/"
-  -
-    scope:
-      path: "careers.html"
-    values:
-      layout: "default"
-      class: "careers"
-      permalink: "/careers/"
-  -
-    scope:
-      path: "careers.de.html"
-    values:
-      layout: "default"
-      class: "careers"
-      permalink: "/careers/"
-      _hide_content: true
-  -
-    scope:
-      path: "jobs.html"
-    values:
-      layout: "default"
-      class: "jobs"
-      permalink: "/careers/jobs/"
-  -
-    scope:
-      path: "jobs.de.html"
-    values:
-      layout: "default"
-      class: "jobs"
-      permalink: "/careers/jobs/"
-      _hide_content: true
-  -
-    scope:
-      path: "internships.html"
-    values:
-      layout: "default"
-      class: "internships"
-      permalink: "/careers/internships/"
-  -
-    scope:
-      path: "internships.de.html"
-    values:
-      layout: "default"
-      class: "internships"
-      permalink: "/careers/internships/"
-      _hide_content: true
+      class: project
+      layout: project
   -
     scope:
       path: ""
-      type: "case_studies"
+      type: people
     values:
-      layout: "casestudy"
-      class: "casestudy"
-  -
-    scope:
-      path: "clients.html"
-    values:
-      layout: "default"
-      class: "clients"
-      permalink: "/clients/"
-  -
-    scope:
-      path: "clients.de.html"
-    values:
-      layout: "default"
-      class: "clients"
-      permalink: "/clients/"
-      _hide_content: true
-  -
-    scope:
-      path: "contact.html"
-    values:
-      layout: "default"
-      class: "contact"
-      permalink: "/contact/"
-  -
-    scope:
-      path: "contact.de.html"
-    values:
-      layout: "default"
-      class: "contact"
-      permalink: "/contact/"
-      _hide_content: true
-  -
-    scope:
-      path: "press.html"
-    values:
-      layout: "default"
-      class: "press"
-      permalink: "/press/"
-  -
-    scope:
-      path: "press.de.html"
-    values:
-      layout: "default"
-      class: "press"
-      permalink: "/press/"
-      _hide_content: true
-  -
-    scope:
-      path: ""
-      type: "jobs"
-    values:
-      layout: "job"
-      class: "job"
-  -
-    scope:
-      path: ""
-      type: "press"
-    values:
-      _comments:
-        press_image: file should be 500px wide
-        pdf_path: to link to a pdf
-        press_link: to link to an external url
-  -
-    scope:
-      path: ""
-      type: "portfolio"
-    values:
-      _comments:
-        image: image should not be wider or taller tha  ~1200px
-  -
-    scope:
-      path: ""
-      type: "internships"
-    values:
-      layout: "job"
-      class: "job"
+      class: about
+      layout: about
   -
     scope:
       path: "cms.md"
@@ -278,16 +41,12 @@ defaults:
       _hide_content: true
 
 
-
-
-languages: ["en", "de"]
-default_lang: "en"
-exclude_from_localization: ["assets", "uploads"]
-parallel_localization: true
-
 # Extending Jekyll
 gems:
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-redirect-from
-  - jekyll-polyglot
+  # - jekyll-redirect-from
+  # - jekyll-polyglot
+  # - jekyll-paginate
+  # - jekyll-archives
+  # - jekyll-feed

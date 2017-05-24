@@ -1,520 +1,200 @@
-body.about {
+.about {
 
-  @include breakpoint(300px, 1199px) {
-    .fluid.grid-container {
-      width: 100%;
+  @include media($s-up) {
+    .desktop {display: none;}
+  }
+  @include media($l-up) {
+    .mobile {display: none;}
+    .desktop {display: block;}
+  }
+
+  .square-index {
+    margin-bottom: 1.5rem;
+    @include square-index();
+    @include media($s-up) {
+      @include span-columns(1 of 2);
+      &:nth-of-type(2n) {
+        margin-right: 0;
+      }
+    }
+    @include media($l-up) {
+      @include span-columns(1 of 4);
+      &:nth-of-type(2n) {
+        margin-right: 2.026197811%
+      }
+      &:nth-of-type(4n) {
+        margin-right: 0;
+      }
+    }
+    // &:before{
+    //   @include transition(all .2s ease);
+    //   position: absolute;
+    //   content:" ";
+    //   top:0;
+    //   left:0;
+    //   width:100%;
+    //   height:100%;
+    //   z-index:0;
+    //   background-color: transparent;
+    // }
+    &:hover:before{
+      @include transition(all .2s ease);
+      // background-color: rgba(52, 87, 104, 0.75);
+    }
+    a {
+      @include transition(all .2s ease);
+      text-decoration: none;
+      width: 100%; 
+      height: 100%;
+      h2, h5 {
+        @include transition(all .2s ease);
+        margin: 0;
+        text-decoration: none;
+        position: relative;
+        z-index: 1;
+      }
+      &:hover {
+        @include transition(all .2s ease);
+        opacity: 1;
+      }  
+      h2.title {
+        font-style: italic;
+      }
     }
   }
 
-  .hero {
-    img {
+  .square-index.active {
+    h2, h5 {
       display: none;
     }
-    .grid-column {
-      @include grid-media($sm-grid) {
-        @include grid-column(8 of 8);
-      }
-      @include grid-media($lg-grid) {
-        @include grid-column(16 of 16);
-      }
-      @include grid-media($xl-grid) {
-        @include grid-column(16 of 16);
-        // @include grid-push(1 of 16);
-      }
+    &:before{
+      @include transition(all .2s ease);
+      position: absolute;
+      content:" ";
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      z-index:0;
+      background-color: transparent;
     }
-    .hero-image {
-      background-size: cover;
-      background-position: center;
-      @include breakpoint(300px, 500px) {
-        height: 33vh;
-      }
-      @include breakpoint(501px, 767px) {
-        height: 250px;
-      }
-      @include breakpoint(md) {
-        height: 480px;
-      }
-      @include breakpoint(lg) {
-        height: 621px;
-      }
+    &:hover:before{
+      @include transition(all .2s ease);
+      background-color: transparent;
     }
   }
 
-  .headline-block.pull {
-    @include breakpoint(xs) {
-      padding-top: 50px;
-      padding-bottom: 22px;
-    }
-    @include breakpoint(sm) {
-      padding-top: 75px;
-      padding-bottom: 32px;
-    }
-    @include breakpoint(md) {
-      padding-top: 90px;
-      padding-bottom: 39px;
-    }
-    @include breakpoint(lg) {
-      padding-top: 0;
-      padding-bottom: 0;
-      .grid-column {
-        margin-top: -130px;
-        padding-top: 70px;
-        padding-bottom: 30px;
-      }
-    }
-    @include breakpoint(xl) {
-      // padding-top: 0;
-      .grid-column {
-        margin-top: -130px;
-        padding-top: 85px;
-        padding-bottom: 85px;
-      }
-    }
-  }
+  // .square-index.inactive {
+  //   &:before{
+  //     @include transition(all .2s ease);
+  //     position: absolute;
+  //     content:" ";
+  //     top:0;
+  //     left:0;
+  //     width:100%;
+  //     height:100%;
+  //     z-index:0;
+  //     background-color: rgba(52, 87, 104, 0.5);
+  //   }
+  //   &:hover:before{
+  //     @include transition(all .2s ease);
+  //     background-color: rgba(52, 87, 104, 0.75);
+  //   }
+  // }
 
-  section.offset-images {
-    @include breakpoint(xs) {
-      margin-top: 26px;
-      margin-bottom: 26px;
+  .share-wrapper {
+    @include span-columns(4 of 4);
+    margin-bottom: 2rem;
+    @include media($l-up) {
+      // margin-bottom: 0rem;
     }
-    @include breakpoint(sm) {
-      margin-top: 52px;
-      margin-bottom: 52px;
-    }
-    @include breakpoint(md) {
-      margin-top: 69px;
-      margin-bottom: 69px;
-    }
-    @include breakpoint(lg) {
-      margin-top: 90px;
-      margin-bottom: 90px;
-    }
-    @include breakpoint(xl) {
-      margin-top: 59px;
-      margin-bottom: 108px;
-    }
-    @include breakpoint(xxl) {
-      margin-top: 81px;
-      margin-bottom: 130px;
-    }
-    .grid-column {
-      @include grid-media($sm-grid) {
-        @include grid-column(8 of 8);
-        // @include grid-push(1 of 8);
+    @include media($s-up) {
+      // background-color: yellow;
+      .share {
+        display: inline-block;
+        background-color: transparent;
+        // width: 24%; 
       }
-      @include grid-media($lg-grid) {
-        @include grid-column(12 of 16);
-        @include grid-push(2 of 16);
+      .share:first-child .share-inner {
+        margin-left: 0;
       }
-    }
-    .left {
-      p {
-        text-transform: uppercase;
-        font-size: 12px;
-        color: $text;
-        letter-spacing: 1px;
-        margin-top: .8rem;
-        margin-bottom: 0;
-      }
-      @include breakpoint(300px, 767px) {
-        margin-bottom: 30px;
-      }
-      @include breakpoint(md) {
-        float: left;
-      }
-      img {
-         width: 100%;
-         max-width: 100%;
-         @include breakpoint(md) {
-           width: 40vw;
-           max-width: 40vw;
-         }
-         @include breakpoint(lg) {
-           width: 341px;
-           max-width: 341px;
-         }
-         @include breakpoint(xl) {
-           width: 413px;
-           max-width: 413px;
-         }
-        @include breakpoint(xxl) {
-          width: 496px;
-          max-width: 496px;
+      .share-inner {
+        background-color: rgba(153, 171, 181, 1);
+        text-align: center;
+        @include media($s-up) {
+          // padding-left: .5rem;
+          margin-left: 1rem;
+          float: left;
         }
-      }
-    }
-    .right {
-      @include breakpoint(md) {
-        float: right;
-      }
-      p {
-        text-transform: uppercase;
-        font-size: 12px;
-        color: $text;
-        letter-spacing: 1px;
-        margin-top: .8rem;
-        margin-bottom: 0;
-      }
-      img {
-         width: 100%;
-         max-width: 100%;
-         @include breakpoint(md) {
-          margin-top: 120px;
-          width: 40vw;
-          max-width: 40vw;
-         }
-         @include breakpoint(lg) {
-           margin-top: 120px;
-           width: 341px;
-           max-width: 341px;
-         }
-         @include breakpoint(xl) {
-           margin-top: 140px;
-           width: 413px;
-           max-width: 413px;
-         }
-        @include breakpoint(xxl) {
-          margin-top: 140px;
-          width: 496px;
-          max-width: 496px;
+        @include media($l-up) {
+          // padding-left: .5rem;
+          margin-left: 1rem;
+          float: left;
         }
 
-      }
-    }
-  }
-
-  section.offset-images.bottom {
-    @include breakpoint(xs) {
-      margin-top: 0px;
-      margin-bottom: 26px;
-    }
-    @include breakpoint(sm) {
-      margin-top: 0px;
-      margin-bottom: 52px;
-    }
-    @include breakpoint(md) {
-      margin-top: 0px;
-      margin-bottom: 69px;
-    }
-    @include breakpoint(lg) {
-      margin-top: 0px;
-      margin-bottom: 90px;
-    }
-    @include breakpoint(xl) {
-      margin-top: 0px;
-      margin-bottom: 103px;
-    }
-    @include breakpoint(xl) {
-      margin-top: 0px;
-      margin-bottom: 130px;
-    }
-    .grid-column {
-      @include grid-media($sm-grid) {
-        @include grid-column(8 of 8);
-        // @include grid-push(1 of 8);
-      }
-      @include grid-media($lg-grid) {
-        @include grid-column(12 of 16);
-        @include grid-push(2 of 16);
-      }
-    }
-    .left {
-      @include breakpoint(300px, 767px) {
-        margin-bottom: 30px;
-      }
-      @include breakpoint(md) {
-        float: left;
-      }
-      img {
-         width: 100%;
-         max-width: 100%;
-         @include breakpoint(md) {
-           width: 30vw;
-           max-width: 30vw;
-         }
-         @include breakpoint(lg) {
-           width: 242px;
-           max-width: 242px;
-         }
-         @include breakpoint(xl) {
-           width: 317px;
-           max-width: 317px;
-         }
-        @include breakpoint(xxl) {
-          width: 380px;
-          max-width: 380px;
-        }
-      }
-    }
-    .right {
-      @include breakpoint(md) {
-        float: right;
-      }
-      img {
-         width: 100%;
-         max-width: 100%;
-         @include breakpoint(md) {
-          // margin-top: 74px;
-          width: 50vw;
-          max-width: 50vw;
-         }
-         @include breakpoint(lg) {
-           // margin-top: 96px;
-           width: 413px;
-           max-width: 413px;
-         }
-         @include breakpoint(xl) {
-           // margin-top: 116px;
-           width: 500px;
-           max-width: 500px;
-         }
-        @include breakpoint(xxl) {
-          // margin-top: 140px;
-          width: 600px;
-          max-width: 600px;
-        }
-      }
-    }
-  }
-
-
-
-  .single-image-block {
-    @include breakpoint(300px, 768px) {
-      .fluid.grid-container {
-        width: 100%;
-      }
-    }
-    @include breakpoint(xl) {
-      // padding-bottom: 150px;
-    }
-    .grid-column {
-      @include grid-media($sm-grid) {
-        @include grid-column(8 of 8);
-      }
-      @include grid-media($lg-grid) {
-        @include grid-column(14 of 16);
-        @include grid-push(1 of 16);
-      }
-    }
-    img {
-      width: 100%;
-      max-width: 100%;
-    }
-  }
-
-  section.gallery {
-    @include breakpoint(xs) {
-      margin-bottom: 40px;
-    }
-    @include breakpoint(sm) {
-      margin-bottom: 75px;
-    }
-    @include breakpoint(md) {
-      margin-bottom: 100px;
-    }
-    @include breakpoint(lg) {
-      margin-bottom: 150px;
-    }
-    .grid-column {
-      @include grid-media($sm-grid) {
-        @include grid-column(8 of 8);
-      }
-      @include grid-media($lg-grid) {
-        @include grid-column(12 of 16);
-        @include grid-push(2 of 16);
-      }
-    }
-
-    h3 {
-      @include breakpoint(xs) {
-        margin-top: 50px;
-      }
-      @include breakpoint(sm) {
-        margin-top: 70px;
-      }
-      @include breakpoint(md) {
-        margin-top: 93px;
-      }
-      @include breakpoint(lg) {
-        margin-top: 120px;
-      }
-      @include breakpoint(xl) {
-        margin-top: 146px;
-      }
-      @include breakpoint(xxl) {
-        margin-top: 175px;
-      }
-      font-size: 18px;
-      margin-bottom: 1.5em;
-      text-align: center;
-      letter-spacing: 1px;
-      color: $text;
-      text-transform: uppercase;
-    }
-
-    @include breakpoint(300px) {
-      .gutter-sizer {
-        width: 4%;
-      }
-      .grid-sizer, .grid-item {
-        // width: calc(48% + 8px);
-        width: 48%;
-      }
-      .grid-item {
-        .staff-name {
-          margin-top: 1rem;
-          margin-bottom: 0;
-          text-align: left;
-        }
-        .staff-title {
-          text-transform: uppercase;
-          font-size: 12px;
-          color: $text;
-          letter-spacing: 1px;
-          margin-top: 2px;
-          margin-bottom: 0;
-        }
-        .staff-bio {
-          transition: all 0.3s ease;
-          display: inline-block;
-          text-transform: uppercase;
+    
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
           text-decoration: none;
-          font-size: 12px;
-          color: $text;
-          letter-spacing: 1px;
-          margin-top: .8rem;
-          padding-bottom: 2px;
-          border-bottom: 1px solid $brand;
-          &:hover {
-            color: $brand;
-            border-bottom: 1px solid transparent;
+          i {
+            @include transition(all .2s ease);
+            color: #fff;
+            @include media($s-up) {
+             font-size: rem(20);
+             display: block;
+             margin: 1rem;
+             width: rem(20);
+             height: rem(20);
+            }
+            @include media($l-up) {
+             font-size: rem(24);
+             display: block;
+             margin: 1rem;
+             width: rem(25);
+             height: rem(25);
+            }
+          }
+          &:hover i {
+            color: $text;
           }
         }
-        margin-bottom: 30px;
-      }
-      .grid-item:hover{
-        cursor: pointer;
-      }
-    }
 
-    @include breakpoint(568px) {
-      .gutter-sizer {
-        width: 4%;
-      }
-      .grid-sizer, .grid-item {
-        // width: calc(48% + 8px);
-        width: 48%;
-      }
-      .grid-item {
-        margin-bottom: 30px;
-      }
-    }
 
-    @include breakpoint(736px) {
-      .gutter-sizer {
-        width: 2%;
       }
-      .grid-sizer, .grid-item {
-        // width: calc(48% + 8px);
-        width: 49%;
-      }
-      .grid-item {
-        margin-bottom: 6px;
-      }
-    }
-
-    @include breakpoint(800px) {
-      .gutter-sizer {
-        width: 5%;
-      }
-      .grid-sizer, .grid-item {
-        width: 30%;
-      }
-      .grid-item {
-        margin-bottom: 28px;
-      }
-    }
-    @include breakpoint(lg) {
-      .grid-item {
-        margin-bottom: 38px;
-      }
-    }
-    @include breakpoint(xl) {
-      .grid-item {
-        margin-bottom: 46px;
-      }
-    }
-
-    img {
-      width: 100%;
     }
   }
 
-  .c-hamburger:hover span::before,
-  .c-hamburger:hover span::after {
-    transition: all 0.3s ease;
-    background-color: $brand;
-  }
-
-  button.c-hamburger:hover {
-    background-color: transparent;
-  }
-
-  .remodal {
-    h2 {
-      font-size: 36px;
-      @include breakpoint(768px) {
-        font-size: 44px;
-      }
-      line-height: 1;
-      margin: 0;
-      color: $text;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      text-align: left;
+  div.copy {
+    margin-bottom: 1rem;
+    @include media($s-up) {
+      @include span-columns(2 of 2);
     }
-    h5 {
-      font-size: 12px;
-      margin-top: .8em;
-      margin-bottom: 0;
-      color: $text;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      text-align: left;
-      padding-bottom: 5%;
-      @include breakpoint(768px) {
-        padding-bottom: 8%;
+    @include media($l-up) {
+      @include span-columns(4 of 4);
+    }
+  }
+
+  h2.name {
+    color: $text;
+    span {
+      font-style: italic;
+    }
+  }
+
+  .bio {
+    @include media($s-up) {
+      @include media($l-up) {
+        @include span-columns(2 of 2)
       }
+    }
+    @include media($l-up) {
+      @include span-columns(3 of 4)
     }
     p {
-      font-size: 19px;
-      line-height: 27px;
-      @include breakpoint(768px) {
-        padding: 0 70px;
-      }
-      margin-top: 0;
-      margin-bottom: .5em;
-      text-align: left;
+      color: $text;
     }
-    p.quote {
-      font-size: 24px;
-      line-height: 33px;
-      @include breakpoint(768px) {
-        font-size: 36px;
-        line-height: 45px;
-      }
-      color: $brand;
-      @include breakpoint(768px) {
-        text-align: center;
-      }
-      padding-bottom: 5%;
-      @include breakpoint(768px) {
-        padding: 2% 30px 10% 30px;
-      }
-      margin: 0;
-    }
-
   }
 
 }

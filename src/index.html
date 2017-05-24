@@ -1,114 +1,58 @@
 ---
-video:
-  headline: woodwork and JOINERY FOR THE MODERN AGE.
-  youtube_id: d1D-DHWxWgc
-  placeholder_image: /uploads/hero-home.png
-text_block: 'Innovation is in our DNA. Leading the entire woodwork and joinery industry from the front line is our mission. Delivering unparalleled interiors today, and in the future, is our vision.'
-next:
-  name: portfolio
-  link: /portfolio/
-title: Home
-description: Merritt welcomes you to the next century of woodwork and joinery design.
-_comments:
-  video: set the video source and text
-  placeholder_image: a still from the video source
-  next: "the'next' link"
-  name: "the text of the 'next' link"
-  link: "where the 'next' link takes you"
-  title: "for meta property='og:title'"
-  description: "(optional) for meta property='og:description'"
-lang: en
+layout: default
+class: home
+featured_projects:
+  - windows-10
+  - corporate-partner-design-systems
+  - integrated-platform-service-naming-and-design
+  - simplified-definition-of-the-corporate-brand
+  - organization-wide-technology-platform
 ---
-<section class="header-video">
-  <div class="wrapper">
-      <img
-        class="header-video__media"
-        data-video-URL="https://www.youtube.com/embed/{{page.video.youtube_id}}"
-        data-teaser=""
-        data-video-width="560"
-        data-video-height="315"
-        data-video-start=""
-        ix-path="{{page.video.placeholder_image}}"
-        ix-params='{
-          "auto": "compress"
-        }'
-        sizes="85vw"
-      >
-      <div class="header-video__close-trigger header-text-condensed" id="header-video__close-trigger">stop</div>
-      <div class="grid-container">
-        <!-- <div class="grid-collapse"> -->
-          <div class="headline header-text-condensed">
-            <p class="animated customFadeInUp">{{page.video.headline}}</p>
-            <a href="" class="header-video__play-trigger animated staggerFadeIn" id="header-video__play-trigger"><span>watch the video</span></a>
-          </div>
-        <!-- </div> -->
-      </div>
-  </div>
-</section>
 
-<section class="intro">
-  <div class="grid-container">
-    <!-- <div class="grid-collapse"> -->
-      <div class="grid-column">
-        <h1 class="copy-text">{{page.text_block}}</h1>
-        <h3 class="header-text-condensed animated fadeIn"><a href="/portfolio">Portfolio</a></h3>
-        <h3 class="header-text-condensed animated fadeIn"><a href="/capabilities">Capabilities</a></h3>
-      </div>
-    <!-- </div> -->
-  </div>
-</section>
+<main class="load">
+  <section class="hero">
+    <h1 class="editable">We are a strategic brand consultancy with big agency experience, operating at start-up speed!</h1>
+    <div class="hero-inner">
+      <p class="editable">Through a combination of creativity and logic, we build branding solutions rooted in strategy with real world application. Whether the deliverable is strategic or creative, the path we take is designed to meet each need uniquely. To get there, we ask the right questions and communicate early and often with our client to arrive at the right answers with unprecedented speed. <span><a href="/contact">Get in touch.</a></span></p>
+    </div>
+  </section>
 
 
 
+  <section class="body">
 
-<section class="case-studies">
-  <h3 class="header header-text-condensed" {% unless jekyll.environment == 'production' %}data-aos="fade-up"{% endunless %}>Case Studies</h3>
-    <div class="grid-container">
-        <div class="grid-column">
-          {% assign casestudies = site.case_studies | sort:"list_order" %}
-          {% for case in casestudies %}
-            <div class="case-study" {% unless jekyll.environment == 'production' %}data-aos="fade-up"{% endunless %}>
-              <div class="case-study-image">
-                <img
-                  class="js-img"
-                  ix-path="{{case.hero_image}}"
-                  ix-params='{
-                    "auto": "compress"
-                  }'
-                  sizes="(max-width: 700px) 100vw, 40vw"
-                >
-              </div>
-              <div class="case-study-info">
-                <div class="wrapper">
-                  <h5 class="header-text">{{case.work-type}}</h5>
-                  <h2 class="header-text-condensed">{{case.title}}</h2>
-                </div>
-                <h3 class="header-text-condensed"><a href="{{case.url}}">view case study</a></h3>
-              </div>
+  <div class="wide-index featured js-flickity" data-flickity-options='{ "wrapAround": true, "pageDots": false }'>
+    {% assign liveprojects = site.projects | where: 'draft',false %}
+    {% for featured in page.featured_projects %}
+      {% for item in liveprojects %}
+        {% if featured == item.slug %}
+          <div class="project gallery-cell" style="background-image:url({{ item.wide_thumbnail_path }});background-size:cover">
+            <div class="text">
+            <a href="{{ item.url}}">
+              <h5>Featured Case Study</h5>
+              <h2>{{ item.title }}</h2>
+            </a>
             </div>
-          {% endfor %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </div>
 
+
+    {% assign posts = site.posts | limit:2 %}
+    {% for post in posts %}
+
+      <div class="square" style="background-image:url({{ post.image_path }});background-size:cover">
+        <div class="block-inner">
+        <a href="{{ post.url }}">
+        <h2>{{ post.title }}</h2>
+        </a>
         </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="next">
-  <div class="grid-container">
-    <!-- <div class="grid-collapse"> -->
-      <div class="grid-column">
-        <div class="color"></div>
       </div>
-    <!-- </div> -->
-  </div>
-  <div class="center">
-    <div class="link-wrapper">
-      <a href="{{page.next.link}}">
-        <h5 class="header-text">next</h5>
-        <span><h2 class="header-text-condensed">{{page.next.name}}</h2></span>
-      </a>
-    </div>
-  </div>
-</section>
 
+    {% endfor %}
+
+  </section>
+
+</main>

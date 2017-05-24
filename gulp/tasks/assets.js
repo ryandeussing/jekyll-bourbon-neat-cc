@@ -16,6 +16,9 @@ const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
 const when = require('gulp-if');
 
+// Bourbon & Neat
+const neat = require('node-neat');
+
 // 'gulp scripts' -- creates a index.js file from your JavaScript files and
 // creates a Sourcemap for it
 // 'gulp scripts --prod' -- creates a index.js file from your JavaScript files,
@@ -25,18 +28,11 @@ gulp.task('scripts', () =>
   // top to bottom, so you want vendor scripts etc on top
   gulp.src([
     'node_modules/jquery/dist/jquery.js',
-    'src/assets/javascript/kibo.js',
-    'src/assets/javascript/smooth-scroll.js',
     'src/assets/javascript/imagesloaded.js',
-    'src/assets/javascript/remodal-custom.js',
-    'node_modules/imgix.js/dist/imgix.js',
-    'src/assets/javascript/classie.js',
-    'src/assets/javascript/aos.js',
-    'src/assets/javascript/rellax.js',
-    'src/assets/javascript/fastclick.js',
     'src/assets/javascript/enquire.js',
-    'src/assets/javascript/isotope.pkgd.js',
-    'src/assets/javascript/modernizr.js',
+    'src/assets/javascript/flickity.min.js',
+    'src/assets/javascript/kibo.js',
+    'node_modules/imgix.js/dist/imgix.js',
     'src/assets/javascript/main.js'
   ])
     .pipe(newer('.tmp/assets/javascript/index.js', {dest: '.tmp/assets/javascript', ext: '.js'}))
@@ -72,7 +68,8 @@ gulp.task('styles', () =>
   gulp.src('src/assets/scss/style.scss')
     .pipe(when(!argv.prod, sourcemaps.init()))
     .pipe(sass({
-      precision: 10
+      precision: 10,
+      includePaths: neat.includePaths
     }).on('error', sass.logError))
     .pipe(postcss([
       autoprefixer({browsers: 'last 2 versions'}) // modify as needed

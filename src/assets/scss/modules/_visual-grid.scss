@@ -1,0 +1,19 @@
+// override the $max-width variable within the visual grid option
+// without them them the visual grid defaults to full width
+// below bourbon's default $max-width :(
+
+// body:before {
+//   @include media($s-up) {
+//     max-width: calc(100% - 2rem);
+//   }
+//   @include media($xl-up) {
+//     max-width: $xl;
+//   }
+// }
+
+// FYI
+// $s: em(100);
+// $m: em(500);
+// $l: em(769);
+// $xl: em(1200);
+// $xxl: em(1600);

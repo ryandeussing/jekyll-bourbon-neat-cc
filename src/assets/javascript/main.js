@@ -8,78 +8,19 @@
     $('body').removeClass('grid');
   });
 
-  // touch links
-  $('.overlay').bind('touchstart', function() {});
-
-  // remove 300ms delay on mobile
-  $(function() {
-      FastClick.attach(document.body);
-  });
-
   // fade-in content
   var main = $('main');
   setTimeout(function(){
     $(main).fadeIn().removeClass('load').addClass('loaded');
   }, 250);
 
-  // mobile menu
-  (function() {
-    var triggerBttn = document.getElementById( 'trigger-overlay' ),
-      overlay = document.querySelector( 'div.overlay' ),
-      body = document.querySelector( 'body' ),
-      burger = document.querySelector(".c-hamburger");
-      closeBttn = overlay.querySelector( 'button.overlay-close' );
-      transEndEventNames = {
-        'WebkitTransition': 'webkitTransitionEnd',
-        'MozTransition': 'transitionend',
-        'OTransition': 'oTransitionEnd',
-        'msTransition': 'MSTransitionEnd',
-        'transition': 'transitionend'
-      },
-      transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
-      support = { transitions : Modernizr.csstransitions };
+  // Google Analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    function toggleOverlay() {
-      if( classie.has( overlay, 'open' ) ) {
-        classie.remove( overlay, 'open' );
-        classie.remove( burger, 'is-active' );
-        classie.add( overlay, 'close' );
-        classie.remove( body, 'open' );
-        var onEndTransitionFn = function( ev ) {
-          if( support.transitions ) {
-            if( ev.propertyName !== 'visibility' ) return;
-            this.removeEventListener( transEndEventName, onEndTransitionFn );
-          }
-          classie.remove( overlay, 'close' );
-        };
-        if( support.transitions ) {
-          overlay.addEventListener( transEndEventName, onEndTransitionFn );
-        }
-        else {
-          onEndTransitionFn();
-        }
-      }
-      else if( !classie.has( overlay, 'close' ) ) {
-        classie.add( overlay, 'open' );
-        classie.add( body, 'open' );
-        classie.add( burger, 'is-active' );
-      }
-    }
-
-    triggerBttn.addEventListener( 'click', toggleOverlay );
-    closeBttn.addEventListener( 'click', toggleOverlay );
-  })();
-
-  // hamburger
-  var toggle = document.querySelector(".c-hamburger");
-
-    toggleHandler(toggle);
-
-    function toggleHandler(toggle) {
-      toggle.addEventListener( "click", function(e) {
-        e.preventDefault();
-        (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-      });
-    }
+  ga('create', 'UA-25219413-2', 'auto');
+  ga('send', 'pageview');
 
 })();

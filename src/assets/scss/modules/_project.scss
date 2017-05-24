@@ -1,0 +1,50 @@
+.project {
+  .project-wrapper {
+    @include media($s-up) {
+      @include span-columns(2 of 2);
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(108, 161, 177, 1);
+      margin-bottom: 2rem;
+    }
+    @include media($l-up) {
+      @include span-columns(4 of 4);
+    }
+  }
+  .description {
+    @include media($s-up) {
+      margin-top: 2rem;
+      @include span-columns(2 of 2);
+    }
+    @include media($l-up) {
+      margin-top: 2rem;
+      @include span-columns(2 of 4);
+    }
+  }
+  .images {
+    @include media($s-up) {
+      @include span-columns(2 of 2); 
+      // @include omega();
+      .image {
+        margin-bottom: 1rem;
+        img {
+          max-width: 100%;
+        }
+      }
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    @include media($l-up) {
+      @include span-columns(2 of 4); 
+      @include omega();
+      .image {
+        margin-bottom: 1rem;
+        img {
+          max-width: 100%;
+        }
+      }
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+

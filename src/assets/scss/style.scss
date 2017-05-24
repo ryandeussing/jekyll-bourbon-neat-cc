@@ -1,157 +1,151 @@
-// suppress warnings about bourbon 5
-// $output-bourbon-deprecation-warnings: false;
+$visual-grid: true;
+$visual-grid-color: yellow;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.2;
 
-// .grid-column {
-//   background-image: linear-gradient(to bottom right, #21e9f4, #00d4ff);
-// }
-
-// base
+//Base
 @import
   "node_modules/normalize.scss/normalize",
-  "settings/settings",
-  "neat/neat";
+  "bourbon",
+  "base/base", // includes grid-settings, which must be imported before neat
+  "modules/grid-settings", //overrides bitters grid-settings
+  "neat";
 
-// modules
+// Modules
 @import
   "modules/vars",
-  "modules/animate",
+  "modules/visual-grid",
   "modules/mixins",
-  "modules/common",
+  "modules/layouts",
   "modules/header",
-  "modules/mobile-nav",
-  "modules/hamburger",
-  "modules/footer",
   "modules/home",
-  "modules/remodal",
-  "modules/remodal-portfolio",
-  "modules/remodal-about",
-  "modules/portfolio",
-  "modules/casestudy",
-  "modules/about",
-  "modules/capabilities",
-  "modules/clients",
-  "modules/press",
-  "modules/careers",
-  "modules/jobs",
-  "modules/job",
-  "modules/internships",
   "modules/contact",
-  "modules/animation",
-  "aos/aos",
-  "modules/grid-test";
+  "modules/about",
+  "modules/projects",
+  "modules/project",
+  "modules/clients",
+  "modules/category",
+  "modules/blog",
+  "modules/articles",
+  "modules/footer",
+  "modules/flickity",
+  // "modules/utilities-accessibility",
+  // "modules/utilities-iframes",
+  "modules/utilities"
+;
 
-// visual grid
-body.grid {
-  .grid-container {
-    @include grid-visual(rgba(255, 255, 0, .5), $lg-grid);
+body {
+  font-family: "Open Sans", sans-serif;
+  @include media($s-up) {
+    // display: none;
+    // background-color: red;
+  }
+  @include media($l-up) {
+    // display: none;
+    // background-color: yellow;
   }
 }
 
-html, body {
-  // overflow-x: hidden; // deal with grid-collapse negative margin
+body:before {
+  display: none;
 }
 
-.grid-collapse {
-  @include grid-container;
-  @include breakpoint(300px, 991px) {
-    @include grid-collapse($sm-grid);
-  }
-  @include breakpoint(lg) {
-    @include grid-collapse($lg-grid);
-  }
+body.grid:before {
+  display: block;
 }
 
-// grid-container
-.grid-container {
-    @include grid-container;
-    margin: 0 auto;
-    width: 95%;
-    // width: calc(100vw - 20px);
-    @include breakpoint(lg) {
-      width: 992px;
-    }
-    @include breakpoint(xl) {
-      width: 1200px;
-    }
-    @include breakpoint(xxl) {
-      width: 1440px;
-    }
-  }
-
-  // .inner-grid-container {
-  //   clear: both;
-  //   content: "";
-  //   display: block;
-  // }
-
-  // full-width outer grid hack
-  .grid-container.fluid {
-    @media (max-width: 1234px) {
-      .grid-column {
-        width: 100% !important;
-        margin: 0 !important;
-      }
-    }
-  }
-
-
-
-
-  // fonts
-  @font-face {
-      font-family: 'Portrait Web';
-      src: url('../fonts/Portrait-Light-Web.eot');
-      src: url('../fonts/Portrait-Light-Web.eot?#iefix') format('embedded-opentype'), url('../fonts/Portrait-Light-Web.woff2') format('woff2'), url('../fonts/Portrait-Light-Web.woff') format('woff');
-      font-weight: 300;
-      font-style: normal;
-      font-stretch: normal;
-  }
-  @font-face {
-      font-family: 'UniversLT-Condensed';
-      src: url('../fonts/321C3D_0_0.eot');
-      src: url('../fonts/321C3D_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/321C3D_0_0.woff2') format('woff2'), url('../fonts//321C3D_0_0.woff') format('woff'), url('../fonts/321C3D_0_0.ttf') format('truetype');
-  }
-  @font-face {
-      font-family: 'UniversLTPro-UltraCn';
-      src: url('../fonts/321C3D_1_0.eot');
-      src: url('../fonts/321C3D_1_0.eot?#iefix') format('embedded-opentype'), url('../fonts/321C3D_1_0.woff2') format('woff2'), url('../fonts/321C3D_1_0.woff') format('woff'), url('../fonts/321C3D_1_0.ttf') format('truetype');
-  }
-  .copy-text {
-      font-family: 'Portrait Web';
-      font-weight: 300;
-      font-style: normal;
-      font-stretch: normal;
-  }
-  .header-text {
-    font-family: UniversLT-Condensed;
-    font-weight: normal;
-    font-style: normal;
-  }
-  .header-text-condensed {
-    font-family: UniversLTPro-UltraCn;
-    font-weight: normal;
-    font-style: normal;
-  }
-
-main.load {
-  transition: all .3s ease-in;
+.load { // js fade in dynamically sized content
   opacity: 0;
 }
 
-main.loaded {
-  transition: all .3s ease-in;
-  opacity: 1;
+main {
+  @include media($s-up) {
+    margin-top: rem(24);
+  }
+  @include media($l-up) {
+    margin-top: rem(36);
+  }
+
 }
 
-body {
-  @include breakpoint(300px, 991px) {
-    margin-top: 45px;
-    &.open {
-      overflow: hidden;
-    }
+// Typograpy
+
+h1 {
+  @include media($s-up) {
+    font-size: rem(24);
+    line-height: 1.4em;
   }
-  @include breakpoint(lg) {
-    margin-top: 72px;
+  @include media($m-up) {
+    font-size: rem(32);
+  }
+  @include media($l-up) {
+    font-size: rem(50);
+    line-height: 1.3em;
+  }
+  font-weight: 100;
+  margin: 0 0 1rem 0;
+}
+
+h2 {
+  @include media($s-up) {
+    font-size: rem(12);
+  }
+  @include media($m-up) {
+    font-size: 1rem;
+  }
+  @include media($xl-up) {
+    font-size: 1.1rem;
+  }
+  font-weight: 700;
+}
+h5 {
+  @include media($s-up) {
+    font-size: rem(14);
+  }
+  @include media($m-up) {
+    // font-size: 1.2rem;
+  }
+  font-weight: 400;
+}
+
+p {
+  @include media($s-up) {
+    line-height: 1.5em;
+    font-size: 1rem;
+  }
+  @include media($l-up) {
+    line-height: 1.6em;
+    font-size: rem(18);
+  }
+  font-weight: 100;
+}
+
+// gifted
+
+.gifted p a {
+  color: $myred;
+  text-decoration: none;
+}
+
+.gifted .hero {
+  margin-bottom: 1.5rem;
+}
+
+.gifted .hero a {
+  @include transition(all .2s ease);
+  color: $myred;
+  font-weight: 700;
+  &:hover {
+    color: $text;
   }
 }
+
+.guide {
+  section.info a {
+    text-decoration: none;
+    color: $myred;
+  }
+}
+
+
 

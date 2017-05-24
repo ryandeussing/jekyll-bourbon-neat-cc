@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<main class="load">
+  <section class="load">
+
+  <div class="project-wrapper">
+    <div class="description">
+      <h2>{{ page.client }}</h2>
+      <h2 class="title">{{ page.title }}</h2>
+      {{ content }}
+    </div>
+
+    <div class="images">
+      <div class="image">
+      {% if page.image_1_path %}
+        <img src="{{ page.image_1_path }}">
+      {% endif %}
+      {% if page.image_2_path %}
+        <img src="{{ page.image_2_path }}">
+      {% endif %}
+      </div>
+    </div>
+  </div>
+
+
+
+  {% include projects.html %}
+
+  </section>
+
+  </main>

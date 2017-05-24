@@ -1,341 +1,68 @@
 .contact {
-
-  section.contact-details {
-    margin-top: -9px;
-    background-color: #f8f7f5;
-    .grid-column {
-      @include grid-media($sm-grid) {
-        @include grid-column(8 of 8);
+  main {
+    text-align: left; 
+    section.hero { 
+      @include media($s-up) { 
+        @include span-columns(2);
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        h1 {
+          margin-bottom: 1.5rem;
+        }
       }
-      @include grid-media($lg-grid) {
-        @include grid-column(6 of 16);
-        @include grid-push(1 of 16);
+      @include media($l-up) {
+        @include span-columns(4);
+        padding: 1.5rem;
+        h1 {
+          margin-bottom: 2.5rem;
+        }
       }
-    }
-    .grid-column {
-      @include breakpoint(xs) {
-        padding-bottom: 3rem;
-      }
-      @include breakpoint(sm) {
-        padding-bottom: 3rem;
-      }
-      @include breakpoint(md) {
-      }
-      @include breakpoint(lg) {
-        padding-bottom: 3rem;
-      }
-      @include breakpoint(xl) {
-      }
-      @include breakpoint(xxl) {
-      }
-    }
-
-    @include breakpoint(xs) {
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
-    @include breakpoint(sm) {
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
-    @include breakpoint(md) {
-      padding-top: 53px;
-      padding-bottom: 53px;
-    }
-    @include breakpoint(lg) {
-      padding-top: 69px;
-      padding-bottom: 69px;
-    }
-    @include breakpoint(xl) {
-      padding-top: 83px;
-      padding-bottom: 83px;
-    }
-    @include breakpoint(xxl) {
-      padding-top: 100px;
-      padding-bottom: 100px;
-    }
-    @include breakpoint(xs) {
-      h3 {
-        font-size: 18px;
-        line-height: 21px;
-        letter-spacing: 1.5px;
-        color: $text;
-        margin-top: 30px;
-        margin-bottom: 1rem;
-        text-transform: uppercase;
-        &:first-of-type {
+      background-color: #ededed; 
+      color: $text;
+      div.hero-inner { 
+        @include media($l-up) {
+          @include span-columns(3 of 4);
+        }
+        p {
           margin-top: 0px;
+          margin-bottom: .5rem
+        } 
+        p a {
+          color: $text;
+          text-decoration: none;
+          &:hover {
+            color: $myred;
+          }
         }
       }
-      p {
-        font-size: 19px;
-        line-height: 27px;
-        color: $near-black;
-        margin: 0;
-      }
-      p.phone {
-        font-size: 18px;
-        font-feature-settings: "lnum" 1;
-      }
-      a {
-        transition: all 0.3s ease;
-        text-decoration: none;
-        color: $text;
-        letter-spacing: 0px;
-        padding-bottom: 2px;
-        border-bottom: 1px solid $brand;
-        &:hover {
-          color: $brand;
-          border-bottom: 1px solid transparent;
+
+      .div-wrapper {
+        @include media($l-up) {
+          @include span-columns(3 of 4)
         }
       }
-    }
-    @include breakpoint(sm) {
-      h3 {
-        font-size: 18px;
-        line-height: 21px;
-        letter-spacing: 1.5px;
-        color: $text;
-        margin-top: 30px;
-        margin-bottom: 1rem;
-        text-transform: uppercase;
-        &:first-of-type {
-          margin-top: 0px;
+
+      .map-wrapper {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem; 
+      }
+
+      #googleMap iframe {
+         width: 100%;
+         z-index: 1;
+      }
+      #googleMap {
+        margin-top: 1.5rem;
+        @include media($s-up) {
+          height: 300px;
         }
-      }
-      p {
-        font-size: 19px;
-        line-height: 27px;
-        color: $near-black;
-        margin: 0;
-      }
-      p.phone {
-        font-size: 18px;
-        font-feature-settings: "lnum" 1;
-      }
-      a {
-        transition: all 0.3s ease;
-        text-decoration: none;
-        color: $text;
-        letter-spacing: 0px;
-        padding-bottom: 2px;
-        border-bottom: 1px solid $brand;
-        &:hover {
-          color: $brand;
-          border-bottom: 1px solid transparent;
+        @include media($l-up) {
+          height: 500px;
         }
+        
       }
-    }
+      #googleMap img { max-width: none; }
+    } 
   }
-
-  section.case-studies {
-    @include breakpoint(300px, 768px) {
-      .grid-container {
-        width: 100%;
-      }
-    }
-    background-color: #FFF;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    @include breakpoint(md) {
-      // 80%
-      padding-top: 80px;
-      padding-bottom: 140px;
-    }
-    @include breakpoint(xl) {
-      padding-top: 100px;
-      padding-bottom: 150px;
-    }
-    h3 {
-      font-size: 18px;
-      // line-height: 1.5;
-      // border-bottom: 1px solid #a45833;
-      // display: inline-block;
-      letter-spacing: 1.5px;
-      color: $near-black;
-      text-transform: uppercase;
-      margin-left: 3rem;
-      margin-right: 3rem;
-      color: $near-black;
-      &.header {
-        text-align: center;
-        margin-bottom: 2rem;
-      }
-    }
-    .grid-column {
-      @include grid-media($lg-grid) {
-        @include grid-column(14 of 16);
-        @include grid-push(1 of 16);
-        img {
-          width: 60%;
-        }
-      }
-      @include grid-media($xl-grid) {
-        @include grid-column(12 of 16);
-        @include grid-push(2 of 16);
-        img {
-          width: 60%;
-        }
-      }
-    }
-    .case-study {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: stretch;
-      margin-bottom: 27px;
-      @include breakpoint(701px) {
-        height: 288px;
-        margin-bottom: 35px;
-      }
-      @include breakpoint(md) {
-        height: 288px;
-      }
-      @include breakpoint(xl) {
-        height: 360px;
-      }
-      img {
-        display: none;
-      }
-    }
-
-    .case-study-info {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: center;
-      background-color: $near-black;
-      a {
-        color: #fff;
-        text-decoration: none;
-        border-bottom: 1px solid $brand;
-        display: inline-block;
-      }
-
-      .wrapper {
-        flex: 0 1 auto;
-      }
-
-      @include breakpoint(300px, 700px) {
-        flex-basis: 100%;
-        height: 200px;
-      }
-      @include breakpoint(701px) {
-        flex-basis: 40%;
-      }
-      position: relative;
-      @include breakpoint(300px) {
-        .wrapper {
-        }
-        h5 {
-          font-size: 12px;
-          line-height: 1.3;
-          letter-spacing: 2px;
-          color: #FFFFFF;
-          text-transform: uppercase;
-          margin: 0;
-          &.phone {
-            margin-top: 1em;
-          }
-        }
-        h2 {
-          font-size: 28px;
-          line-height: 1.3;
-          letter-spacing: 1.5px;
-          color: #FFFFFF;
-          text-transform: uppercase;
-          margin: 0 0 1rem 0;
-          padding-right: 30px;
-        }
-
-      }
-      @include breakpoint(md) {
-        .wrapper {
-        }
-        h5 {
-          font-size: 12px;
-          letter-spacing: 2px;
-          color: #FFFFFF;
-          text-transform: uppercase;
-          margin: 0;
-          &.phone {
-            margin-top: 1em;
-          }
-        }
-        h2 {
-          font-size: 28px;
-          line-height: 1.3;
-          letter-spacing: 1.5px;
-          color: #FFFFFF;
-          text-transform: uppercase;
-          margin: 0 0 1rem 0;
-          padding-right: 30px;
-        }
-      }
-      @include breakpoint(xl) {
-        .wrapper {
-        }
-        h5 {
-          font-size: 12px;
-          line-height: 1.3;
-          letter-spacing: 2px;
-          color: #FFFFFF;
-          text-transform: uppercase;
-          margin: 0;
-          &.phone {
-            margin-top: 1em;
-          }
-        }
-        h2 {
-          font-size: 44px;
-          line-height: 1.3;
-          letter-spacing: 1.5px;
-          color: #FFFFFF;
-          text-transform: uppercase;
-          margin: 0 0 1rem 0;
-          padding-right: 30px;
-        }
-      }
-    }
-
-    .case-study a {
-      display: block;
-      height: 100%;
-    }
-
-    .case-study:nth-child(odd) {
-      .case-study-image {
-        @include breakpoint(300px, 700px) {
-          flex-basis: 100%;
-          height: 200px;
-        }
-        @include breakpoint(701px) {
-          flex-basis: 60%;
-        }
-        background-size: cover;
-        background-position: center;
-      }
-    }
-
-    .case-study:nth-child(even) {
-      .case-study-image {
-        @include breakpoint(300px, 700px) {
-          flex-basis: 100%;
-          height: 200px;
-        }
-        @include breakpoint(701px) {
-          flex-basis: 60%;
-          order: 2;
-        }
-        // flex-basis: 60%;
-        // order: 2;
-        background-size: cover;
-        background-position: center;
-      }
-    }
-
-
-
-
-  }
-
 }
+
