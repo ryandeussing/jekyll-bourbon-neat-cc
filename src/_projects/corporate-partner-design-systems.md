@@ -4,7 +4,7 @@ client: Olympic Games 2010–2016
 project_type: Design
 link: true
 order: 10
-thumbnail_image: 'https://source.unsplash.com/random/500x500'
+thumbnail_image: 'https://images.unsplash.com/photo-1423775162340-fc7066ace5be?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=500&h=500&fit=crop&s=723bab64906cf8f53b8cbd98a2403b35'
 content_section:
   - text_block_markdown: >-
       GE, a Worldwide Partner of the Olympic Games, was looking to stand out from the crowd of competing worldwide and national team partners.

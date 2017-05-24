@@ -631,20 +631,9 @@ header {
     list-style-type: none; }
     @media screen and (min-width: 6.25em) {
       header ul.links {
-        float: left;
-        display: block;
-        margin-right: 4.1362032824%;
         width: 100%;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-        header ul.links:last-child {
-          margin-right: 0; } }
-    @media screen and (min-width: 31.25em) {
-      header ul.links {
-        text-align: left;
-        display: inline; } }
+        text-align: right;
+        display: inline-block; } }
     @media screen and (min-width: 48.0625em) {
       header ul.links {
         float: left;
@@ -2024,19 +2013,19 @@ main {
       .category .category ul.client ul.project li a:hover {
         color: #ed1417; }
 
-.post .square-index {
+.project .square-index {
   transition: all 0.2s ease;
   display: inline-block;
   position: relative;
   background-color: #ededed;
   font-size: 0.875rem;
   margin-bottom: 1rem; }
-  .post .square-index a {
+  .project .square-index a {
     text-decoration: none;
     display: block;
     width: 100%;
     height: 100%; }
-    .post .square-index a h2, .post .square-index a h5 {
+    .project .square-index a h2, .project .square-index a h5 {
       transition: all 0.4s ease;
       opacity: 1;
       margin: 0;
@@ -2044,15 +2033,15 @@ main {
       color: #335769;
       position: relative;
       z-index: 1; }
-    .post .square-index a p {
+    .project .square-index a p {
       transition: all 0.4s ease;
       color: #335769; }
-    .post .square-index a:hover h2, .post .square-index a:hover h5, .post .square-index a:hover p {
+    .project .square-index a:hover h2, .project .square-index a:hover h5, .project .square-index a:hover p {
       transition: all 0.4s ease;
       color: white; }
-    .post .square-index a:hover p.more {
+    .project .square-index a:hover p.more {
       border-bottom: 1px solid white !important; }
-  .post .square-index h2, .post .square-index h5 {
+  .project .square-index h2, .project .square-index h5 {
     transition: all 0.4s ease;
     opacity: 1;
     margin: 0;
@@ -2060,13 +2049,13 @@ main {
     color: #335769;
     position: relative;
     z-index: 1; }
-  .post .square-index p {
+  .project .square-index p {
     transition: all 0.4s ease;
     color: #335769; }
-  .post .square-index:hover h2, .post .square-index:hover h5, .post .square-index:hover p {
+  .project .square-index:hover h2, .project .square-index:hover h5, .project .square-index:hover p {
     transition: all 0.4s ease;
     color: white; }
-  .post .square-index:before {
+  .project .square-index:before {
     transition: all 0.4s ease;
     position: absolute;
     content: " ";
@@ -2076,259 +2065,259 @@ main {
     height: 100%;
     z-index: 0;
     background-color: rgba(230, 230, 230, 0.92); }
-  .post .square-index:hover:before {
+  .project .square-index:hover:before {
     transition: all 0.4s ease;
     background-color: transparent; }
   @media screen and (min-width: 6.25em) {
-    .post .square-index {
+    .project .square-index {
       float: left;
       display: block;
       margin-right: 4.1362032824%;
       width: 47.9318983588%; }
-      .post .square-index:last-child {
+      .project .square-index:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 48.0625em) {
-    .post .square-index {
+    .project .square-index {
       float: left;
       display: block;
       margin-right: 2.026197811%;
       width: 23.4803516417%; }
-      .post .square-index:last-child {
+      .project .square-index:last-child {
         margin-right: 0; } }
-  .post .square-index:after {
+  .project .square-index:after {
     padding-top: 100%;
     display: block;
     content: ''; }
-  .post .square-index a .block-inner {
+  .project .square-index a .block-inner {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0; }
     @media screen and (min-width: 6.25em) {
-      .post .square-index a .block-inner {
+      .project .square-index a .block-inner {
         padding: .5rem; } }
     @media (min-width: 568px) and (max-width: 768px) {
-      .post .square-index a .block-inner {
+      .project .square-index a .block-inner {
         padding: 1.5rem; } }
     @media (min-width: 769px) and (max-width: 899px) {
-      .post .square-index a .block-inner {
+      .project .square-index a .block-inner {
         padding: 1rem; } }
     @media (min-width: 900px) {
-      .post .square-index a .block-inner {
+      .project .square-index a .block-inner {
         padding: 1.5rem; } }
-    .post .square-index a .block-inner p {
+    .project .square-index a .block-inner p {
       margin-top: 0;
       margin-bottom: 0; }
-    .post .square-index a .block-inner .more {
+    .project .square-index a .block-inner .more {
       margin-bottom: 0;
       border-bottom: 1px solid transparent;
       position: absolute;
       font-style: italic;
       line-height: 1.2; }
       @media screen and (min-width: 6.25em) {
-        .post .square-index a .block-inner .more {
+        .project .square-index a .block-inner .more {
           left: .5rem;
           bottom: .5rem; } }
       @media (min-width: 568px) and (max-width: 768px) {
-        .post .square-index a .block-inner .more {
+        .project .square-index a .block-inner .more {
           left: 1.5rem;
           bottom: 1.5rem; } }
       @media (min-width: 769px) and (max-width: 899px) {
-        .post .square-index a .block-inner .more {
+        .project .square-index a .block-inner .more {
           left: 1rem;
           bottom: 1rem; } }
       @media (min-width: 900px) {
-        .post .square-index a .block-inner .more {
+        .project .square-index a .block-inner .more {
           left: 1.5rem;
           bottom: 1.5rem; } }
-  .post .square-index .block-inner {
+  .project .square-index .block-inner {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0; }
     @media screen and (min-width: 6.25em) {
-      .post .square-index .block-inner {
+      .project .square-index .block-inner {
         padding: .5rem; } }
     @media (min-width: 568px) and (max-width: 768px) {
-      .post .square-index .block-inner {
+      .project .square-index .block-inner {
         padding: 1.5rem; } }
     @media (min-width: 769px) and (max-width: 899px) {
-      .post .square-index .block-inner {
+      .project .square-index .block-inner {
         padding: 1rem; } }
     @media (min-width: 900px) {
-      .post .square-index .block-inner {
+      .project .square-index .block-inner {
         padding: 1.5rem; } }
     @media (min-width: 300px) and (max-width: 499px) {
-      .post .square-index .block-inner h2 {
+      .project .square-index .block-inner h2 {
         font-size: .75rem;
         margin-top: .5em; } }
     @media (min-width: 500px) and (max-width: 767px) {
-      .post .square-index .block-inner h2 {
+      .project .square-index .block-inner h2 {
         font-size: 1.1rem; } }
     @media (min-width: 769px) and (max-width: 999px) {
-      .post .square-index .block-inner h2 {
+      .project .square-index .block-inner h2 {
         font-size: 1rem; } }
     @media (min-width: 1000px) {
-      .post .square-index .block-inner h2 {
+      .project .square-index .block-inner h2 {
         font-size: 1.1rem; } }
-    .post .square-index .block-inner p {
+    .project .square-index .block-inner p {
       margin-top: 0;
       margin-bottom: 0; }
       @media (min-width: 300px) and (max-width: 499px) {
-        .post .square-index .block-inner p {
+        .project .square-index .block-inner p {
           font-size: .75rem; } }
       @media (min-width: 500px) and (max-width: 767px) {
-        .post .square-index .block-inner p {
+        .project .square-index .block-inner p {
           font-size: 1rem; } }
       @media (min-width: 769px) and (max-width: 999px) {
-        .post .square-index .block-inner p {
+        .project .square-index .block-inner p {
           font-size: 1rem; } }
       @media (min-width: 1000px) {
-        .post .square-index .block-inner p {
+        .project .square-index .block-inner p {
           font-size: 1rem; } }
-    .post .square-index .block-inner .more {
+    .project .square-index .block-inner .more {
       margin-bottom: 0;
       position: absolute;
       border-bottom: 1px solid transparent; }
       @media screen and (min-width: 6.25em) {
-        .post .square-index .block-inner .more {
+        .project .square-index .block-inner .more {
           left: .5rem;
           bottom: .5rem; } }
       @media (min-width: 568px) and (max-width: 768px) {
-        .post .square-index .block-inner .more {
+        .project .square-index .block-inner .more {
           left: 1.5rem;
           bottom: 1.5rem; } }
       @media (min-width: 769px) and (max-width: 899px) {
-        .post .square-index .block-inner .more {
+        .project .square-index .block-inner .more {
           left: 1rem;
           bottom: 1rem; } }
       @media (min-width: 900px) {
-        .post .square-index .block-inner .more {
+        .project .square-index .block-inner .more {
           left: 1.5rem;
           bottom: 1.5rem; } }
   @media screen and (min-width: 6.25em) {
-    .post .square-index {
+    .project .square-index {
       float: left;
       display: block;
       margin-right: 4.1362032824%;
       width: 47.9318983588%; }
-      .post .square-index:last-child {
+      .project .square-index:last-child {
         margin-right: 0; }
-      .post .square-index:nth-of-type(2n) {
+      .project .square-index:nth-of-type(2n) {
         margin-right: 0; } }
   @media screen and (min-width: 48.0625em) {
-    .post .square-index {
+    .project .square-index {
       float: left;
       display: block;
       margin-right: 2.026197811%;
       width: 23.4803516417%; }
-      .post .square-index:last-child {
+      .project .square-index:last-child {
         margin-right: 0; }
-      .post .square-index:nth-of-type(2n) {
+      .project .square-index:nth-of-type(2n) {
         margin-right: 2.026197811%; }
-      .post .square-index:nth-of-type(4n) {
+      .project .square-index:nth-of-type(4n) {
         margin-right: 0; } }
 
-.post h5 {
+.project h5 {
   margin: 2.5rem 0 .5rem 0;
   color: #335769; }
 
-.post h2 {
+.project h2 {
   margin: 0 0 1.5rem 0;
   color: #335769; }
 
-.post .post-wrapper img {
+.project .post-wrapper img {
   margin-bottom: 1.5rem; }
 
-.post .body {
+.project .body {
   color: #335769;
   margin-bottom: 1.5rem; }
-  .post .body h5 {
+  .project .body h5 {
     margin: .5rem 0 0 0;
     font-weight: bold; }
-    .post .body h5 a {
+    .project .body h5 a {
       color: #335769;
       text-decoration: none; }
-    .post .body h5 span {
+    .project .body h5 span {
       font-weight: normal; }
-  .post .body ol {
+  .project .body ol {
     list-style-type: decimal; }
-  .post .body ul {
+  .project .body ul {
     list-style-type: disc; }
-  .post .body li {
+  .project .body li {
     margin-left: 1rem;
     font-weight: 100; }
     @media screen and (min-width: 6.25em) {
-      .post .body li {
+      .project .body li {
         line-height: 1.5em;
         font-size: 1rem; } }
     @media screen and (min-width: 48.0625em) {
-      .post .body li {
+      .project .body li {
         line-height: 1.6em;
         font-size: 1.125rem; } }
 
 @media screen and (min-width: 6.25em) and (min-width: 48.0625em) {
-  .post .body {
+  .project .body {
     float: left;
     display: block;
     margin-right: 4.1362032824%;
     width: 100%; }
-    .post .body:last-child {
+    .project .body:last-child {
       margin-right: 0; } }
   @media screen and (min-width: 48.0625em) {
-    .post .body {
+    .project .body {
       float: left;
       display: block;
       margin-right: 2.026197811%;
       width: 74.4934505472%; }
-      .post .body:last-child {
+      .project .body:last-child {
         margin-right: 0; } }
 
-.post .share-wrapper {
+.project .share-wrapper {
   padding-top: 1rem;
   margin-bottom: 1rem; }
   @media screen and (min-width: 6.25em) {
-    .post .share-wrapper .share {
+    .project .share-wrapper .share {
       display: inline-block;
       background-color: transparent; }
-    .post .share-wrapper .share-inner {
+    .project .share-wrapper .share-inner {
       background-color: #99abb5;
       text-align: center; } }
   @media screen and (min-width: 6.25em) and (min-width: 6.25em) {
-    .post .share-wrapper .share-inner {
+    .project .share-wrapper .share-inner {
       margin-left: 1rem;
       float: left; } }
   @media screen and (min-width: 6.25em) and (min-width: 48.0625em) {
-    .post .share-wrapper .share-inner {
+    .project .share-wrapper .share-inner {
       margin-left: 1rem;
       float: left; } }
   @media screen and (min-width: 6.25em) {
-      .post .share-wrapper .share-inner a {
+      .project .share-wrapper .share-inner a {
         display: block;
         width: 100%;
         height: 100%;
         text-decoration: none; }
-        .post .share-wrapper .share-inner a i {
+        .project .share-wrapper .share-inner a i {
           transition: all 0.2s ease;
           color: #fff; } }
       @media screen and (min-width: 6.25em) and (min-width: 6.25em) {
-        .post .share-wrapper .share-inner a i {
+        .project .share-wrapper .share-inner a i {
           font-size: 1.25rem;
           display: block;
           margin: 1rem;
           width: 1.25rem;
           height: 1.25rem; } }
       @media screen and (min-width: 6.25em) and (min-width: 48.0625em) {
-        .post .share-wrapper .share-inner a i {
+        .project .share-wrapper .share-inner a i {
           font-size: 1.5rem;
           display: block;
           margin: 1rem;
           width: 1.5625rem;
           height: 1.5625rem; } }
   @media screen and (min-width: 6.25em) {
-        .post .share-wrapper .share-inner a:hover i {
+        .project .share-wrapper .share-inner a:hover i {
           color: #335769; } }
 
 @media screen and (min-width: 6.25em) {
@@ -2394,19 +2383,19 @@ main {
     .posts-wrapper .square-index:nth-of-type(4n) {
       margin-right: 0; } }
 
-.blog .square-index {
+.work .square-index {
   transition: all 0.2s ease;
   display: inline-block;
   position: relative;
   background-color: #ededed;
   font-size: 0.875rem;
   margin-bottom: 1rem; }
-  .blog .square-index a {
+  .work .square-index a {
     text-decoration: none;
     display: block;
     width: 100%;
     height: 100%; }
-    .blog .square-index a h2, .blog .square-index a h5 {
+    .work .square-index a h2, .work .square-index a h5 {
       transition: all 0.4s ease;
       opacity: 1;
       margin: 0;
@@ -2414,15 +2403,15 @@ main {
       color: #335769;
       position: relative;
       z-index: 1; }
-    .blog .square-index a p {
+    .work .square-index a p {
       transition: all 0.4s ease;
       color: #335769; }
-    .blog .square-index a:hover h2, .blog .square-index a:hover h5, .blog .square-index a:hover p {
+    .work .square-index a:hover h2, .work .square-index a:hover h5, .work .square-index a:hover p {
       transition: all 0.4s ease;
       color: white; }
-    .blog .square-index a:hover p.more {
+    .work .square-index a:hover p.more {
       border-bottom: 1px solid white !important; }
-  .blog .square-index h2, .blog .square-index h5 {
+  .work .square-index h2, .work .square-index h5 {
     transition: all 0.4s ease;
     opacity: 1;
     margin: 0;
@@ -2430,13 +2419,13 @@ main {
     color: #335769;
     position: relative;
     z-index: 1; }
-  .blog .square-index p {
+  .work .square-index p {
     transition: all 0.4s ease;
     color: #335769; }
-  .blog .square-index:hover h2, .blog .square-index:hover h5, .blog .square-index:hover p {
+  .work .square-index:hover h2, .work .square-index:hover h5, .work .square-index:hover p {
     transition: all 0.4s ease;
     color: white; }
-  .blog .square-index:before {
+  .work .square-index:before {
     transition: all 0.4s ease;
     position: absolute;
     content: " ";
@@ -2446,159 +2435,159 @@ main {
     height: 100%;
     z-index: 0;
     background-color: rgba(230, 230, 230, 0.92); }
-  .blog .square-index:hover:before {
+  .work .square-index:hover:before {
     transition: all 0.4s ease;
     background-color: transparent; }
   @media screen and (min-width: 6.25em) {
-    .blog .square-index {
+    .work .square-index {
       float: left;
       display: block;
       margin-right: 4.1362032824%;
       width: 47.9318983588%; }
-      .blog .square-index:last-child {
+      .work .square-index:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 48.0625em) {
-    .blog .square-index {
+    .work .square-index {
       float: left;
       display: block;
       margin-right: 2.026197811%;
       width: 23.4803516417%; }
-      .blog .square-index:last-child {
+      .work .square-index:last-child {
         margin-right: 0; } }
-  .blog .square-index:after {
+  .work .square-index:after {
     padding-top: 100%;
     display: block;
     content: ''; }
-  .blog .square-index a .block-inner {
+  .work .square-index a .block-inner {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0; }
     @media screen and (min-width: 6.25em) {
-      .blog .square-index a .block-inner {
+      .work .square-index a .block-inner {
         padding: .5rem; } }
     @media (min-width: 568px) and (max-width: 768px) {
-      .blog .square-index a .block-inner {
+      .work .square-index a .block-inner {
         padding: 1.5rem; } }
     @media (min-width: 769px) and (max-width: 899px) {
-      .blog .square-index a .block-inner {
+      .work .square-index a .block-inner {
         padding: 1rem; } }
     @media (min-width: 900px) {
-      .blog .square-index a .block-inner {
+      .work .square-index a .block-inner {
         padding: 1.5rem; } }
-    .blog .square-index a .block-inner p {
+    .work .square-index a .block-inner p {
       margin-top: 0;
       margin-bottom: 0; }
-    .blog .square-index a .block-inner .more {
+    .work .square-index a .block-inner .more {
       margin-bottom: 0;
       border-bottom: 1px solid transparent;
       position: absolute;
       font-style: italic;
       line-height: 1.2; }
       @media screen and (min-width: 6.25em) {
-        .blog .square-index a .block-inner .more {
+        .work .square-index a .block-inner .more {
           left: .5rem;
           bottom: .5rem; } }
       @media (min-width: 568px) and (max-width: 768px) {
-        .blog .square-index a .block-inner .more {
+        .work .square-index a .block-inner .more {
           left: 1.5rem;
           bottom: 1.5rem; } }
       @media (min-width: 769px) and (max-width: 899px) {
-        .blog .square-index a .block-inner .more {
+        .work .square-index a .block-inner .more {
           left: 1rem;
           bottom: 1rem; } }
       @media (min-width: 900px) {
-        .blog .square-index a .block-inner .more {
+        .work .square-index a .block-inner .more {
           left: 1.5rem;
           bottom: 1.5rem; } }
-  .blog .square-index .block-inner {
+  .work .square-index .block-inner {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0; }
     @media screen and (min-width: 6.25em) {
-      .blog .square-index .block-inner {
+      .work .square-index .block-inner {
         padding: .5rem; } }
     @media (min-width: 568px) and (max-width: 768px) {
-      .blog .square-index .block-inner {
+      .work .square-index .block-inner {
         padding: 1.5rem; } }
     @media (min-width: 769px) and (max-width: 899px) {
-      .blog .square-index .block-inner {
+      .work .square-index .block-inner {
         padding: 1rem; } }
     @media (min-width: 900px) {
-      .blog .square-index .block-inner {
+      .work .square-index .block-inner {
         padding: 1.5rem; } }
     @media (min-width: 300px) and (max-width: 499px) {
-      .blog .square-index .block-inner h2 {
+      .work .square-index .block-inner h2 {
         font-size: .75rem;
         margin-top: .5em; } }
     @media (min-width: 500px) and (max-width: 767px) {
-      .blog .square-index .block-inner h2 {
+      .work .square-index .block-inner h2 {
         font-size: 1.1rem; } }
     @media (min-width: 769px) and (max-width: 999px) {
-      .blog .square-index .block-inner h2 {
+      .work .square-index .block-inner h2 {
         font-size: 1rem; } }
     @media (min-width: 1000px) {
-      .blog .square-index .block-inner h2 {
+      .work .square-index .block-inner h2 {
         font-size: 1.1rem; } }
-    .blog .square-index .block-inner p {
+    .work .square-index .block-inner p {
       margin-top: 0;
       margin-bottom: 0; }
       @media (min-width: 300px) and (max-width: 499px) {
-        .blog .square-index .block-inner p {
+        .work .square-index .block-inner p {
           font-size: .75rem; } }
       @media (min-width: 500px) and (max-width: 767px) {
-        .blog .square-index .block-inner p {
+        .work .square-index .block-inner p {
           font-size: 1rem; } }
       @media (min-width: 769px) and (max-width: 999px) {
-        .blog .square-index .block-inner p {
+        .work .square-index .block-inner p {
           font-size: 1rem; } }
       @media (min-width: 1000px) {
-        .blog .square-index .block-inner p {
+        .work .square-index .block-inner p {
           font-size: 1rem; } }
-    .blog .square-index .block-inner .more {
+    .work .square-index .block-inner .more {
       margin-bottom: 0;
       position: absolute;
       border-bottom: 1px solid transparent; }
       @media screen and (min-width: 6.25em) {
-        .blog .square-index .block-inner .more {
+        .work .square-index .block-inner .more {
           left: .5rem;
           bottom: .5rem; } }
       @media (min-width: 568px) and (max-width: 768px) {
-        .blog .square-index .block-inner .more {
+        .work .square-index .block-inner .more {
           left: 1.5rem;
           bottom: 1.5rem; } }
       @media (min-width: 769px) and (max-width: 899px) {
-        .blog .square-index .block-inner .more {
+        .work .square-index .block-inner .more {
           left: 1rem;
           bottom: 1rem; } }
       @media (min-width: 900px) {
-        .blog .square-index .block-inner .more {
+        .work .square-index .block-inner .more {
           left: 1.5rem;
           bottom: 1.5rem; } }
   @media screen and (min-width: 6.25em) {
-    .blog .square-index {
+    .work .square-index {
       float: left;
       display: block;
       margin-right: 4.1362032824%;
       width: 47.9318983588%; }
-      .blog .square-index:last-child {
+      .work .square-index:last-child {
         margin-right: 0; }
-      .blog .square-index:nth-of-type(2n) {
+      .work .square-index:nth-of-type(2n) {
         margin-right: 0; } }
   @media screen and (min-width: 48.0625em) {
-    .blog .square-index {
+    .work .square-index {
       float: left;
       display: block;
       margin-right: 2.026197811%;
       width: 23.4803516417%; }
-      .blog .square-index:last-child {
+      .work .square-index:last-child {
         margin-right: 0; }
-      .blog .square-index:nth-of-type(2n) {
+      .work .square-index:nth-of-type(2n) {
         margin-right: 2.026197811%; }
-      .blog .square-index:nth-of-type(4n) {
+      .work .square-index:nth-of-type(4n) {
         margin-right: 0; } }
 
 footer {

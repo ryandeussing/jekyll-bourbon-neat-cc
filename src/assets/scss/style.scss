@@ -1,3 +1,5 @@
+$output-bourbon-deprecation-warnings: false !default;
+
 $visual-grid: true;
 $visual-grid-color: yellow;
 $visual-grid-index: front;
@@ -25,7 +27,7 @@ $visual-grid-opacity: 0.2;
   "modules/project",
   "modules/clients",
   "modules/category",
-  "modules/blog",
+  "modules/work",
   "modules/articles",
   "modules/footer",
   "modules/flickity",

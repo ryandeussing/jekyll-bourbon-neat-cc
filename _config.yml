@@ -51,6 +51,13 @@ defaults:
       class: about
       layout: default
       permalink: "/about/"
+  -
+    scope:
+      path: "work.html"
+    values:
+      class: work
+      layout: default
+      permalink: "/work/"
 
 
 # Extending Jekyll

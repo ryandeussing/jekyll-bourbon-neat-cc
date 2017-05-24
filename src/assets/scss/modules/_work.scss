@@ -2,7 +2,7 @@
 //   background-color: yellow;
 // }
 
-.post {
+.project {
 
   .square-index {
     @include square-index();
@@ -175,7 +175,7 @@
   }
 }
 
-.blog {
+.work {
   .square-index {
     @include square-index();
     @include media($s-up) {
