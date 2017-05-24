@@ -17,15 +17,15 @@ main {
         margin-bottom: 2.75rem;
       }
     }
-    .wide-index {
-      @include wide-index();
-    }
+    // .wide-index {
+    //   @include wide-index();
+    // }
     .square-index {
       @include square-index();
     }
-    .square {
-      @include square-index();
-    }
+    // .square {
+    //   @include square-index();
+    // }
     h1 {
       color: $text;
     }

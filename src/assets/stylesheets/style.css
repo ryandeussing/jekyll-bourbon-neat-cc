@@ -747,89 +747,6 @@ main {
       main section.body h1 {
         margin-top: 3rem;
         margin-bottom: 2.75rem; } }
-  main section.body .wide-index {
-    transition: all 0.2s ease;
-    display: inline-block;
-    position: relative;
-    background-color: #ededed;
-    font-size: 0.875rem;
-    margin-bottom: 1rem;
-    height: 15.625rem; }
-    main section.body .wide-index button {
-      z-index: 2; }
-    @media screen and (min-width: 6.25em) {
-      main section.body .wide-index {
-        padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
-      main section.body .wide-index {
-        padding: 1.5rem; } }
-    main section.body .wide-index a {
-      text-decoration: none;
-      display: block;
-      width: 100%;
-      height: 100%;
-      position: relative;
-      z-index: 1; }
-      main section.body .wide-index a h2, main section.body .wide-index a h5 {
-        transition: all 0.2s ease;
-        opacity: 1;
-        margin: 0 0 .5rem 0;
-        text-decoration: none;
-        color: #335769;
-        position: relative;
-        z-index: 1; }
-    @media screen and (min-width: 6.25em) {
-      main section.body .wide-index {
-        float: left;
-        display: block;
-        margin-right: 4.1362032824%;
-        width: 100%;
-        padding: 0; }
-        main section.body .wide-index:last-child {
-          margin-right: 0; } }
-    @media screen and (min-width: 48.0625em) {
-      main section.body .wide-index {
-        float: left;
-        display: block;
-        margin-right: 2.026197811%;
-        width: 48.9869010945%; }
-        main section.body .wide-index:last-child {
-          margin-right: 0; } }
-    main section.body .wide-index .gallery-cell {
-      width: 100%;
-      height: 100%;
-      overflow: hidden; }
-    main section.body .wide-index .text {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0; }
-      @media screen and (min-width: 6.25em) {
-        main section.body .wide-index .text {
-          padding: 1rem; } }
-      @media screen and (min-width: 48.0625em) {
-        main section.body .wide-index .text {
-          padding: 1.5rem; } }
-      main section.body .wide-index .text a h2, main section.body .wide-index .text a h5 {
-        display: block;
-        color: #335769; }
-      main section.body .wide-index .text:hover a h2, main section.body .wide-index .text:hover a h5 {
-        color: transparent; }
-      main section.body .wide-index .text:before {
-        transition: all 0.2s ease;
-        position: absolute;
-        content: " ";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        background-color: rgba(230, 230, 230, 0.92);
-        cursor: pointer; }
-      main section.body .wide-index .text:hover:before {
-        transition: all 0.2s ease;
-        background-color: transparent; }
   main section.body .square-index {
     transition: all 0.2s ease;
     display: inline-block;
@@ -837,35 +754,41 @@ main {
     background-color: #ededed;
     font-size: 0.875rem;
     margin-bottom: 1rem; }
-    @media screen and (min-width: 6.25em) {
-      main section.body .square-index {
-        padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
-      main section.body .square-index {
-        padding: 1.5rem; } }
     main section.body .square-index a {
       text-decoration: none;
       display: block;
       width: 100%;
-      height: 100%;
-      position: relative;
-      z-index: 1; }
+      height: 100%; }
       main section.body .square-index a h2, main section.body .square-index a h5 {
-        transition: all 0.2s ease;
+        transition: all 0.4s ease;
         opacity: 1;
-        margin: 0 0 .5rem 0;
+        margin: 0;
         text-decoration: none;
         color: #335769;
         position: relative;
         z-index: 1; }
-      main section.body .square-index a:hover h2, main section.body .square-index a:hover h5 {
-        color: transparent; }
-    main section.body .square-index:hover a h2, main section.body .square-index:hover a h5 {
-      transition: all 0.2s ease;
+      main section.body .square-index a p {
+        transition: all 0.4s ease;
+        color: #335769; }
+      main section.body .square-index a:hover h2, main section.body .square-index a:hover h5, main section.body .square-index a:hover p {
+        transition: all 0.4s ease;
+        color: white; }
+    main section.body .square-index h2, main section.body .square-index h5 {
+      transition: all 0.4s ease;
       opacity: 1;
-      color: transparent; }
+      margin: 0;
+      text-decoration: none;
+      color: #335769;
+      position: relative;
+      z-index: 1; }
+    main section.body .square-index p {
+      transition: all 0.4s ease;
+      color: #335769; }
+    main section.body .square-index:hover h2, main section.body .square-index:hover h5, main section.body .square-index:hover p {
+      transition: all 0.4s ease;
+      color: white; }
     main section.body .square-index:before {
-      transition: all 0.2s ease;
+      transition: all 0.4s ease;
       position: absolute;
       content: " ";
       top: 0;
@@ -875,7 +798,7 @@ main {
       z-index: 0;
       background-color: rgba(230, 230, 230, 0.92); }
     main section.body .square-index:hover:before {
-      transition: all 0.2s ease;
+      transition: all 0.4s ease;
       background-color: transparent; }
     @media screen and (min-width: 6.25em) {
       main section.body .square-index {
@@ -897,6 +820,34 @@ main {
       padding-top: 100%;
       display: block;
       content: ''; }
+    main section.body .square-index a .block-inner {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0; }
+      @media screen and (min-width: 6.25em) {
+        main section.body .square-index a .block-inner {
+          padding: 1rem; } }
+      @media screen and (min-width: 48.0625em) {
+        main section.body .square-index a .block-inner {
+          padding: 1.5rem; } }
+      main section.body .square-index a .block-inner p {
+        font-size: 1rem;
+        margin-top: 0;
+        margin-bottom: 0; }
+      main section.body .square-index a .block-inner .more {
+        margin-bottom: 0;
+        position: absolute;
+        left: 1.5rem;
+        bottom: 1.5rem;
+        font-size: 14px; }
+      @media screen and (min-width: 6.25em) {
+        main section.body .square-index a .block-inner {
+          padding: 1rem; } }
+      @media screen and (min-width: 48.0625em) {
+        main section.body .square-index a .block-inner {
+          padding: 1.5rem; } }
     main section.body .square-index .block-inner {
       position: absolute;
       top: 0;
@@ -909,84 +860,21 @@ main {
       @media screen and (min-width: 48.0625em) {
         main section.body .square-index .block-inner {
           padding: 1.5rem; } }
-  main section.body .square {
-    transition: all 0.2s ease;
-    display: inline-block;
-    position: relative;
-    background-color: #ededed;
-    font-size: 0.875rem;
-    margin-bottom: 1rem; }
-    @media screen and (min-width: 6.25em) {
-      main section.body .square {
-        padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
-      main section.body .square {
-        padding: 1.5rem; } }
-    main section.body .square a {
-      text-decoration: none;
-      display: block;
-      width: 100%;
-      height: 100%;
-      position: relative;
-      z-index: 1; }
-      main section.body .square a h2, main section.body .square a h5 {
-        transition: all 0.2s ease;
-        opacity: 1;
-        margin: 0 0 .5rem 0;
-        text-decoration: none;
-        color: #335769;
-        position: relative;
-        z-index: 1; }
-      main section.body .square a:hover h2, main section.body .square a:hover h5 {
-        color: transparent; }
-    main section.body .square:hover a h2, main section.body .square:hover a h5 {
-      transition: all 0.2s ease;
-      opacity: 1;
-      color: transparent; }
-    main section.body .square:before {
-      transition: all 0.2s ease;
-      position: absolute;
-      content: " ";
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-      background-color: rgba(230, 230, 230, 0.92); }
-    main section.body .square:hover:before {
-      transition: all 0.2s ease;
-      background-color: transparent; }
-    @media screen and (min-width: 6.25em) {
-      main section.body .square {
-        float: left;
-        display: block;
-        margin-right: 4.1362032824%;
-        width: 47.9318983588%; }
-        main section.body .square:last-child {
-          margin-right: 0; } }
-    @media screen and (min-width: 48.0625em) {
-      main section.body .square {
-        float: left;
-        display: block;
-        margin-right: 2.026197811%;
-        width: 23.4803516417%; }
-        main section.body .square:last-child {
-          margin-right: 0; } }
-    main section.body .square:after {
-      padding-top: 100%;
-      display: block;
-      content: ''; }
-    main section.body .square .block-inner {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0; }
+      main section.body .square-index .block-inner p {
+        font-size: 1rem;
+        margin-top: 0;
+        margin-bottom: 0; }
+      main section.body .square-index .block-inner .more {
+        margin-bottom: 0;
+        position: absolute;
+        left: 1.5rem;
+        bottom: 1.5rem;
+        font-size: 14px; }
       @media screen and (min-width: 6.25em) {
-        main section.body .square .block-inner {
+        main section.body .square-index .block-inner {
           padding: 1rem; } }
       @media screen and (min-width: 48.0625em) {
-        main section.body .square .block-inner {
+        main section.body .square-index .block-inner {
           padding: 1.5rem; } }
   main section.body h1 {
     color: #335769; }
@@ -1078,35 +966,41 @@ main {
   background-color: #ededed;
   font-size: 0.875rem;
   margin-bottom: 1rem; }
-  @media screen and (min-width: 6.25em) {
-    .about .square-index {
-      padding: 1rem; } }
-  @media screen and (min-width: 48.0625em) {
-    .about .square-index {
-      padding: 1.5rem; } }
   .about .square-index a {
     text-decoration: none;
     display: block;
     width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 1; }
+    height: 100%; }
     .about .square-index a h2, .about .square-index a h5 {
-      transition: all 0.2s ease;
+      transition: all 0.4s ease;
       opacity: 1;
-      margin: 0 0 .5rem 0;
+      margin: 0;
       text-decoration: none;
       color: #335769;
       position: relative;
       z-index: 1; }
-    .about .square-index a:hover h2, .about .square-index a:hover h5 {
-      color: transparent; }
-  .about .square-index:hover a h2, .about .square-index:hover a h5 {
-    transition: all 0.2s ease;
+    .about .square-index a p {
+      transition: all 0.4s ease;
+      color: #335769; }
+    .about .square-index a:hover h2, .about .square-index a:hover h5, .about .square-index a:hover p {
+      transition: all 0.4s ease;
+      color: white; }
+  .about .square-index h2, .about .square-index h5 {
+    transition: all 0.4s ease;
     opacity: 1;
-    color: transparent; }
+    margin: 0;
+    text-decoration: none;
+    color: #335769;
+    position: relative;
+    z-index: 1; }
+  .about .square-index p {
+    transition: all 0.4s ease;
+    color: #335769; }
+  .about .square-index:hover h2, .about .square-index:hover h5, .about .square-index:hover p {
+    transition: all 0.4s ease;
+    color: white; }
   .about .square-index:before {
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
     position: absolute;
     content: " ";
     top: 0;
@@ -1116,7 +1010,7 @@ main {
     z-index: 0;
     background-color: rgba(230, 230, 230, 0.92); }
   .about .square-index:hover:before {
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
     background-color: transparent; }
   @media screen and (min-width: 6.25em) {
     .about .square-index {
@@ -1138,12 +1032,56 @@ main {
     padding-top: 100%;
     display: block;
     content: ''; }
+  .about .square-index a .block-inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; }
+    @media screen and (min-width: 6.25em) {
+      .about .square-index a .block-inner {
+        padding: 1rem; } }
+    @media screen and (min-width: 48.0625em) {
+      .about .square-index a .block-inner {
+        padding: 1.5rem; } }
+    .about .square-index a .block-inner p {
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 0; }
+    .about .square-index a .block-inner .more {
+      margin-bottom: 0;
+      position: absolute;
+      left: 1.5rem;
+      bottom: 1.5rem;
+      font-size: 14px; }
+    @media screen and (min-width: 6.25em) {
+      .about .square-index a .block-inner {
+        padding: 1rem; } }
+    @media screen and (min-width: 48.0625em) {
+      .about .square-index a .block-inner {
+        padding: 1.5rem; } }
   .about .square-index .block-inner {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0; }
+    @media screen and (min-width: 6.25em) {
+      .about .square-index .block-inner {
+        padding: 1rem; } }
+    @media screen and (min-width: 48.0625em) {
+      .about .square-index .block-inner {
+        padding: 1.5rem; } }
+    .about .square-index .block-inner p {
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 0; }
+    .about .square-index .block-inner .more {
+      margin-bottom: 0;
+      position: absolute;
+      left: 1.5rem;
+      bottom: 1.5rem;
+      font-size: 14px; }
     @media screen and (min-width: 6.25em) {
       .about .square-index .block-inner {
         padding: 1rem; } }
@@ -1306,268 +1244,6 @@ main {
 .about .bio p {
   color: #335769; }
 
-.project .description h5 {
-  margin: 2.5rem 0 .5rem 0;
-  color: #335769; }
-
-.project .description h2 {
-  margin: 0;
-  color: #335769; }
-  .project .description h2.title {
-    font-style: italic; }
-
-.project .description p {
-  color: #335769; }
-
-@media screen and (min-width: 6.25em) {
-  .work .blocks, .project .blocks {
-    float: left;
-    display: block;
-    margin-right: 4.1362032824%;
-    width: 100%; }
-    .work .blocks:last-child, .project .blocks:last-child {
-      margin-right: 0; } }
-
-@media screen and (min-width: 48.0625em) {
-  .work .blocks, .project .blocks {
-    float: left;
-    display: block;
-    margin-right: 2.026197811%;
-    width: 100%; }
-    .work .blocks:last-child, .project .blocks:last-child {
-      margin-right: 0; } }
-
-@media screen and (min-width: 6.25em) {
-  .work .blocks-wrapper, .project .blocks-wrapper {
-    float: left;
-    display: block;
-    margin-right: 4.1362032824%;
-    width: 47.9318983588%; }
-    .work .blocks-wrapper:last-child, .project .blocks-wrapper:last-child {
-      margin-right: 0; } }
-
-@media screen and (min-width: 48.0625em) {
-  .work .blocks-wrapper, .project .blocks-wrapper {
-    float: left;
-    display: block;
-    margin-right: 2.026197811%;
-    width: 74.4934505472%; }
-    .work .blocks-wrapper:last-child, .project .blocks-wrapper:last-child {
-      margin-right: 0; } }
-
-.work .omega, .project .omega {
-  margin-right: 0;
-  margin-right: 0 !important; }
-
-.work .tall, .project .tall {
-  transition: all 0.2s ease;
-  display: inline-block;
-  position: relative;
-  background-color: #ededed;
-  font-size: 0.875rem;
-  margin-bottom: 1rem; }
-  @media screen and (min-width: 6.25em) {
-    .work .tall, .project .tall {
-      padding: 1rem; } }
-  @media screen and (min-width: 48.0625em) {
-    .work .tall, .project .tall {
-      padding: 1.5rem; } }
-  .work .tall a, .project .tall a {
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 1; }
-    .work .tall a h2, .work .tall a h5, .project .tall a h2, .project .tall a h5 {
-      transition: all 0.2s ease;
-      opacity: 1;
-      margin: 0 0 .5rem 0;
-      text-decoration: none;
-      color: #335769;
-      position: relative;
-      z-index: 1; }
-    .work .tall a:hover h2, .work .tall a:hover h5, .project .tall a:hover h2, .project .tall a:hover h5 {
-      color: transparent; }
-  .work .tall:hover a h2, .work .tall:hover a h5, .project .tall:hover a h2, .project .tall:hover a h5 {
-    transition: all 0.2s ease;
-    opacity: 1;
-    color: transparent; }
-  .work .tall:before, .project .tall:before {
-    transition: all 0.2s ease;
-    position: absolute;
-    content: " ";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    background-color: rgba(230, 230, 230, 0.92); }
-  .work .tall:hover:before, .project .tall:hover:before {
-    transition: all 0.2s ease;
-    background-color: transparent; }
-  @media screen and (min-width: 6.25em) {
-    .work .tall, .project .tall {
-      float: left;
-      display: block;
-      margin-right: 4.1362032824%;
-      width: 47.9318983588%; }
-      .work .tall:last-child, .project .tall:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 48.0625em) {
-    .work .tall, .project .tall {
-      float: left;
-      display: block;
-      margin-right: 2.026197811%;
-      width: 23.4803516417%; }
-      .work .tall:last-child, .project .tall:last-child {
-        margin-right: 0; } }
-
-.work .square, .project .square {
-  transition: all 0.2s ease;
-  display: inline-block;
-  position: relative;
-  background-color: #ededed;
-  font-size: 0.875rem;
-  margin-bottom: 1rem; }
-  @media screen and (min-width: 6.25em) {
-    .work .square, .project .square {
-      padding: 1rem; } }
-  @media screen and (min-width: 48.0625em) {
-    .work .square, .project .square {
-      padding: 1.5rem; } }
-  .work .square a, .project .square a {
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 1; }
-    .work .square a h2, .work .square a h5, .project .square a h2, .project .square a h5 {
-      transition: all 0.2s ease;
-      opacity: 1;
-      margin: 0 0 .5rem 0;
-      text-decoration: none;
-      color: #335769;
-      position: relative;
-      z-index: 1; }
-    .work .square a:hover h2, .work .square a:hover h5, .project .square a:hover h2, .project .square a:hover h5 {
-      color: transparent; }
-  .work .square:hover a h2, .work .square:hover a h5, .project .square:hover a h2, .project .square:hover a h5 {
-    transition: all 0.2s ease;
-    opacity: 1;
-    color: transparent; }
-  .work .square:before, .project .square:before {
-    transition: all 0.2s ease;
-    position: absolute;
-    content: " ";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    background-color: rgba(230, 230, 230, 0.92); }
-  .work .square:hover:before, .project .square:hover:before {
-    transition: all 0.2s ease;
-    background-color: transparent; }
-  @media screen and (min-width: 6.25em) {
-    .work .square, .project .square {
-      float: left;
-      display: block;
-      margin-right: 4.1362032824%;
-      width: 100%; }
-      .work .square:last-child, .project .square:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 48.0625em) {
-    .work .square, .project .square {
-      float: left;
-      display: block;
-      margin-right: 2.7199677235%;
-      width: 31.5200215177%; }
-      .work .square:last-child, .project .square:last-child {
-        margin-right: 0; } }
-  .work .square:after, .project .square:after {
-    padding-top: 100%;
-    display: block;
-    content: ''; }
-  .work .square .block-inner, .project .square .block-inner {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0; }
-    @media screen and (min-width: 6.25em) {
-      .work .square .block-inner, .project .square .block-inner {
-        padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
-      .work .square .block-inner, .project .square .block-inner {
-        padding: 1.5rem; } }
-
-.work .wide, .project .wide {
-  transition: all 0.2s ease;
-  display: inline-block;
-  position: relative;
-  background-color: #ededed;
-  font-size: 0.875rem;
-  margin-bottom: 1rem;
-  height: 15.625rem; }
-  @media screen and (min-width: 6.25em) {
-    .work .wide, .project .wide {
-      padding: 1rem; } }
-  @media screen and (min-width: 48.0625em) {
-    .work .wide, .project .wide {
-      padding: 1.5rem; } }
-  .work .wide a, .project .wide a {
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 1; }
-    .work .wide a h2, .work .wide a h5, .project .wide a h2, .project .wide a h5 {
-      transition: all 0.2s ease;
-      opacity: 1;
-      margin: 0 0 .5rem 0;
-      text-decoration: none;
-      color: #335769;
-      position: relative;
-      z-index: 1; }
-    .work .wide a:hover h2, .work .wide a:hover h5, .project .wide a:hover h2, .project .wide a:hover h5 {
-      color: transparent; }
-  .work .wide:hover a h2, .work .wide:hover a h5, .project .wide:hover a h2, .project .wide:hover a h5 {
-    transition: all 0.2s ease;
-    opacity: 1;
-    color: transparent; }
-  .work .wide:before, .project .wide:before {
-    transition: all 0.2s ease;
-    position: absolute;
-    content: " ";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    background-color: rgba(230, 230, 230, 0.92); }
-  .work .wide:hover:before, .project .wide:hover:before {
-    transition: all 0.2s ease;
-    background-color: transparent; }
-  @media screen and (min-width: 6.25em) {
-    .work .wide, .project .wide {
-      float: left;
-      display: block;
-      margin-right: 4.1362032824%;
-      width: 100%; }
-      .work .wide:last-child, .project .wide:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 48.0625em) {
-    .work .wide, .project .wide {
-      float: left;
-      display: block;
-      margin-right: 2.7199677235%;
-      width: 65.7600107588%; }
-      .work .wide:last-child, .project .wide:last-child {
-        margin-right: 0; } }
-
 @media screen and (min-width: 6.25em) {
   .project .project-wrapper {
     float: left;
@@ -1648,35 +1324,41 @@ main {
   background-color: #ededed;
   font-size: 0.875rem;
   margin-bottom: 1rem; }
-  @media screen and (min-width: 6.25em) {
-    .clients .square-index {
-      padding: 1rem; } }
-  @media screen and (min-width: 48.0625em) {
-    .clients .square-index {
-      padding: 1.5rem; } }
   .clients .square-index a {
     text-decoration: none;
     display: block;
     width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 1; }
+    height: 100%; }
     .clients .square-index a h2, .clients .square-index a h5 {
-      transition: all 0.2s ease;
+      transition: all 0.4s ease;
       opacity: 1;
-      margin: 0 0 .5rem 0;
+      margin: 0;
       text-decoration: none;
       color: #335769;
       position: relative;
       z-index: 1; }
-    .clients .square-index a:hover h2, .clients .square-index a:hover h5 {
-      color: transparent; }
-  .clients .square-index:hover a h2, .clients .square-index:hover a h5 {
-    transition: all 0.2s ease;
+    .clients .square-index a p {
+      transition: all 0.4s ease;
+      color: #335769; }
+    .clients .square-index a:hover h2, .clients .square-index a:hover h5, .clients .square-index a:hover p {
+      transition: all 0.4s ease;
+      color: white; }
+  .clients .square-index h2, .clients .square-index h5 {
+    transition: all 0.4s ease;
     opacity: 1;
-    color: transparent; }
+    margin: 0;
+    text-decoration: none;
+    color: #335769;
+    position: relative;
+    z-index: 1; }
+  .clients .square-index p {
+    transition: all 0.4s ease;
+    color: #335769; }
+  .clients .square-index:hover h2, .clients .square-index:hover h5, .clients .square-index:hover p {
+    transition: all 0.4s ease;
+    color: white; }
   .clients .square-index:before {
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
     position: absolute;
     content: " ";
     top: 0;
@@ -1686,7 +1368,7 @@ main {
     z-index: 0;
     background-color: rgba(230, 230, 230, 0.92); }
   .clients .square-index:hover:before {
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
     background-color: transparent; }
   @media screen and (min-width: 6.25em) {
     .clients .square-index {
@@ -1708,12 +1390,56 @@ main {
     padding-top: 100%;
     display: block;
     content: ''; }
+  .clients .square-index a .block-inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; }
+    @media screen and (min-width: 6.25em) {
+      .clients .square-index a .block-inner {
+        padding: 1rem; } }
+    @media screen and (min-width: 48.0625em) {
+      .clients .square-index a .block-inner {
+        padding: 1.5rem; } }
+    .clients .square-index a .block-inner p {
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 0; }
+    .clients .square-index a .block-inner .more {
+      margin-bottom: 0;
+      position: absolute;
+      left: 1.5rem;
+      bottom: 1.5rem;
+      font-size: 14px; }
+    @media screen and (min-width: 6.25em) {
+      .clients .square-index a .block-inner {
+        padding: 1rem; } }
+    @media screen and (min-width: 48.0625em) {
+      .clients .square-index a .block-inner {
+        padding: 1.5rem; } }
   .clients .square-index .block-inner {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0; }
+    @media screen and (min-width: 6.25em) {
+      .clients .square-index .block-inner {
+        padding: 1rem; } }
+    @media screen and (min-width: 48.0625em) {
+      .clients .square-index .block-inner {
+        padding: 1.5rem; } }
+    .clients .square-index .block-inner p {
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 0; }
+    .clients .square-index .block-inner .more {
+      margin-bottom: 0;
+      position: absolute;
+      left: 1.5rem;
+      bottom: 1.5rem;
+      font-size: 14px; }
     @media screen and (min-width: 6.25em) {
       .clients .square-index .block-inner {
         padding: 1rem; } }
@@ -1823,35 +1549,41 @@ main {
   background-color: #ededed;
   font-size: 0.875rem;
   margin-bottom: 1rem; }
-  @media screen and (min-width: 6.25em) {
-    .category .square-index {
-      padding: 1rem; } }
-  @media screen and (min-width: 48.0625em) {
-    .category .square-index {
-      padding: 1.5rem; } }
   .category .square-index a {
     text-decoration: none;
     display: block;
     width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 1; }
+    height: 100%; }
     .category .square-index a h2, .category .square-index a h5 {
-      transition: all 0.2s ease;
+      transition: all 0.4s ease;
       opacity: 1;
-      margin: 0 0 .5rem 0;
+      margin: 0;
       text-decoration: none;
       color: #335769;
       position: relative;
       z-index: 1; }
-    .category .square-index a:hover h2, .category .square-index a:hover h5 {
-      color: transparent; }
-  .category .square-index:hover a h2, .category .square-index:hover a h5 {
-    transition: all 0.2s ease;
+    .category .square-index a p {
+      transition: all 0.4s ease;
+      color: #335769; }
+    .category .square-index a:hover h2, .category .square-index a:hover h5, .category .square-index a:hover p {
+      transition: all 0.4s ease;
+      color: white; }
+  .category .square-index h2, .category .square-index h5 {
+    transition: all 0.4s ease;
     opacity: 1;
-    color: transparent; }
+    margin: 0;
+    text-decoration: none;
+    color: #335769;
+    position: relative;
+    z-index: 1; }
+  .category .square-index p {
+    transition: all 0.4s ease;
+    color: #335769; }
+  .category .square-index:hover h2, .category .square-index:hover h5, .category .square-index:hover p {
+    transition: all 0.4s ease;
+    color: white; }
   .category .square-index:before {
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
     position: absolute;
     content: " ";
     top: 0;
@@ -1861,7 +1593,7 @@ main {
     z-index: 0;
     background-color: rgba(230, 230, 230, 0.92); }
   .category .square-index:hover:before {
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
     background-color: transparent; }
   @media screen and (min-width: 6.25em) {
     .category .square-index {
@@ -1883,12 +1615,56 @@ main {
     padding-top: 100%;
     display: block;
     content: ''; }
+  .category .square-index a .block-inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; }
+    @media screen and (min-width: 6.25em) {
+      .category .square-index a .block-inner {
+        padding: 1rem; } }
+    @media screen and (min-width: 48.0625em) {
+      .category .square-index a .block-inner {
+        padding: 1.5rem; } }
+    .category .square-index a .block-inner p {
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 0; }
+    .category .square-index a .block-inner .more {
+      margin-bottom: 0;
+      position: absolute;
+      left: 1.5rem;
+      bottom: 1.5rem;
+      font-size: 14px; }
+    @media screen and (min-width: 6.25em) {
+      .category .square-index a .block-inner {
+        padding: 1rem; } }
+    @media screen and (min-width: 48.0625em) {
+      .category .square-index a .block-inner {
+        padding: 1.5rem; } }
   .category .square-index .block-inner {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0; }
+    @media screen and (min-width: 6.25em) {
+      .category .square-index .block-inner {
+        padding: 1rem; } }
+    @media screen and (min-width: 48.0625em) {
+      .category .square-index .block-inner {
+        padding: 1.5rem; } }
+    .category .square-index .block-inner p {
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 0; }
+    .category .square-index .block-inner .more {
+      margin-bottom: 0;
+      position: absolute;
+      left: 1.5rem;
+      bottom: 1.5rem;
+      font-size: 14px; }
     @media screen and (min-width: 6.25em) {
       .category .square-index .block-inner {
         padding: 1rem; } }
@@ -2008,35 +1784,41 @@ main {
   background-color: #ededed;
   font-size: 0.875rem;
   margin-bottom: 1rem; }
-  @media screen and (min-width: 6.25em) {
-    .post .square-index {
-      padding: 1rem; } }
-  @media screen and (min-width: 48.0625em) {
-    .post .square-index {
-      padding: 1.5rem; } }
   .post .square-index a {
     text-decoration: none;
     display: block;
     width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 1; }
+    height: 100%; }
     .post .square-index a h2, .post .square-index a h5 {
-      transition: all 0.2s ease;
+      transition: all 0.4s ease;
       opacity: 1;
-      margin: 0 0 .5rem 0;
+      margin: 0;
       text-decoration: none;
       color: #335769;
       position: relative;
       z-index: 1; }
-    .post .square-index a:hover h2, .post .square-index a:hover h5 {
-      color: transparent; }
-  .post .square-index:hover a h2, .post .square-index:hover a h5 {
-    transition: all 0.2s ease;
+    .post .square-index a p {
+      transition: all 0.4s ease;
+      color: #335769; }
+    .post .square-index a:hover h2, .post .square-index a:hover h5, .post .square-index a:hover p {
+      transition: all 0.4s ease;
+      color: white; }
+  .post .square-index h2, .post .square-index h5 {
+    transition: all 0.4s ease;
     opacity: 1;
-    color: transparent; }
+    margin: 0;
+    text-decoration: none;
+    color: #335769;
+    position: relative;
+    z-index: 1; }
+  .post .square-index p {
+    transition: all 0.4s ease;
+    color: #335769; }
+  .post .square-index:hover h2, .post .square-index:hover h5, .post .square-index:hover p {
+    transition: all 0.4s ease;
+    color: white; }
   .post .square-index:before {
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
     position: absolute;
     content: " ";
     top: 0;
@@ -2046,7 +1828,7 @@ main {
     z-index: 0;
     background-color: rgba(230, 230, 230, 0.92); }
   .post .square-index:hover:before {
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
     background-color: transparent; }
   @media screen and (min-width: 6.25em) {
     .post .square-index {
@@ -2068,12 +1850,56 @@ main {
     padding-top: 100%;
     display: block;
     content: ''; }
+  .post .square-index a .block-inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; }
+    @media screen and (min-width: 6.25em) {
+      .post .square-index a .block-inner {
+        padding: 1rem; } }
+    @media screen and (min-width: 48.0625em) {
+      .post .square-index a .block-inner {
+        padding: 1.5rem; } }
+    .post .square-index a .block-inner p {
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 0; }
+    .post .square-index a .block-inner .more {
+      margin-bottom: 0;
+      position: absolute;
+      left: 1.5rem;
+      bottom: 1.5rem;
+      font-size: 14px; }
+    @media screen and (min-width: 6.25em) {
+      .post .square-index a .block-inner {
+        padding: 1rem; } }
+    @media screen and (min-width: 48.0625em) {
+      .post .square-index a .block-inner {
+        padding: 1.5rem; } }
   .post .square-index .block-inner {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0; }
+    @media screen and (min-width: 6.25em) {
+      .post .square-index .block-inner {
+        padding: 1rem; } }
+    @media screen and (min-width: 48.0625em) {
+      .post .square-index .block-inner {
+        padding: 1.5rem; } }
+    .post .square-index .block-inner p {
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 0; }
+    .post .square-index .block-inner .more {
+      margin-bottom: 0;
+      position: absolute;
+      left: 1.5rem;
+      bottom: 1.5rem;
+      font-size: 14px; }
     @media screen and (min-width: 6.25em) {
       .post .square-index .block-inner {
         padding: 1rem; } }
@@ -2273,35 +2099,41 @@ main {
   background-color: #ededed;
   font-size: 0.875rem;
   margin-bottom: 1rem; }
-  @media screen and (min-width: 6.25em) {
-    .blog .square-index {
-      padding: 1rem; } }
-  @media screen and (min-width: 48.0625em) {
-    .blog .square-index {
-      padding: 1.5rem; } }
   .blog .square-index a {
     text-decoration: none;
     display: block;
     width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 1; }
+    height: 100%; }
     .blog .square-index a h2, .blog .square-index a h5 {
-      transition: all 0.2s ease;
+      transition: all 0.4s ease;
       opacity: 1;
-      margin: 0 0 .5rem 0;
+      margin: 0;
       text-decoration: none;
       color: #335769;
       position: relative;
       z-index: 1; }
-    .blog .square-index a:hover h2, .blog .square-index a:hover h5 {
-      color: transparent; }
-  .blog .square-index:hover a h2, .blog .square-index:hover a h5 {
-    transition: all 0.2s ease;
+    .blog .square-index a p {
+      transition: all 0.4s ease;
+      color: #335769; }
+    .blog .square-index a:hover h2, .blog .square-index a:hover h5, .blog .square-index a:hover p {
+      transition: all 0.4s ease;
+      color: white; }
+  .blog .square-index h2, .blog .square-index h5 {
+    transition: all 0.4s ease;
     opacity: 1;
-    color: transparent; }
+    margin: 0;
+    text-decoration: none;
+    color: #335769;
+    position: relative;
+    z-index: 1; }
+  .blog .square-index p {
+    transition: all 0.4s ease;
+    color: #335769; }
+  .blog .square-index:hover h2, .blog .square-index:hover h5, .blog .square-index:hover p {
+    transition: all 0.4s ease;
+    color: white; }
   .blog .square-index:before {
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
     position: absolute;
     content: " ";
     top: 0;
@@ -2311,7 +2143,7 @@ main {
     z-index: 0;
     background-color: rgba(230, 230, 230, 0.92); }
   .blog .square-index:hover:before {
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
     background-color: transparent; }
   @media screen and (min-width: 6.25em) {
     .blog .square-index {
@@ -2333,12 +2165,56 @@ main {
     padding-top: 100%;
     display: block;
     content: ''; }
+  .blog .square-index a .block-inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; }
+    @media screen and (min-width: 6.25em) {
+      .blog .square-index a .block-inner {
+        padding: 1rem; } }
+    @media screen and (min-width: 48.0625em) {
+      .blog .square-index a .block-inner {
+        padding: 1.5rem; } }
+    .blog .square-index a .block-inner p {
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 0; }
+    .blog .square-index a .block-inner .more {
+      margin-bottom: 0;
+      position: absolute;
+      left: 1.5rem;
+      bottom: 1.5rem;
+      font-size: 14px; }
+    @media screen and (min-width: 6.25em) {
+      .blog .square-index a .block-inner {
+        padding: 1rem; } }
+    @media screen and (min-width: 48.0625em) {
+      .blog .square-index a .block-inner {
+        padding: 1.5rem; } }
   .blog .square-index .block-inner {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0; }
+    @media screen and (min-width: 6.25em) {
+      .blog .square-index .block-inner {
+        padding: 1rem; } }
+    @media screen and (min-width: 48.0625em) {
+      .blog .square-index .block-inner {
+        padding: 1.5rem; } }
+    .blog .square-index .block-inner p {
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 0; }
+    .blog .square-index .block-inner .more {
+      margin-bottom: 0;
+      position: absolute;
+      left: 1.5rem;
+      bottom: 1.5rem;
+      font-size: 14px; }
     @media screen and (min-width: 6.25em) {
       .blog .square-index .block-inner {
         padding: 1rem; } }

@@ -113,10 +113,10 @@
   position: relative;
   background-color: #ededed;
   @include media($s-up) {
-    padding: 1rem;
+    // padding: 1rem;
   }
   @include media($l-up) {
-    padding: 1.5rem;
+    // padding: 1.5rem;
   }
   font-size: rem(14);
   margin-bottom: 1rem;
@@ -125,32 +125,56 @@
     display: block;
     width: 100%;
     height: 100%;
-    position: relative;
-    z-index: 1;
+    // position: relative;
+    // z-index: 1;
     h2, h5 {
-      @include transition(all .2s ease);
+      @include transition(all .4s ease);
       opacity: 1;
-      margin: 0 0 .5rem 0;
+      margin: 0;
       text-decoration: none;
       color: $text;
       position: relative;
       z-index: 1;
     }
+    p {
+      @include transition(all .4s ease);
+      color: $text;
+    }
     &:hover {
-      h2, h5 {
-        color: transparent;
+      h2, h5, p {
+        @include transition(all .4s ease);
+        color: white;
       }
     }
   }
-  &:hover a {
-    h2, h5 {
-      @include transition(all .2s ease);
+  h2, h5 {
+      @include transition(all .4s ease);
       opacity: 1;
-      color: transparent;
+      margin: 0;
+      text-decoration: none;
+      color: $text;
+      position: relative;
+      z-index: 1;
     }
-  }
+    p {
+      @include transition(all .4s ease);
+      color: $text;
+    }
+    &:hover {
+      h2, h5, p {
+        @include transition(all .4s ease);
+        color: white;
+      }
+    }
+  // &:hover a {
+  //   h2, h5 {
+  //     @include transition(all .2s ease);
+  //     opacity: 1;
+  //     color: white;
+  //   }
+  // }
   &:before{
-    @include transition(all .2s ease);
+    @include transition(all .4s ease);
     position: absolute;
     content:" ";
     top:0;
@@ -162,87 +186,43 @@
     // cursor: pointer;
   }
   &:hover:before{
-    @include transition(all .2s ease);
+    @include transition(all .4s ease);
     background-color: transparent;
   }
 }
 
-@mixin block-index() {
-  @include transition(all .2s ease);
-  display: inline-block;
-  position: relative;
-  background-color: #ededed;
-  padding: 1rem;
-  font-size: rem(14);
-  margin-bottom: 1rem;
-  a {
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    height: 100%;
-    h2, h5 {
-      @include transition(all .2s ease);
-      margin: 0 0 .5rem 0;
-      text-decoration: none;
-      color: $text;
-      position: relative;
-      z-index: 1;
-    }
-    &:hover {
-      h2, h5 {
-        @include transition(all .2s ease);
-        color: transparent;
-      }
-    }
-  }
-  &:before{
-    @include transition(all .2s ease);
-    position: absolute;
-    content:" ";
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    z-index:0;
-    background-color: rgba(230, 230, 230, 0.92);
-    cursor: pointer;
-  }
-  &:hover:before{
-    @include transition(all .2s ease);
-    background-color: transparent;
-  }
-}
 
-@mixin square() {
-  @include block();
-  @include media($s-up) {
-    @include span-columns(2 of 2);
-  }
-  @include media($l-up) {
-    @include span-columns(1 of 3);
-  }
-  &:after {
-    // responsive div that keeps aspect ratio
-    // http://stackoverflow.com/questions/12121090/responsively-change-div-size-keeping-aspect-ratio
-    padding-top: 100%;
-    display: block;
-    content: '';
-  }
-  .block-inner {
-  // responsive div that keeps aspect ratio (see above)
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    @include media($s-up) {
-      padding: 1rem;
-    }
-    @include media($l-up) {
-      padding: 1.5rem;
-    }
-  }
-}
+
+// @mixin square() {
+//   @include block();
+//   @include media($s-up) {
+//     @include span-columns(2 of 2);
+//   }
+//   @include media($l-up) {
+//     @include span-columns(1 of 3);
+//   }
+//   &:after {
+//     // responsive div that keeps aspect ratio
+//     // http://stackoverflow.com/questions/12121090/responsively-change-div-size-keeping-aspect-ratio
+//     padding-top: 100%;
+//     display: block;
+//     content: '';
+//   }
+//   .block-inner {
+//     // responsive div that keeps aspect ratio (see above)
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     right: 0;
+//     left: 0;
+//     @include media($s-up) {
+//       padding: 1rem;
+//     }
+//     @include media($l-up) {
+//       padding: 1.5rem;
+//     }
+//   }
+// }
 
 @mixin square-index() {
   @include block();
@@ -259,13 +239,65 @@
     display: block;
     content: '';
   }
+  a {
+    .block-inner {
+      // responsive div that keeps aspect ratio (see above)
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      @include media($s-up) {
+        padding: 1rem;
+      }
+      @include media($l-up) {
+        padding: 1.5rem;
+      }
+      p {
+        font-size: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .more {
+        margin-bottom: 0;
+        position: absolute;
+        left: 1.5rem;
+        bottom: 1.5rem;
+        font-size: 14px;
+      }
+      @include media($s-up) {
+        padding: 1rem;
+      }
+      @include media($l-up) {
+        padding: 1.5rem;
+      }
+    }
+  }
   .block-inner {
-  // responsive div that keeps aspect ratio (see above)
+    // responsive div that keeps aspect ratio (see above)
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
+    @include media($s-up) {
+      padding: 1rem;
+    }
+    @include media($l-up) {
+      padding: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .more {
+      margin-bottom: 0;
+      position: absolute;
+      left: 1.5rem;
+      bottom: 1.5rem;
+      font-size: 14px;
+    }
     @include media($s-up) {
       padding: 1rem;
     }

@@ -2,7 +2,7 @@
 title: Corporate Partner Design Systems
 client: Olympic Games 2010–2016
 project_type: Design
-draft: false
+link: true
 order: 10
 thumbnail_image: 'https://source.unsplash.com/random/500x500'
 content_section:

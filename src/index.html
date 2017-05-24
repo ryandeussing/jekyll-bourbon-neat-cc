@@ -15,12 +15,14 @@ class: home
 
     {% for project in site.projects limit:4 %}
 
-      <div class="square" style="background-image:url({{ project.image_path }});background-size:cover">
-        <div class="block-inner">
-        <a href="{{ project.url }}">
-        <h2>{{ project.title }}</h2>
-        </a>
-        </div>
+      <div class="square-index" style="background-image:url({{ project.thumbnail_image }});background-size:cover">
+        {% if project.link %}<a href="{{ project.url }}">{% endif %}
+          <div class="block-inner">
+            <p>{{ project.client }}</p>
+            <h2>{{ project.title }}</h2>
+            {% if project.link %}<p class="more">Read more</p>{% endif %}
+          </div>
+        {% if project.link %}</a>{% endif %}
       </div>
 
     {% endfor %}
