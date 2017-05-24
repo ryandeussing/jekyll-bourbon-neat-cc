@@ -1,55 +1,53 @@
+@import "modules/mixins";
+
 footer {
   // padding-left: 0px;
   color: $text;
-  border-top: 1px solid $myred;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
-  text-align: left;
+  @include breakpoint(300px, 666px) {
+    text-align: center;
+  }
+  @include breakpoint(667px) {
+    text-align: left;
+  }
   ul {
-    display: inline;
+    border-top: 1px solid $myred;
+    display: block;
+    width: 100%;
     list-style-type: none;
     padding-left: 0px;
+    padding-top: 1rem;
     text-align: left;
     margin-top: .5rem;
-    @include media($s-up) {
-      display: inline-block;
+    @include breakpoint(300px, 666px) {
+      display: block;
     }
-    @include media($m-up) {
+    @include media(667px) {
       display: inline-block;
     }
     li {
       white-space: nowrap;
-      @include media(max-width 320px) {
-        font-size: rem(9);
-        padding: 0 .5rem 0 0;
+      @include media(667px) {
+        padding-right: .5rem;
       }
-      @include media(min-width 321px) {
-        font-size: rem(11);
-        padding: 0 1rem 0 0;
-      } 
-      @include media($s-up) {
-        text-align: center;
-        display: inline;
-        border-right: 1px solid $text;
+      @include breakpoint(300px, 666px) {
+        text-align: left;
+        display: block;
         margin-right: .5rem;
-        line-height: 1rem; 
+        line-height: 1.4rem;
+        font-size: .75rem;
       }
-      @include media($m-up) {
+      @include breakpoint(667px) {
+        display: inline-block;
         text-align: left;
         font-size: 1rem;
-        margin-right: 1rem;
+        // margin-right: 1rem;
       }
-      // @include media($m-up) {
-      //   display: inline;
-      //   border-right: 1px solid $text;
-      //   line-height: 1rem; 
-      //   padding: 0 .5rem;
-      // }
       color: $text;
       text-decoration: none;
       &:last-of-type {
         padding-right: 0px;
-        border-right: none;
       }
       a {
         @include transition(all .2s ease);
@@ -66,16 +64,5 @@ footer {
         }
       }
     }
-    // li.divider {
-    //   width: 45%;
-    //   height: 1px;
-    //   margin: 0 auto;
-    //   padding: 0;
-    //   overflow: hidden;
-    //   background-color: #e5e5e5;
-    //   @include media($m-up) {
-    //     display: none;
-    //   }
-    // }
   }
 }

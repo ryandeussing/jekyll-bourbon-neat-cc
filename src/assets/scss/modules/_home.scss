@@ -12,20 +12,36 @@ main {
     @include media($l-up) {
       @include span-columns(4);
       // margin-top: 1.5rem;
-      h1 {
+    }
+    h1 {
+      @include media($s-up){
+        padding: 1rem 0;
+        margin-bottom: .5rem;
+      }
+      @include media($l-up) {
         margin-top: 3rem;
         margin-bottom: 2.75rem;
       }
     }
-    // .wide-index {
-    //   @include wide-index();
-    // }
+
     .square-index {
       @include square-index();
+      @include media($s-up) {
+        @include span-columns(1 of 2);
+        &:nth-of-type(2n) {
+          margin-right: 0;
+        }
+      }
+      @include media($l-up) {
+        @include span-columns(1 of 4);
+        &:nth-of-type(2n) {
+          margin-right: 2.026197811%;
+        }
+        &:nth-of-type(4n) {
+          margin-right: 0;
+        }
+      }
     }
-    // .square {
-    //   @include square-index();
-    // }
     h1 {
       color: $text;
     }

@@ -74,7 +74,7 @@
 @mixin hero() {
   @include media($s-up) {
     @include span-columns(2);
-    padding: 1rem;
+    padding: 1rem 0;
   }
   @include media($l-up) {
     @include span-columns(4);
@@ -140,10 +140,20 @@
       @include transition(all .4s ease);
       color: $text;
     }
+    @include media(100px, 768px) {
+    }
+    @include media(769px, 895px) {
+
+    }
+    @include breakpoint(895px) {
+    }
     &:hover {
       h2, h5, p {
         @include transition(all .4s ease);
         color: white;
+      }
+      p.more {
+        border-bottom: 1px solid white !important;
       }
     }
   }
@@ -166,13 +176,6 @@
         color: white;
       }
     }
-  // &:hover a {
-  //   h2, h5 {
-  //     @include transition(all .2s ease);
-  //     opacity: 1;
-  //     color: white;
-  //   }
-  // }
   &:before{
     @include transition(all .4s ease);
     position: absolute;
@@ -191,38 +194,6 @@
   }
 }
 
-
-
-// @mixin square() {
-//   @include block();
-//   @include media($s-up) {
-//     @include span-columns(2 of 2);
-//   }
-//   @include media($l-up) {
-//     @include span-columns(1 of 3);
-//   }
-//   &:after {
-//     // responsive div that keeps aspect ratio
-//     // http://stackoverflow.com/questions/12121090/responsively-change-div-size-keeping-aspect-ratio
-//     padding-top: 100%;
-//     display: block;
-//     content: '';
-//   }
-//   .block-inner {
-//     // responsive div that keeps aspect ratio (see above)
-//     position: absolute;
-//     top: 0;
-//     bottom: 0;
-//     right: 0;
-//     left: 0;
-//     @include media($s-up) {
-//       padding: 1rem;
-//     }
-//     @include media($l-up) {
-//       padding: 1.5rem;
-//     }
-//   }
-// }
 
 @mixin square-index() {
   @include block();
@@ -247,29 +218,45 @@
       bottom: 0;
       right: 0;
       left: 0;
-      @include media($s-up) {
+      @include media($s) {
+        padding: .5rem;
+      }
+      @include breakpoint(600px, 768px) {
+        padding: 1.5rem;
+      }
+      @include breakpoint(769px, 899px) {
         padding: 1rem;
       }
-      @include media($l-up) {
+      @include breakpoint(900px) {
         padding: 1.5rem;
       }
       p {
-        font-size: 1rem;
         margin-top: 0;
         margin-bottom: 0;
       }
       .more {
         margin-bottom: 0;
+        border-bottom: 1px solid transparent;
         position: absolute;
-        left: 1.5rem;
-        bottom: 1.5rem;
-        font-size: 14px;
-      }
-      @include media($s-up) {
-        padding: 1rem;
-      }
-      @include media($l-up) {
-        padding: 1.5rem;
+        @include media($s) {
+          left: .5rem;
+          bottom: .5rem;
+        }
+        @include breakpoint(600px, 768px) {
+          left: 1.5rem;
+          bottom: 1.5rem;
+        }
+        @include breakpoint(769px, 899px) {
+          left: 1rem;
+          bottom: 1rem;
+        }
+        @include breakpoint(900px) {
+          left: 1.5rem;
+          bottom: 1.5rem;
+        }
+
+        font-style: italic;
+        line-height: 1.2;
       }
     }
   }
@@ -280,153 +267,72 @@
     bottom: 0;
     right: 0;
     left: 0;
-    @include media($s-up) {
-      padding: 1rem;
+    @include media($s) {
+      padding: .5rem;
     }
-    @include media($l-up) {
+    @include breakpoint(600px, 768px) {
       padding: 1.5rem;
     }
+    @include breakpoint(769px, 899px) {
+      padding: 1rem;
+    }
+    @include breakpoint(900px) {
+      padding: 1.5rem;
+    }
+    h2 {
+      @include media($s-up) {
+        font-size: .75rem;
+        margin-top: .5em;
+      }
+      @include breakpoint(500px, 768px) {
+        font-size: 3vw;
+      }
+      @include breakpoint(769px, 999px) {
+        font-size: 1.5vw;
+      }
+      @include breakpoint(1000px) {
+        font-size: 1.2rem;
+      }
+    }
     p {
-      font-size: 1rem;
+      @include media($s-up) {
+        font-size: .75rem;
+      }
+      @include breakpoint(500px, 768px) {
+        font-size: 2.5vw;
+      }
+      @include breakpoint(769px, 999px) {
+        font-size: 1.25vw;
+      }
+      @include breakpoint(1000px) {
+        font-size: 1rem;
+      }
       margin-top: 0;
       margin-bottom: 0;
     }
     .more {
       margin-bottom: 0;
       position: absolute;
-      left: 1.5rem;
-      bottom: 1.5rem;
-      font-size: 14px;
-    }
-    @include media($s-up) {
-      padding: 1rem;
-    }
-    @include media($l-up) {
-      padding: 1.5rem;
-    }
-  }
-}
-
-@mixin tall() {
-  @include block();
-  @include media($s-up) {
-    @include span-columns(1 of 2);
-  }
-  @include media($l-up) {
-    @include span-columns(1 of 4);
-  }
-}
-
-@mixin wide() {
-  @include block();
-  height: rem(250);
-  @include media($s-up) {
-    @include span-columns(2 of 2);
-  }
-  @include media($l-up) {
-    @include span-columns(2 of 3);
-  }
-}
-
-
-@mixin wide-index() {
-  button { z-index: 2 }
-
-  @include transition(all .2s ease);
-  display: inline-block;
-  position: relative;
-  background-color: #ededed;
-  @include media($s-up) {
-    padding: 1rem;
-  }
-  @include media($l-up) {
-    padding: 1.5rem;
-  }
-  font-size: rem(14);
-  margin-bottom: 1rem;
-  a {
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 1;
-    h2, h5 {
-      @include transition(all .2s ease);
-      opacity: 1;
-      margin: 0 0 .5rem 0;
-      text-decoration: none;
-      color: $text;
-      position: relative;
-      z-index: 1;
-    }
-    // &:hover {
-    //   h2, h5 {
-    //     color: transparent;
-    //   }
-    // }
-  }
-  // &:hover a {
-  //   h2, h5 {
-  //     @include transition(all .2s ease);
-  //     opacity: 1;
-  //     color: transparent;
-  //   }
-  // }
-
-
-  height: rem(250);
-  @include media($s-up) {
-    @include span-columns(2 of 2);
-    padding: 0;
-  }
-  @include media($l-up) {
-    @include span-columns(2 of 4);
-  }
-  .gallery-cell {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  // a {opacity: 1 !important;}
-  .text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    @include media($s-up) {
-      padding: 1rem;
-    }
-    @include media($l-up) {
-      padding: 1.5rem;
-    }
-    // padding: 1rem 1rem .5rem 1rem;
-    a h2, a h5 {
-      display: block;
-      color: $text;
-    }
-    &:hover {
-      // background-color: transparent !important;
-      a h2, a h5 {
-        color: transparent;
+      @include media($s) {
+        left: .5rem;
+        bottom: .5rem;
       }
-    }
-    &:before{
-      @include transition(all .2s ease);
-      position: absolute;
-      content:" ";
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      z-index:1;
-      background-color: rgba(230, 230, 230, 0.92);
-      cursor: pointer;
-    }
-    &:hover:before{
-      @include transition(all .2s ease);
-      background-color: transparent;
+      @include breakpoint(600px, 768px) {
+        left: 1.5rem;
+        bottom: 1.5rem;
+      }
+      @include breakpoint(769px, 899px) {
+        left: 1rem;
+        bottom: 1rem;
+      }
+      @include breakpoint(900px) {
+        left: 1.5rem;
+        bottom: 1.5rem;
+      }
+      border-bottom: 1px solid transparent;
     }
   }
 }
+
+
+

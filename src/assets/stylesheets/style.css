@@ -696,7 +696,7 @@ main {
         display: block;
         margin-right: 4.1362032824%;
         width: 100%;
-        padding: 1rem; }
+        padding: 1rem 0; }
         main section.hero:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 48.0625em) {
@@ -743,10 +743,15 @@ main {
       margin-right: 2.026197811%;
       width: 100%; }
       main section.body:last-child {
-        margin-right: 0; }
-      main section.body h1 {
-        margin-top: 3rem;
-        margin-bottom: 2.75rem; } }
+        margin-right: 0; } }
+  @media screen and (min-width: 6.25em) {
+    main section.body h1 {
+      padding: 1rem 0;
+      margin-bottom: .5rem; } }
+  @media screen and (min-width: 48.0625em) {
+    main section.body h1 {
+      margin-top: 3rem;
+      margin-bottom: 2.75rem; } }
   main section.body .square-index {
     transition: all 0.2s ease;
     display: inline-block;
@@ -773,6 +778,8 @@ main {
       main section.body .square-index a:hover h2, main section.body .square-index a:hover h5, main section.body .square-index a:hover p {
         transition: all 0.4s ease;
         color: white; }
+      main section.body .square-index a:hover p.more {
+        border-bottom: 1px solid white !important; }
     main section.body .square-index h2, main section.body .square-index h5 {
       transition: all 0.4s ease;
       opacity: 1;
@@ -828,26 +835,41 @@ main {
       left: 0; }
       @media screen and (min-width: 6.25em) {
         main section.body .square-index a .block-inner {
+          padding: .5rem; } }
+      @media (min-width: 600px) and (max-width: 768px) {
+        main section.body .square-index a .block-inner {
+          padding: 1.5rem; } }
+      @media (min-width: 769px) and (max-width: 899px) {
+        main section.body .square-index a .block-inner {
           padding: 1rem; } }
-      @media screen and (min-width: 48.0625em) {
+      @media (min-width: 900px) {
         main section.body .square-index a .block-inner {
           padding: 1.5rem; } }
       main section.body .square-index a .block-inner p {
-        font-size: 1rem;
         margin-top: 0;
         margin-bottom: 0; }
       main section.body .square-index a .block-inner .more {
         margin-bottom: 0;
+        border-bottom: 1px solid transparent;
         position: absolute;
-        left: 1.5rem;
-        bottom: 1.5rem;
-        font-size: 14px; }
-      @media screen and (min-width: 6.25em) {
-        main section.body .square-index a .block-inner {
-          padding: 1rem; } }
-      @media screen and (min-width: 48.0625em) {
-        main section.body .square-index a .block-inner {
-          padding: 1.5rem; } }
+        font-style: italic;
+        line-height: 1.2; }
+        @media screen and (min-width: 6.25em) {
+          main section.body .square-index a .block-inner .more {
+            left: .5rem;
+            bottom: .5rem; } }
+        @media (min-width: 600px) and (max-width: 768px) {
+          main section.body .square-index a .block-inner .more {
+            left: 1.5rem;
+            bottom: 1.5rem; } }
+        @media (min-width: 769px) and (max-width: 899px) {
+          main section.body .square-index a .block-inner .more {
+            left: 1rem;
+            bottom: 1rem; } }
+        @media (min-width: 900px) {
+          main section.body .square-index a .block-inner .more {
+            left: 1.5rem;
+            bottom: 1.5rem; } }
     main section.body .square-index .block-inner {
       position: absolute;
       top: 0;
@@ -856,26 +878,86 @@ main {
       left: 0; }
       @media screen and (min-width: 6.25em) {
         main section.body .square-index .block-inner {
-          padding: 1rem; } }
-      @media screen and (min-width: 48.0625em) {
+          padding: .5rem; } }
+      @media (min-width: 600px) and (max-width: 768px) {
         main section.body .square-index .block-inner {
           padding: 1.5rem; } }
+      @media (min-width: 769px) and (max-width: 899px) {
+        main section.body .square-index .block-inner {
+          padding: 1rem; } }
+      @media (min-width: 900px) {
+        main section.body .square-index .block-inner {
+          padding: 1.5rem; } }
+      @media screen and (min-width: 6.25em) {
+        main section.body .square-index .block-inner h2 {
+          font-size: .75rem;
+          margin-top: .5em; } }
+      @media (min-width: 500px) and (max-width: 768px) {
+        main section.body .square-index .block-inner h2 {
+          font-size: 3vw; } }
+      @media (min-width: 769px) and (max-width: 999px) {
+        main section.body .square-index .block-inner h2 {
+          font-size: 1.5vw; } }
+      @media (min-width: 1000px) {
+        main section.body .square-index .block-inner h2 {
+          font-size: 1.2rem; } }
       main section.body .square-index .block-inner p {
-        font-size: 1rem;
         margin-top: 0;
         margin-bottom: 0; }
+        @media screen and (min-width: 6.25em) {
+          main section.body .square-index .block-inner p {
+            font-size: .75rem; } }
+        @media (min-width: 500px) and (max-width: 768px) {
+          main section.body .square-index .block-inner p {
+            font-size: 2.5vw; } }
+        @media (min-width: 769px) and (max-width: 999px) {
+          main section.body .square-index .block-inner p {
+            font-size: 1.25vw; } }
+        @media (min-width: 1000px) {
+          main section.body .square-index .block-inner p {
+            font-size: 1rem; } }
       main section.body .square-index .block-inner .more {
         margin-bottom: 0;
         position: absolute;
-        left: 1.5rem;
-        bottom: 1.5rem;
-        font-size: 14px; }
-      @media screen and (min-width: 6.25em) {
-        main section.body .square-index .block-inner {
-          padding: 1rem; } }
-      @media screen and (min-width: 48.0625em) {
-        main section.body .square-index .block-inner {
-          padding: 1.5rem; } }
+        border-bottom: 1px solid transparent; }
+        @media screen and (min-width: 6.25em) {
+          main section.body .square-index .block-inner .more {
+            left: .5rem;
+            bottom: .5rem; } }
+        @media (min-width: 600px) and (max-width: 768px) {
+          main section.body .square-index .block-inner .more {
+            left: 1.5rem;
+            bottom: 1.5rem; } }
+        @media (min-width: 769px) and (max-width: 899px) {
+          main section.body .square-index .block-inner .more {
+            left: 1rem;
+            bottom: 1rem; } }
+        @media (min-width: 900px) {
+          main section.body .square-index .block-inner .more {
+            left: 1.5rem;
+            bottom: 1.5rem; } }
+    @media screen and (min-width: 6.25em) {
+      main section.body .square-index {
+        float: left;
+        display: block;
+        margin-right: 4.1362032824%;
+        width: 47.9318983588%; }
+        main section.body .square-index:last-child {
+          margin-right: 0; }
+        main section.body .square-index:nth-of-type(2n) {
+          margin-right: 0; } }
+    @media screen and (min-width: 48.0625em) {
+      main section.body .square-index {
+        float: left;
+        display: block;
+        margin-right: 2.026197811%;
+        width: 23.4803516417%; }
+        main section.body .square-index:last-child {
+          margin-right: 0; }
+        main section.body .square-index:nth-of-type(2n) {
+          margin-right: 2.026197811%; }
+        main section.body .square-index:nth-of-type(4n) {
+          margin-right: 0; } }
   main section.body h1 {
     color: #335769; }
 
@@ -985,6 +1067,8 @@ main {
     .about .square-index a:hover h2, .about .square-index a:hover h5, .about .square-index a:hover p {
       transition: all 0.4s ease;
       color: white; }
+    .about .square-index a:hover p.more {
+      border-bottom: 1px solid white !important; }
   .about .square-index h2, .about .square-index h5 {
     transition: all 0.4s ease;
     opacity: 1;
@@ -1040,26 +1124,41 @@ main {
     left: 0; }
     @media screen and (min-width: 6.25em) {
       .about .square-index a .block-inner {
+        padding: .5rem; } }
+    @media (min-width: 600px) and (max-width: 768px) {
+      .about .square-index a .block-inner {
+        padding: 1.5rem; } }
+    @media (min-width: 769px) and (max-width: 899px) {
+      .about .square-index a .block-inner {
         padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
+    @media (min-width: 900px) {
       .about .square-index a .block-inner {
         padding: 1.5rem; } }
     .about .square-index a .block-inner p {
-      font-size: 1rem;
       margin-top: 0;
       margin-bottom: 0; }
     .about .square-index a .block-inner .more {
       margin-bottom: 0;
+      border-bottom: 1px solid transparent;
       position: absolute;
-      left: 1.5rem;
-      bottom: 1.5rem;
-      font-size: 14px; }
-    @media screen and (min-width: 6.25em) {
-      .about .square-index a .block-inner {
-        padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
-      .about .square-index a .block-inner {
-        padding: 1.5rem; } }
+      font-style: italic;
+      line-height: 1.2; }
+      @media screen and (min-width: 6.25em) {
+        .about .square-index a .block-inner .more {
+          left: .5rem;
+          bottom: .5rem; } }
+      @media (min-width: 600px) and (max-width: 768px) {
+        .about .square-index a .block-inner .more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
+      @media (min-width: 769px) and (max-width: 899px) {
+        .about .square-index a .block-inner .more {
+          left: 1rem;
+          bottom: 1rem; } }
+      @media (min-width: 900px) {
+        .about .square-index a .block-inner .more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
   .about .square-index .block-inner {
     position: absolute;
     top: 0;
@@ -1068,26 +1167,64 @@ main {
     left: 0; }
     @media screen and (min-width: 6.25em) {
       .about .square-index .block-inner {
-        padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
+        padding: .5rem; } }
+    @media (min-width: 600px) and (max-width: 768px) {
       .about .square-index .block-inner {
         padding: 1.5rem; } }
+    @media (min-width: 769px) and (max-width: 899px) {
+      .about .square-index .block-inner {
+        padding: 1rem; } }
+    @media (min-width: 900px) {
+      .about .square-index .block-inner {
+        padding: 1.5rem; } }
+    @media screen and (min-width: 6.25em) {
+      .about .square-index .block-inner h2 {
+        font-size: .75rem;
+        margin-top: .5em; } }
+    @media (min-width: 500px) and (max-width: 768px) {
+      .about .square-index .block-inner h2 {
+        font-size: 3vw; } }
+    @media (min-width: 769px) and (max-width: 999px) {
+      .about .square-index .block-inner h2 {
+        font-size: 1.5vw; } }
+    @media (min-width: 1000px) {
+      .about .square-index .block-inner h2 {
+        font-size: 1.2rem; } }
     .about .square-index .block-inner p {
-      font-size: 1rem;
       margin-top: 0;
       margin-bottom: 0; }
+      @media screen and (min-width: 6.25em) {
+        .about .square-index .block-inner p {
+          font-size: .75rem; } }
+      @media (min-width: 500px) and (max-width: 768px) {
+        .about .square-index .block-inner p {
+          font-size: 2.5vw; } }
+      @media (min-width: 769px) and (max-width: 999px) {
+        .about .square-index .block-inner p {
+          font-size: 1.25vw; } }
+      @media (min-width: 1000px) {
+        .about .square-index .block-inner p {
+          font-size: 1rem; } }
     .about .square-index .block-inner .more {
       margin-bottom: 0;
       position: absolute;
-      left: 1.5rem;
-      bottom: 1.5rem;
-      font-size: 14px; }
-    @media screen and (min-width: 6.25em) {
-      .about .square-index .block-inner {
-        padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
-      .about .square-index .block-inner {
-        padding: 1.5rem; } }
+      border-bottom: 1px solid transparent; }
+      @media screen and (min-width: 6.25em) {
+        .about .square-index .block-inner .more {
+          left: .5rem;
+          bottom: .5rem; } }
+      @media (min-width: 600px) and (max-width: 768px) {
+        .about .square-index .block-inner .more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
+      @media (min-width: 769px) and (max-width: 899px) {
+        .about .square-index .block-inner .more {
+          left: 1rem;
+          bottom: 1rem; } }
+      @media (min-width: 900px) {
+        .about .square-index .block-inner .more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
   @media screen and (min-width: 6.25em) {
     .about .square-index {
       float: left;
@@ -1343,6 +1480,8 @@ main {
     .clients .square-index a:hover h2, .clients .square-index a:hover h5, .clients .square-index a:hover p {
       transition: all 0.4s ease;
       color: white; }
+    .clients .square-index a:hover p.more {
+      border-bottom: 1px solid white !important; }
   .clients .square-index h2, .clients .square-index h5 {
     transition: all 0.4s ease;
     opacity: 1;
@@ -1398,26 +1537,41 @@ main {
     left: 0; }
     @media screen and (min-width: 6.25em) {
       .clients .square-index a .block-inner {
+        padding: .5rem; } }
+    @media (min-width: 600px) and (max-width: 768px) {
+      .clients .square-index a .block-inner {
+        padding: 1.5rem; } }
+    @media (min-width: 769px) and (max-width: 899px) {
+      .clients .square-index a .block-inner {
         padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
+    @media (min-width: 900px) {
       .clients .square-index a .block-inner {
         padding: 1.5rem; } }
     .clients .square-index a .block-inner p {
-      font-size: 1rem;
       margin-top: 0;
       margin-bottom: 0; }
     .clients .square-index a .block-inner .more {
       margin-bottom: 0;
+      border-bottom: 1px solid transparent;
       position: absolute;
-      left: 1.5rem;
-      bottom: 1.5rem;
-      font-size: 14px; }
-    @media screen and (min-width: 6.25em) {
-      .clients .square-index a .block-inner {
-        padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
-      .clients .square-index a .block-inner {
-        padding: 1.5rem; } }
+      font-style: italic;
+      line-height: 1.2; }
+      @media screen and (min-width: 6.25em) {
+        .clients .square-index a .block-inner .more {
+          left: .5rem;
+          bottom: .5rem; } }
+      @media (min-width: 600px) and (max-width: 768px) {
+        .clients .square-index a .block-inner .more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
+      @media (min-width: 769px) and (max-width: 899px) {
+        .clients .square-index a .block-inner .more {
+          left: 1rem;
+          bottom: 1rem; } }
+      @media (min-width: 900px) {
+        .clients .square-index a .block-inner .more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
   .clients .square-index .block-inner {
     position: absolute;
     top: 0;
@@ -1426,26 +1580,64 @@ main {
     left: 0; }
     @media screen and (min-width: 6.25em) {
       .clients .square-index .block-inner {
-        padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
+        padding: .5rem; } }
+    @media (min-width: 600px) and (max-width: 768px) {
       .clients .square-index .block-inner {
         padding: 1.5rem; } }
+    @media (min-width: 769px) and (max-width: 899px) {
+      .clients .square-index .block-inner {
+        padding: 1rem; } }
+    @media (min-width: 900px) {
+      .clients .square-index .block-inner {
+        padding: 1.5rem; } }
+    @media screen and (min-width: 6.25em) {
+      .clients .square-index .block-inner h2 {
+        font-size: .75rem;
+        margin-top: .5em; } }
+    @media (min-width: 500px) and (max-width: 768px) {
+      .clients .square-index .block-inner h2 {
+        font-size: 3vw; } }
+    @media (min-width: 769px) and (max-width: 999px) {
+      .clients .square-index .block-inner h2 {
+        font-size: 1.5vw; } }
+    @media (min-width: 1000px) {
+      .clients .square-index .block-inner h2 {
+        font-size: 1.2rem; } }
     .clients .square-index .block-inner p {
-      font-size: 1rem;
       margin-top: 0;
       margin-bottom: 0; }
+      @media screen and (min-width: 6.25em) {
+        .clients .square-index .block-inner p {
+          font-size: .75rem; } }
+      @media (min-width: 500px) and (max-width: 768px) {
+        .clients .square-index .block-inner p {
+          font-size: 2.5vw; } }
+      @media (min-width: 769px) and (max-width: 999px) {
+        .clients .square-index .block-inner p {
+          font-size: 1.25vw; } }
+      @media (min-width: 1000px) {
+        .clients .square-index .block-inner p {
+          font-size: 1rem; } }
     .clients .square-index .block-inner .more {
       margin-bottom: 0;
       position: absolute;
-      left: 1.5rem;
-      bottom: 1.5rem;
-      font-size: 14px; }
-    @media screen and (min-width: 6.25em) {
-      .clients .square-index .block-inner {
-        padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
-      .clients .square-index .block-inner {
-        padding: 1.5rem; } }
+      border-bottom: 1px solid transparent; }
+      @media screen and (min-width: 6.25em) {
+        .clients .square-index .block-inner .more {
+          left: .5rem;
+          bottom: .5rem; } }
+      @media (min-width: 600px) and (max-width: 768px) {
+        .clients .square-index .block-inner .more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
+      @media (min-width: 769px) and (max-width: 899px) {
+        .clients .square-index .block-inner .more {
+          left: 1rem;
+          bottom: 1rem; } }
+      @media (min-width: 900px) {
+        .clients .square-index .block-inner .more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
   @media screen and (min-width: 6.25em) {
     .clients .square-index {
       float: left;
@@ -1568,6 +1760,8 @@ main {
     .category .square-index a:hover h2, .category .square-index a:hover h5, .category .square-index a:hover p {
       transition: all 0.4s ease;
       color: white; }
+    .category .square-index a:hover p.more {
+      border-bottom: 1px solid white !important; }
   .category .square-index h2, .category .square-index h5 {
     transition: all 0.4s ease;
     opacity: 1;
@@ -1623,26 +1817,41 @@ main {
     left: 0; }
     @media screen and (min-width: 6.25em) {
       .category .square-index a .block-inner {
+        padding: .5rem; } }
+    @media (min-width: 600px) and (max-width: 768px) {
+      .category .square-index a .block-inner {
+        padding: 1.5rem; } }
+    @media (min-width: 769px) and (max-width: 899px) {
+      .category .square-index a .block-inner {
         padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
+    @media (min-width: 900px) {
       .category .square-index a .block-inner {
         padding: 1.5rem; } }
     .category .square-index a .block-inner p {
-      font-size: 1rem;
       margin-top: 0;
       margin-bottom: 0; }
     .category .square-index a .block-inner .more {
       margin-bottom: 0;
+      border-bottom: 1px solid transparent;
       position: absolute;
-      left: 1.5rem;
-      bottom: 1.5rem;
-      font-size: 14px; }
-    @media screen and (min-width: 6.25em) {
-      .category .square-index a .block-inner {
-        padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
-      .category .square-index a .block-inner {
-        padding: 1.5rem; } }
+      font-style: italic;
+      line-height: 1.2; }
+      @media screen and (min-width: 6.25em) {
+        .category .square-index a .block-inner .more {
+          left: .5rem;
+          bottom: .5rem; } }
+      @media (min-width: 600px) and (max-width: 768px) {
+        .category .square-index a .block-inner .more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
+      @media (min-width: 769px) and (max-width: 899px) {
+        .category .square-index a .block-inner .more {
+          left: 1rem;
+          bottom: 1rem; } }
+      @media (min-width: 900px) {
+        .category .square-index a .block-inner .more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
   .category .square-index .block-inner {
     position: absolute;
     top: 0;
@@ -1651,26 +1860,64 @@ main {
     left: 0; }
     @media screen and (min-width: 6.25em) {
       .category .square-index .block-inner {
-        padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
+        padding: .5rem; } }
+    @media (min-width: 600px) and (max-width: 768px) {
       .category .square-index .block-inner {
         padding: 1.5rem; } }
+    @media (min-width: 769px) and (max-width: 899px) {
+      .category .square-index .block-inner {
+        padding: 1rem; } }
+    @media (min-width: 900px) {
+      .category .square-index .block-inner {
+        padding: 1.5rem; } }
+    @media screen and (min-width: 6.25em) {
+      .category .square-index .block-inner h2 {
+        font-size: .75rem;
+        margin-top: .5em; } }
+    @media (min-width: 500px) and (max-width: 768px) {
+      .category .square-index .block-inner h2 {
+        font-size: 3vw; } }
+    @media (min-width: 769px) and (max-width: 999px) {
+      .category .square-index .block-inner h2 {
+        font-size: 1.5vw; } }
+    @media (min-width: 1000px) {
+      .category .square-index .block-inner h2 {
+        font-size: 1.2rem; } }
     .category .square-index .block-inner p {
-      font-size: 1rem;
       margin-top: 0;
       margin-bottom: 0; }
+      @media screen and (min-width: 6.25em) {
+        .category .square-index .block-inner p {
+          font-size: .75rem; } }
+      @media (min-width: 500px) and (max-width: 768px) {
+        .category .square-index .block-inner p {
+          font-size: 2.5vw; } }
+      @media (min-width: 769px) and (max-width: 999px) {
+        .category .square-index .block-inner p {
+          font-size: 1.25vw; } }
+      @media (min-width: 1000px) {
+        .category .square-index .block-inner p {
+          font-size: 1rem; } }
     .category .square-index .block-inner .more {
       margin-bottom: 0;
       position: absolute;
-      left: 1.5rem;
-      bottom: 1.5rem;
-      font-size: 14px; }
-    @media screen and (min-width: 6.25em) {
-      .category .square-index .block-inner {
-        padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
-      .category .square-index .block-inner {
-        padding: 1.5rem; } }
+      border-bottom: 1px solid transparent; }
+      @media screen and (min-width: 6.25em) {
+        .category .square-index .block-inner .more {
+          left: .5rem;
+          bottom: .5rem; } }
+      @media (min-width: 600px) and (max-width: 768px) {
+        .category .square-index .block-inner .more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
+      @media (min-width: 769px) and (max-width: 899px) {
+        .category .square-index .block-inner .more {
+          left: 1rem;
+          bottom: 1rem; } }
+      @media (min-width: 900px) {
+        .category .square-index .block-inner .more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
   @media screen and (min-width: 6.25em) {
     .category .square-index {
       float: left;
@@ -1803,6 +2050,8 @@ main {
     .post .square-index a:hover h2, .post .square-index a:hover h5, .post .square-index a:hover p {
       transition: all 0.4s ease;
       color: white; }
+    .post .square-index a:hover p.more {
+      border-bottom: 1px solid white !important; }
   .post .square-index h2, .post .square-index h5 {
     transition: all 0.4s ease;
     opacity: 1;
@@ -1858,26 +2107,41 @@ main {
     left: 0; }
     @media screen and (min-width: 6.25em) {
       .post .square-index a .block-inner {
+        padding: .5rem; } }
+    @media (min-width: 600px) and (max-width: 768px) {
+      .post .square-index a .block-inner {
+        padding: 1.5rem; } }
+    @media (min-width: 769px) and (max-width: 899px) {
+      .post .square-index a .block-inner {
         padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
+    @media (min-width: 900px) {
       .post .square-index a .block-inner {
         padding: 1.5rem; } }
     .post .square-index a .block-inner p {
-      font-size: 1rem;
       margin-top: 0;
       margin-bottom: 0; }
     .post .square-index a .block-inner .more {
       margin-bottom: 0;
+      border-bottom: 1px solid transparent;
       position: absolute;
-      left: 1.5rem;
-      bottom: 1.5rem;
-      font-size: 14px; }
-    @media screen and (min-width: 6.25em) {
-      .post .square-index a .block-inner {
-        padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
-      .post .square-index a .block-inner {
-        padding: 1.5rem; } }
+      font-style: italic;
+      line-height: 1.2; }
+      @media screen and (min-width: 6.25em) {
+        .post .square-index a .block-inner .more {
+          left: .5rem;
+          bottom: .5rem; } }
+      @media (min-width: 600px) and (max-width: 768px) {
+        .post .square-index a .block-inner .more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
+      @media (min-width: 769px) and (max-width: 899px) {
+        .post .square-index a .block-inner .more {
+          left: 1rem;
+          bottom: 1rem; } }
+      @media (min-width: 900px) {
+        .post .square-index a .block-inner .more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
   .post .square-index .block-inner {
     position: absolute;
     top: 0;
@@ -1886,26 +2150,64 @@ main {
     left: 0; }
     @media screen and (min-width: 6.25em) {
       .post .square-index .block-inner {
-        padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
+        padding: .5rem; } }
+    @media (min-width: 600px) and (max-width: 768px) {
       .post .square-index .block-inner {
         padding: 1.5rem; } }
+    @media (min-width: 769px) and (max-width: 899px) {
+      .post .square-index .block-inner {
+        padding: 1rem; } }
+    @media (min-width: 900px) {
+      .post .square-index .block-inner {
+        padding: 1.5rem; } }
+    @media screen and (min-width: 6.25em) {
+      .post .square-index .block-inner h2 {
+        font-size: .75rem;
+        margin-top: .5em; } }
+    @media (min-width: 500px) and (max-width: 768px) {
+      .post .square-index .block-inner h2 {
+        font-size: 3vw; } }
+    @media (min-width: 769px) and (max-width: 999px) {
+      .post .square-index .block-inner h2 {
+        font-size: 1.5vw; } }
+    @media (min-width: 1000px) {
+      .post .square-index .block-inner h2 {
+        font-size: 1.2rem; } }
     .post .square-index .block-inner p {
-      font-size: 1rem;
       margin-top: 0;
       margin-bottom: 0; }
+      @media screen and (min-width: 6.25em) {
+        .post .square-index .block-inner p {
+          font-size: .75rem; } }
+      @media (min-width: 500px) and (max-width: 768px) {
+        .post .square-index .block-inner p {
+          font-size: 2.5vw; } }
+      @media (min-width: 769px) and (max-width: 999px) {
+        .post .square-index .block-inner p {
+          font-size: 1.25vw; } }
+      @media (min-width: 1000px) {
+        .post .square-index .block-inner p {
+          font-size: 1rem; } }
     .post .square-index .block-inner .more {
       margin-bottom: 0;
       position: absolute;
-      left: 1.5rem;
-      bottom: 1.5rem;
-      font-size: 14px; }
-    @media screen and (min-width: 6.25em) {
-      .post .square-index .block-inner {
-        padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
-      .post .square-index .block-inner {
-        padding: 1.5rem; } }
+      border-bottom: 1px solid transparent; }
+      @media screen and (min-width: 6.25em) {
+        .post .square-index .block-inner .more {
+          left: .5rem;
+          bottom: .5rem; } }
+      @media (min-width: 600px) and (max-width: 768px) {
+        .post .square-index .block-inner .more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
+      @media (min-width: 769px) and (max-width: 899px) {
+        .post .square-index .block-inner .more {
+          left: 1rem;
+          bottom: 1rem; } }
+      @media (min-width: 900px) {
+        .post .square-index .block-inner .more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
   @media screen and (min-width: 6.25em) {
     .post .square-index {
       float: left;
@@ -2118,6 +2420,8 @@ main {
     .blog .square-index a:hover h2, .blog .square-index a:hover h5, .blog .square-index a:hover p {
       transition: all 0.4s ease;
       color: white; }
+    .blog .square-index a:hover p.more {
+      border-bottom: 1px solid white !important; }
   .blog .square-index h2, .blog .square-index h5 {
     transition: all 0.4s ease;
     opacity: 1;
@@ -2173,26 +2477,41 @@ main {
     left: 0; }
     @media screen and (min-width: 6.25em) {
       .blog .square-index a .block-inner {
+        padding: .5rem; } }
+    @media (min-width: 600px) and (max-width: 768px) {
+      .blog .square-index a .block-inner {
+        padding: 1.5rem; } }
+    @media (min-width: 769px) and (max-width: 899px) {
+      .blog .square-index a .block-inner {
         padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
+    @media (min-width: 900px) {
       .blog .square-index a .block-inner {
         padding: 1.5rem; } }
     .blog .square-index a .block-inner p {
-      font-size: 1rem;
       margin-top: 0;
       margin-bottom: 0; }
     .blog .square-index a .block-inner .more {
       margin-bottom: 0;
+      border-bottom: 1px solid transparent;
       position: absolute;
-      left: 1.5rem;
-      bottom: 1.5rem;
-      font-size: 14px; }
-    @media screen and (min-width: 6.25em) {
-      .blog .square-index a .block-inner {
-        padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
-      .blog .square-index a .block-inner {
-        padding: 1.5rem; } }
+      font-style: italic;
+      line-height: 1.2; }
+      @media screen and (min-width: 6.25em) {
+        .blog .square-index a .block-inner .more {
+          left: .5rem;
+          bottom: .5rem; } }
+      @media (min-width: 600px) and (max-width: 768px) {
+        .blog .square-index a .block-inner .more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
+      @media (min-width: 769px) and (max-width: 899px) {
+        .blog .square-index a .block-inner .more {
+          left: 1rem;
+          bottom: 1rem; } }
+      @media (min-width: 900px) {
+        .blog .square-index a .block-inner .more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
   .blog .square-index .block-inner {
     position: absolute;
     top: 0;
@@ -2201,26 +2520,64 @@ main {
     left: 0; }
     @media screen and (min-width: 6.25em) {
       .blog .square-index .block-inner {
-        padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
+        padding: .5rem; } }
+    @media (min-width: 600px) and (max-width: 768px) {
       .blog .square-index .block-inner {
         padding: 1.5rem; } }
+    @media (min-width: 769px) and (max-width: 899px) {
+      .blog .square-index .block-inner {
+        padding: 1rem; } }
+    @media (min-width: 900px) {
+      .blog .square-index .block-inner {
+        padding: 1.5rem; } }
+    @media screen and (min-width: 6.25em) {
+      .blog .square-index .block-inner h2 {
+        font-size: .75rem;
+        margin-top: .5em; } }
+    @media (min-width: 500px) and (max-width: 768px) {
+      .blog .square-index .block-inner h2 {
+        font-size: 3vw; } }
+    @media (min-width: 769px) and (max-width: 999px) {
+      .blog .square-index .block-inner h2 {
+        font-size: 1.5vw; } }
+    @media (min-width: 1000px) {
+      .blog .square-index .block-inner h2 {
+        font-size: 1.2rem; } }
     .blog .square-index .block-inner p {
-      font-size: 1rem;
       margin-top: 0;
       margin-bottom: 0; }
+      @media screen and (min-width: 6.25em) {
+        .blog .square-index .block-inner p {
+          font-size: .75rem; } }
+      @media (min-width: 500px) and (max-width: 768px) {
+        .blog .square-index .block-inner p {
+          font-size: 2.5vw; } }
+      @media (min-width: 769px) and (max-width: 999px) {
+        .blog .square-index .block-inner p {
+          font-size: 1.25vw; } }
+      @media (min-width: 1000px) {
+        .blog .square-index .block-inner p {
+          font-size: 1rem; } }
     .blog .square-index .block-inner .more {
       margin-bottom: 0;
       position: absolute;
-      left: 1.5rem;
-      bottom: 1.5rem;
-      font-size: 14px; }
-    @media screen and (min-width: 6.25em) {
-      .blog .square-index .block-inner {
-        padding: 1rem; } }
-    @media screen and (min-width: 48.0625em) {
-      .blog .square-index .block-inner {
-        padding: 1.5rem; } }
+      border-bottom: 1px solid transparent; }
+      @media screen and (min-width: 6.25em) {
+        .blog .square-index .block-inner .more {
+          left: .5rem;
+          bottom: .5rem; } }
+      @media (min-width: 600px) and (max-width: 768px) {
+        .blog .square-index .block-inner .more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
+      @media (min-width: 769px) and (max-width: 899px) {
+        .blog .square-index .block-inner .more {
+          left: 1rem;
+          bottom: 1rem; } }
+      @media (min-width: 900px) {
+        .blog .square-index .block-inner .more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
   @media screen and (min-width: 6.25em) {
     .blog .square-index {
       float: left;
@@ -2246,49 +2603,50 @@ main {
 
 footer {
   color: #335769;
-  border-top: 1px solid #ed1417;
   margin-top: 1.5rem;
-  margin-bottom: 2rem;
-  text-align: left; }
+  margin-bottom: 2rem; }
+  @media (min-width: 300px) and (max-width: 666px) {
+    footer {
+      text-align: center; } }
+  @media (min-width: 667px) {
+    footer {
+      text-align: left; } }
   footer ul {
-    display: inline;
+    border-top: 1px solid #ed1417;
+    display: block;
+    width: 100%;
     list-style-type: none;
     padding-left: 0px;
+    padding-top: 1rem;
     text-align: left;
     margin-top: .5rem; }
-    @media screen and (min-width: 6.25em) {
+    @media (min-width: 300px) and (max-width: 666px) {
       footer ul {
-        display: inline-block; } }
-    @media screen and (min-width: 31.25em) {
+        display: block; } }
+    @media screen and (min-width: 667px) {
       footer ul {
         display: inline-block; } }
     footer ul li {
       white-space: nowrap;
       color: #335769;
       text-decoration: none; }
-      @media screen and (max-width: 320px) {
+      @media screen and (min-width: 667px) {
         footer ul li {
-          font-size: 0.5625rem;
-          padding: 0 .5rem 0 0; } }
-      @media screen and (min-width: 321px) {
-        footer ul li {
-          font-size: 0.6875rem;
-          padding: 0 1rem 0 0; } }
-      @media screen and (min-width: 6.25em) {
-        footer ul li {
-          text-align: center;
-          display: inline;
-          border-right: 1px solid #335769;
-          margin-right: .5rem;
-          line-height: 1rem; } }
-      @media screen and (min-width: 31.25em) {
+          padding-right: .5rem; } }
+      @media (min-width: 300px) and (max-width: 666px) {
         footer ul li {
           text-align: left;
-          font-size: 1rem;
-          margin-right: 1rem; } }
+          display: block;
+          margin-right: .5rem;
+          line-height: 1.4rem;
+          font-size: .75rem; } }
+      @media (min-width: 667px) {
+        footer ul li {
+          display: inline-block;
+          text-align: left;
+          font-size: 1rem; } }
       footer ul li:last-of-type {
-        padding-right: 0px;
-        border-right: none; }
+        padding-right: 0px; }
       footer ul li a {
         transition: all 0.2s ease;
         color: #335769;
@@ -2474,7 +2832,8 @@ body.grid:before {
 
 @media screen and (min-width: 48.0625em) {
   main {
-    margin-top: 4.5rem; } }
+    margin-top: 4.5rem;
+    margin-bottom: 1.5rem; } }
 
 h1 {
   font-weight: 100;
