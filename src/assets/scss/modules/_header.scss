@@ -1,4 +1,4 @@
-header { 
+header {
   padding-top: 1.5rem; // overrides styles from _layouts.scss
   .logo {
     @include media($s-up){
@@ -8,18 +8,18 @@ header {
       }
     }
     @include media($l-up) {
-      @include span-columns(1);  
+      @include span-columns(1);
       img {
         height: rem(36);
       }
     }
 
   }
-  ul.links { 
+  ul.links {
     margin-top: 1rem;
     margin-bottom: 0;
     padding-left: 0px;
-    list-style-type: none; 
+    list-style-type: none;
     @include media($s-up) {
       @include span-columns(2);
       display: flex;
@@ -37,17 +37,17 @@ header {
     li {
       display: inline;
       text-align: center;
-      border-right: 1px solid $text;
+      // border-right: 1px solid $text;
       @include media($s-up) {
         text-align: center;
         font-size: rem(11);
         flex-grow: 1;
         padding: 0 .5rem;
-      } 
+      }
       @include media($m-up) {
-        font-size: 1rem; 
-        padding: 0 1rem;
-      } 
+        font-size: 1rem;
+        padding: 0 .75rem;
+      }
       a {
         @include transition(all .2s ease);
         display: inline-block;

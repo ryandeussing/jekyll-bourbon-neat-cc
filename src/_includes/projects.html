@@ -20,7 +20,7 @@
 {% if grid1 %}
  <div class="blocks">
    {% if projects[0] %}
-   <div class="tall" {% if projects[0].tall_thumbnail_path %}style="background-image:url({{ projects[0].tall_thumbnail_path|imageSize('auto', 880) }});background-size:cover"{% endif %}>
+   <div class="tall" {% if projects[0].tall_thumbnail_image %}style="background-image:url({{ projects[0].tall_thumbnail_image|imageSize('auto', 880) }});background-size:cover"{% endif %}>
      <a href="{{ projects[0].url }}">
      <h5>{{ projects[0].client }}</h5>
      <h2>{{ projects[0].title }}</h2>
@@ -30,7 +30,7 @@
 
    {% if projects[1] %}
    <div class="blocks-wrapper omega mobile">
-     <div class="square" {% if projects[1].square_thumbnail_path %}style="background-image:url({{ projects[1].square_thumbnail_path|imageSize(420) }});background-size:cover"{% endif %}>
+     <div class="square" {% if projects[1].thumbnail_image %}style="background-image:url({{ projects[1].thumbnail_image|imageSize(420) }});background-size:cover"{% endif %}>
        <div class="block-inner">
        <a href="{{ projects[1].url }}">
        <h5>{{ projects[1].client }}</h5>
@@ -39,7 +39,7 @@
        </div>
      </div>
      {% if projects[2] %}
-     <div class="square" {% if projects[2].square_thumbnail_path %}style="background-image:url({{ projects[2].square_thumbnail_path|imageSize(420) }});background-size:cover"{% endif %}>
+     <div class="square" {% if projects[2].thumbnail_image %}style="background-image:url({{ projects[2].thumbnail_image|imageSize(420) }});background-size:cover"{% endif %}>
        <div class="block-inner">
        <a href="{{ projects[2].url }}">
        <h5>{{ projects[2].client }}</h5>
@@ -52,7 +52,7 @@
    {% endif %}
 
    {% if projects[3] %}
-   <div class="wide mobile" {% if projects[3].wide_thumbnail_path %}style="background-image:url({{ projects[3].wide_thumbnail_path|imageSize(880, 'auto') }});background-size:cover"{% endif %}>
+   <div class="wide mobile" {% if projects[3].wide_thumbnail_image %}style="background-image:url({{ projects[3].wide_thumbnail_image|imageSize(880, 'auto') }});background-size:cover"{% endif %}>
    <a href="{{ projects[3].url }}">
    <h5>{{ projects[3].client }}</h5>
    <h2>{{ projects[3].title }}</h2>
@@ -60,7 +60,7 @@
    </div>
    {% endif %}
    {% if projects[4] %}
-   <div class="wide mobile" {% if projects[4].wide_thumbnail_path %}style="background-image:url({{ projects[4].wide_thumbnail_path|imageSize(880, 'auto') }});background-size:cover"{% endif %}>
+   <div class="wide mobile" {% if projects[4].wide_thumbnail_image %}style="background-image:url({{ projects[4].wide_thumbnail_image|imageSize(880, 'auto') }});background-size:cover"{% endif %}>
    <a href="{{ projects[4].url }}">
    <h5>{{ projects[4].client }}</h5>
    <h2>{{ projects[4].title }}</h2>
@@ -72,7 +72,7 @@
    {% if projects[1] %}
    <div class="blocks-wrapper desktop">
 
-     <div class="square" {% if projects[1].square_thumbnail_path %}style="background-image:url({{ projects[1].square_thumbnail_path|imageSize(420) }});background-size:cover"{% endif %}>
+     <div class="square" {% if projects[1].thumbnail_image %}style="background-image:url({{ projects[1].thumbnail_image|imageSize(420) }});background-size:cover"{% endif %}>
        <div class="block-inner">
          <a href="{{ projects[1].url }}">
            <h5>{{ projects[1].client }}</h5>
@@ -81,7 +81,7 @@
        </div>
      </div>
      {% if projects[2] %}
-     <div class="wide omega" {% if projects[2].wide_thumbnail_path %}style="background-image:url({{ projects[2].wide_thumbnail_path|imageSize(880, 'auto') }});background-size:cover"{% endif %}>
+     <div class="wide omega" {% if projects[2].wide_thumbnail_image %}style="background-image:url({{ projects[2].wide_thumbnail_image|imageSize(880, 'auto') }});background-size:cover"{% endif %}>
        <a href="{{ projects[2].url }}">
          <h5>{{ projects[2].client }}</h5>
          <h2>{{ projects[2].title }}</h2>
@@ -89,7 +89,7 @@
      </div>
      {% endif %}
      {% if projects[3] %}
-     <div class="wide" {% if projects[3].wide_thumbnail_path %}style="background-image:url({{ projects[3].wide_thumbnail_path|imageSize(880, 'auto') }});background-size:cover"{% endif %}>
+     <div class="wide" {% if projects[3].wide_thumbnail_image %}style="background-image:url({{ projects[3].wide_thumbnail_image|imageSize(880, 'auto') }});background-size:cover"{% endif %}>
        <a href="{{ projects[3].url }}">
          <h5>{{ projects[3].client }}</h5>
          <h2>{{ projects[3].title }}</h2>
@@ -97,7 +97,7 @@
      </div>
      {% endif %}
      {% if projects[4] %}
-     <div class="square" {% if projects[4].square_thumbnail_path %}style="background-image:url({{ projects[4].square_thumbnail_path|imageSize(420) }});background-size:cover"{% endif %}>
+     <div class="square" {% if projects[4].thumbnail_image %}style="background-image:url({{ projects[4].thumbnail_image|imageSize(420) }});background-size:cover"{% endif %}>
        <div class="block-inner">
          <a href="{{ projects[4].url }}">
            <h5>{{ projects[4].client }}</h5>
@@ -119,7 +119,7 @@
 
     {% if projects[5] %}
     <div class="blocks-wrapper mobile">
-      <div class="square" {% if projects[5].square_thumbnail_path %}style="background-image:url({{ projects[5].square_thumbnail_path|imageSize(420) }});background-size:cover"{% endif %}>
+      <div class="square" {% if projects[5].thumbnail_image %}style="background-image:url({{ projects[5].thumbnail_image|imageSize(420) }});background-size:cover"{% endif %}>
         <div class="block-inner">
         <a href="{{ projects[5].url }}">
         <h5>1 {{ projects[5].client }}</h5>
@@ -128,7 +128,7 @@
         </div>
       </div>
       {% if projects[7] %}
-      <div class="square" {% if projects[7].square_thumbnail_path %}style="background-image:url({{ projects[6].square_thumbnail_path|imageSize(420) }});background-size:cover"{% endif %}>
+      <div class="square" {% if projects[7].thumbnail_image %}style="background-image:url({{ projects[6].thumbnail_image|imageSize(420) }});background-size:cover"{% endif %}>
         <div class="block-inner">
         <a href="{{ projects[7].url }}">
         <h5>3 {{ projects[7].client }}</h5>
@@ -141,7 +141,7 @@
     {% endif %}
 
     {% if projects[6] %}
-    <div class="tall omega mobile" {% if projects[6].tall_thumbnail_path %}style="background-image:url({{ projects[6].tall_thumbnail_path|imageSize('auto', 880) }});background-size:cover"{% endif %}>
+    <div class="tall omega mobile" {% if projects[6].tall_thumbnail_image %}style="background-image:url({{ projects[6].tall_thumbnail_image|imageSize('auto', 880) }});background-size:cover"{% endif %}>
       <a href="{{ projects[6].url }}">
       <h5>2 {{ projects[6].client }}</h5>
       <h2>{{ projects[6].title }}</h2>
@@ -150,7 +150,7 @@
     {% endif %}
 
     {% if projects[8] %}
-    <div class="wide mobile" {% if projects[8].wide_thumbnail_path %}style="background-image:url({{ projects[8].wide_thumbnail_path|imageSize(880, 'auto') }});background-size:cover"{% endif %}>
+    <div class="wide mobile" {% if projects[8].wide_thumbnail_image %}style="background-image:url({{ projects[8].wide_thumbnail_image|imageSize(880, 'auto') }});background-size:cover"{% endif %}>
     <a href="{{ projects[8].url }}">
     <h5>4 {{ projects[8].client }}</h5>
     <h2>{{ projects[8].title }}</h2>
@@ -158,7 +158,7 @@
     </div>
     {% endif %}
     {% if projects[9] %}
-    <div class="wide mobile" {% if projects[9].wide_thumbnail_path %}style="background-image:url({{ projects[9].wide_thumbnail_path|imageSize(880, 'auto') }});background-size:cover"{% endif %}>
+    <div class="wide mobile" {% if projects[9].wide_thumbnail_image %}style="background-image:url({{ projects[9].wide_thumbnail_image|imageSize(880, 'auto') }});background-size:cover"{% endif %}>
     <a href="{{ projects[9].url }}">
     <h5>5 {{ projects[9].client }}</h5>
     <h2>{{ projects[9].title }}</h2>
@@ -170,7 +170,7 @@
     {% if projects[6] %}
     <div class="blocks-wrapper desktop">
 
-      <div class="square" {% if projects[6].square_thumbnail_path %}style="background-image:url({{ projects[6].square_thumbnail_path|imageSize(420) }});background-size:cover"{% endif %}>
+      <div class="square" {% if projects[6].thumbnail_image %}style="background-image:url({{ projects[6].thumbnail_image|imageSize(420) }});background-size:cover"{% endif %}>
         <div class="block-inner">
           <a href="{{ projects[6].url }}">
             <h5>{{ projects[6].client }}</h5>
@@ -179,7 +179,7 @@
         </div>
       </div>
       {% if projects[7] %}
-      <div class="wide omega" {% if projects[7].wide_thumbnail_path %}style="background-image:url({{ projects[7].wide_thumbnail_path|imageSize(880, 'auto') }});background-size:cover"{% endif %}>
+      <div class="wide omega" {% if projects[7].wide_thumbnail_image %}style="background-image:url({{ projects[7].wide_thumbnail_image|imageSize(880, 'auto') }});background-size:cover"{% endif %}>
         <a href="{{ projects[7].url }}">
           <h5>{{ projects[7].client }}</h5>
           <h2>{{ projects[7].title }}</h2>
@@ -187,7 +187,7 @@
       </div>
       {% endif %}
       {% if projects[8] %}
-      <div class="wide" {% if projects[8].wide_thumbnail_path %}style="background-image:url({{ projects[8].wide_thumbnail_path|imageSize(880, 'auto') }});background-size:cover"{% endif %}>
+      <div class="wide" {% if projects[8].wide_thumbnail_image %}style="background-image:url({{ projects[8].wide_thumbnail_image|imageSize(880, 'auto') }});background-size:cover"{% endif %}>
         <a href="{{ projects[8].url }}">
           <h5>{{ projects[8].client }}</h5>
           <h2>{{ projects[8].title }}</h2>
@@ -195,7 +195,7 @@
       </div>
       {% endif %}
       {% if projects[9] %}
-      <div class="square" {% if projects[9].square_thumbnail_path %}style="background-image:url({{ projects[9].square_thumbnail_path|imageSize(420) }});background-size:cover"{% endif %}>
+      <div class="square" {% if projects[9].thumbnail_image %}style="background-image:url({{ projects[9].thumbnail_image|imageSize(420) }});background-size:cover"{% endif %}>
         <div class="block-inner">
           <a href="{{ projects[9].url }}">
             <h5>{{ projects[9].client }}</h5>
@@ -209,7 +209,7 @@
     {% endif %}
 
     {% if projects[5] %}
-    <div class="tall desktop" {% if projects[5].tall_thumbnail_path %}style="background-image:url({{ projects[5].tall_thumbnail_path|imageSize('auto', 880) }});background-size:cover"{% endif %}>
+    <div class="tall desktop" {% if projects[5].tall_thumbnail_image %}style="background-image:url({{ projects[5].tall_thumbnail_image|imageSize('auto', 880) }});background-size:cover"{% endif %}>
       <a href="{{ projects[5].url }}">
       <h5>{{ projects[5].client }}</h5>
       <h2>{{ projects[5].title }}</h2>

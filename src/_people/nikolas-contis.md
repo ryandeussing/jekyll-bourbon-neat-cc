@@ -3,8 +3,8 @@ name: Nik Contis
 title: Senior Partner, Naming
 email: nik.contis@ps212.com
 linkedin:
-photo_path: /assets/images/nik.png
-sort: 2
+photo_path: /uploads/nik.png
+order: 2
 ---
 
 Nik Contis has 25 years of naming and branding experience.

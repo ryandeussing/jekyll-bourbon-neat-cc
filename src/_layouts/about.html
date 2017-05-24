@@ -3,11 +3,361 @@ layout: default
 class: about
 ---
 
-{% assign people = site.people  %}
+{% assign people = site.people | sort:"order" %}
 
 <main class="load">
 
-  <div>check layouts/about for bad logic</div>
+  <div class="set mobile">
+    {% for person in people %}
+      {% if forloop.index0 < 2 %}
+        <div class="square-index {% if page.name == person.name %}active{% else %}inactive{% endif %}" style="background-image:url({{ person.photo_path }});background-size:cover">
+          <div class="block-inner">
+            <a href="{{ person.url }}">
+              <h2>{{ person.name }}</h2>
+              <h2 class="title">{{ person.title }}</h2>
+            </a>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+    {% for person in people %}
+      {% if forloop.index0 < 2 %}
+        {% if person.name == page.name %}
+          <div class="copy">
+            <h2 class="name">{{ person.name }}, <span>{{ person.title }}</span></h2>
+            <div class="bio">{{ content }}</div>
+          </div>
+          {% if person.linkedin or person.email %}
+            <div class="share-wrapper">
+              {% if person.email %}
+                <div class="share"><div class="share-inner"><a href="mailto:{{person.email}}"><i class="fa fa-envelope"></i></a></div></div>
+              {% endif %}
+              {% if person.linkedin %}
+                <div class="share"><div class="share-inner"><a target="_blank" href="{{person.linkedin}}"><i class="fa fa-linkedin"></i></a></div></div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="set mobile">
+    {% for person in people %}
+      {% if forloop.index0 == 2 or forloop.index0 == 3 %}
+        <div class="square-index {% if page.name == person.name %}active{% else %}inactive{% endif %}" style="background-image:url({{ person.photo_path }});background-size:cover">
+          <div class="block-inner">
+            <a href="{{ person.url }}">
+              <h2>{{ person.name }}</h2>
+              <h2 class="title">{{ person.title }}</h2>
+            </a>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+    {% for person in people %}
+      {% if forloop.index0 == 2 or forloop.index0 == 3 %}
+        {% if person.name == page.name %}
+          <div class="copy">
+            <h2 class="name">{{ person.name }}, <span>{{ person.title }}</span></h2>
+            <div class="bio">{{ content }}</div>
+          </div>
+          {% if person.linkedin or person.email %}
+            <div class="share-wrapper">
+              {% if person.email %}
+                <div class="share"><div class="share-inner"><a href="mailto:{{person.email}}"><i class="fa fa-envelope"></i></a></div></div>
+              {% endif %}
+              {% if person.linkedin %}
+                <div class="share"><div class="share-inner"><a target="_blank" href="{{person.linkedin}}"><i class="fa fa-linkedin"></i></a></div></div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="set mobile">
+    {% for person in people %}
+      {% if forloop.index0 == 4 or forloop.index0 == 5 %}
+        <div class="square-index {% if page.name == person.name %}active{% else %}inactive{% endif %}" style="background-image:url({{ person.photo_path }});background-size:cover">
+          <div class="block-inner">
+            <a href="{{ person.url }}">
+              <h2>{{ person.name }}</h2>
+              <h2 class="title">{{ person.title }}</h2>
+            </a>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+    {% for person in people %}
+      {% if forloop.index0 == 4 or forloop.index0 == 5 %}
+        {% if person.name == page.name %}
+          <div class="copy">
+            <h2 class="name">{{ person.name }}, <span>{{ person.title }}</span></h2>
+            <div class="bio">{{ content }}</div>
+          </div>
+          {% if person.linkedin or person.email %}
+            <div class="share-wrapper">
+              {% if person.email %}
+                <div class="share"><div class="share-inner"><a href="mailto:{{person.email}}"><i class="fa fa-envelope"></i></a></div></div>
+              {% endif %}
+              {% if person.linkedin %}
+                <div class="share"><div class="share-inner"><a target="_blank" href="{{person.linkedin}}"><i class="fa fa-linkedin"></i></a></div></div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="set mobile">
+    {% for person in people %}
+      {% if forloop.index0 == 6 or forloop.index0 == 7 %}
+        <div class="square-index {% if page.name == person.name %}active{% else %}inactive{% endif %}" style="background-image:url({{ person.photo_path }});background-size:cover">
+          <div class="block-inner">
+            <a href="{{ person.url }}">
+              <h2>{{ person.name }}</h2>
+              <h2 class="title">{{ person.title }}</h2>
+            </a>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+    {% for person in people %}
+      {% if forloop.index0 == 6 or forloop.index0 == 7 %}
+        {% if person.name == page.name %}
+          <div class="copy">
+            <h2 class="name">{{ person.name }}, <span>{{ person.title }}</span></h2>
+            <div class="bio">{{ content }}</div>
+          </div>
+          {% if person.linkedin or person.email %}
+            <div class="share-wrapper">
+              {% if person.email %}
+                <div class="share"><div class="share-inner"><a href="mailto:{{person.email}}"><i class="fa fa-envelope"></i></a></div></div>
+              {% endif %}
+              {% if person.linkedin %}
+                <div class="share"><div class="share-inner"><a target="_blank" href="{{person.linkedin}}"><i class="fa fa-linkedin"></i></a></div></div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="set mobile">
+    {% for person in people %}
+      {% if forloop.index0 == 8 or forloop.index0 == 9 %}
+        <div class="square-index {% if page.name == person.name %}active{% else %}inactive{% endif %}" style="background-image:url({{ person.photo_path }});background-size:cover">
+          <div class="block-inner">
+            <a href="{{ person.url }}">
+              <h2>{{ person.name }}</h2>
+              <h2 class="title">{{ person.title }}</h2>
+            </a>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+    {% for person in people %}
+      {% if forloop.index0 == 8 or forloop.index0 == 9 %}
+        {% if person.name == page.name %}
+          <div class="copy">
+            <h2 class="name">{{ person.name }}, <span>{{ person.title }}</span></h2>
+            <div class="bio">{{ content }}</div>
+          </div>
+          {% if person.linkedin or person.email %}
+            <div class="share-wrapper">
+              {% if person.email %}
+                <div class="share"><div class="share-inner"><a href="mailto:{{person.email}}"><i class="fa fa-envelope"></i></a></div></div>
+              {% endif %}
+              {% if person.linkedin %}
+                <div class="share"><div class="share-inner"><a target="_blank" href="{{person.linkedin}}"><i class="fa fa-linkedin"></i></a></div></div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="set mobile">
+    {% for person in people %}
+      {% if forloop.index0 == 10 or forloop.index0 == 11 %}
+        <div class="square-index {% if page.name == person.name %}active{% else %}inactive{% endif %}" style="background-image:url({{ person.photo_path }});background-size:cover">
+          <div class="block-inner">
+            <a href="{{ person.url }}">
+              <h2>{{ person.name }}</h2>
+              <h2 class="title">{{ person.title }}</h2>
+            </a>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+    {% for person in people %}
+      {% if forloop.index0 == 10 or forloop.index0 == 11 %}
+        {% if person.name == page.name %}
+          <div class="copy">
+            <h2 class="name">{{ person.name }}, <span>{{ person.title }}</span></h2>
+            <div class="bio">{{ content }}</div>
+          </div>
+          {% if person.linkedin or person.email %}
+            <div class="share-wrapper">
+              {% if person.email %}
+                <div class="share"><div class="share-inner"><a href="mailto:{{person.email}}"><i class="fa fa-envelope"></i></a></div></div>
+              {% endif %}
+              {% if person.linkedin %}
+                <div class="share"><div class="share-inner"><a target="_blank" href="{{person.linkedin}}"><i class="fa fa-linkedin"></i></a></div></div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="set mobile">
+    {% for person in people %}
+      {% if forloop.index0 == 12 or forloop.index0 == 13 %}
+        <div class="square-index {% if page.name == person.name %}active{% else %}inactive{% endif %}" style="background-image:url({{ person.photo_path }});background-size:cover">
+          <div class="block-inner">
+            <a href="{{ person.url }}">
+              <h2>{{ person.name }}</h2>
+              <h2 class="title">{{ person.title }}</h2>
+            </a>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+    {% for person in people %}
+      {% if forloop.index0 == 12 or forloop.index0 == 13 %}
+        {% if person.name == page.name %}
+          <div class="copy">
+            <h2 class="name">{{ person.name }}, <span>{{ person.title }}</span></h2>
+            <div class="bio">{{ content }}</div>
+          </div>
+          {% if person.linkedin or person.email %}
+            <div class="share-wrapper">
+              {% if person.email %}
+                <div class="share"><div class="share-inner"><a href="mailto:{{person.email}}"><i class="fa fa-envelope"></i></a></div></div>
+              {% endif %}
+              {% if person.linkedin %}
+                <div class="share"><div class="share-inner"><a target="_blank" href="{{person.linkedin}}"><i class="fa fa-linkedin"></i></a></div></div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="set desktop">
+    {% for person in people %}
+      {% if forloop.index0 < 4 %}
+        <div class="square-index {% if page.name == person.name %}active{% else %}inactive{% endif %}" style="background-image:url({{ person.photo_path }});background-size:cover">
+          <div class="block-inner">
+            <a href="{{ person.url }}">
+            <h2>{{ person.name }}</h2>
+            <h2 class="title">{{ person.title }}</h2>
+            </a>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+    {% for person in people %}
+      {% if forloop.index0 < 4 %}
+        {% if page.name == person.name %}
+          <div class="copy">
+            <h2 class="name">{{ person.name }}, <span>{{ person.title }}</span></h2>
+            <div class="bio">{{ content }}</div>
+          </div>
+          {% if person.linkedin or person.email %}
+            <div class="share-wrapper">
+              {% if person.email %}
+                <div class="share"><div class="share-inner"><a href="mailto:{{person.email}}"><i class="fa fa-envelope"></i></a></div></div>
+              {% endif %}
+              {% if person.linkedin %}
+                <div class="share"><div class="share-inner"><a target="_blank" href="{{person.linkedin}}"><i class="fa fa-linkedin"></i></a></div></div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+
+  <div class="set desktop">
+    {% for person in people %}
+      {% if forloop.index0 > 3 and forloop.index0 < 8 %}
+        <div class="square-index {% if page.name == person.name %}active{% else %}inactive{% endif %}" style="background-image:url({{ person.photo_path }});background-size:cover">
+          <div class="block-inner">
+            <a href="{{ person.url }}">
+            <h2>{{ person.name }}</h2>
+            <h2 class="title">{{ person.title }}</h2>
+            </a>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+    {% for person in people %}
+      {% if forloop.index0 > 3 and forloop.index0 < 8 %}
+        {% if page.name == person.name %}
+          <div class="copy">
+            <h2 class="name">{{ person.name }}, <span>{{ person.title }}</span></h2>
+            <div class="bio">{{ content }}</div>
+          </div>
+          {% if person.linkedin or person.email %}
+            <div class="share-wrapper">
+              {% if person.email %}
+                <div class="share"><div class="share-inner"><a href="mailto:{{person.email}}"><i class="fa fa-envelope"></i></a></div></div>
+              {% endif %}
+              {% if person.linkedin %}
+                <div class="share"><div class="share-inner"><a target="_blank" href="{{person.linkedin}}"><i class="fa fa-linkedin"></i></a></div></div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+
+  <div class="set desktop">
+    {% for person in people %}
+      {% if forloop.index0 > 7 and forloop.index0 < 12 %}
+        <div class="square-index {% if page.name == person.name %}active{% else %}inactive{% endif %}" style="background-image:url({{ person.photo_path }});background-size:cover">
+          <div class="block-inner">
+            <a href="{{ person.url }}">
+            <h2>{{ person.name }}</h2>
+            <h2 class="title">{{ person.title }}</h2>
+            </a>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+    {% for person in people %}
+      {% if forloop.index0 > 7 and forloop.index0 < 12 %}
+        {% if page.name == person.name %}
+          <div class="copy">
+            <h2 class="name">{{ person.name }}, <span>{{ person.title }}</span></h2>
+            <div class="bio">{{ content }}</div>
+          </div>
+          {% if person.linkedin or person.email %}
+            <div class="share-wrapper">
+              {% if person.email %}
+                <div class="share"><div class="share-inner"><a href="mailto:{{person.email}}"><i class="fa fa-envelope"></i></a></div></div>
+              {% endif %}
+              {% if person.linkedin %}
+                <div class="share"><div class="share-inner"><a target="_blank" href="{{person.linkedin}}"><i class="fa fa-linkedin"></i></a></div></div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
 
 
 </main>

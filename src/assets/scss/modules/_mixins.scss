@@ -75,19 +75,17 @@
   @include media($s-up) {
     @include span-columns(2);
     padding: 1rem;
-    h1 {
-      margin-bottom: 1.5rem;
-    }
   }
   @include media($l-up) {
     @include span-columns(4);
-    padding: 1.5rem;
-    h1 {
-      margin-bottom: 2.5rem;
-    }
+    padding: 3rem 0;
   }
-  background-color: #ededed;
+  border-top: 1px solid $myred;
+  border-bottom: 1px solid $myred;
   color: $text;
+  h1 {
+    margin-bottom: .5em;
+  }
   div.hero-inner {
     @include media($l-up) {
       @include span-columns(3 of 4);

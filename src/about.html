@@ -1,9 +1,8 @@
 ---
-layout: default
-class: about
+
 ---
 
-{% assign people = site.people %}
+{% assign people = site.people | sort:"order" %}
 
 <main class="load">
 

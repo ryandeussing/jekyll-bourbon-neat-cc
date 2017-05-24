@@ -1,47 +1,20 @@
 ---
 layout: default
 class: home
-featured_projects:
-  - windows-10
-  - corporate-partner-design-systems
-  - integrated-platform-service-naming-and-design
-  - simplified-definition-of-the-corporate-brand
-  - organization-wide-technology-platform
 ---
 
 <main class="load">
   <section class="hero">
-    <h1 class="editable">We are a strategic brand consultancy with big agency experience, operating at start-up speed!</h1>
-    <div class="hero-inner">
-      <p class="editable">Through a combination of creativity and logic, we build branding solutions rooted in strategy with real world application. Whether the deliverable is strategic or creative, the path we take is designed to meet each need uniquely. To get there, we ask the right questions and communicate early and often with our client to arrive at the right answers with unprecedented speed. <span><a href="/contact">Get in touch.</a></span></p>
-    </div>
+    <h1 class="editable">We are a strategic brand consultancy with big agency experience, operating at start-up speed.</h1>
   </section>
-
 
 
   <section class="body">
 
-  <div class="wide-index featured js-flickity" data-flickity-options='{ "wrapAround": true, "pageDots": false }'>
-    {% assign liveprojects = site.projects | where: 'draft',false %}
-    {% for featured in page.featured_projects %}
-      {% for item in liveprojects %}
-        {% if featured == item.slug %}
-          <div class="project gallery-cell" style="background-image:url({{ item.wide_thumbnail_path }});background-size:cover">
-            <div class="text">
-            <a href="{{ item.url}}">
-              <h5>Featured Case Study</h5>
-              <h2>{{ item.title }}</h2>
-            </a>
-            </div>
-          </div>
-        {% endif %}
-      {% endfor %}
-    {% endfor %}
-  </div>
+    <h1>Latest</h1>
 
 
-    {% assign posts = site.posts | limit:2 %}
-    {% for post in posts %}
+    {% for post in site.posts limit:4 %}
 
       <div class="square" style="background-image:url({{ post.image_path }});background-size:cover">
         <div class="block-inner">

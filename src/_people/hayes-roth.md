@@ -3,8 +3,8 @@ name: Hayes Roth
 title: Executive Advisor
 email: brittany.williams@ps212.com
 linkedin:
-photo_path: /assets/images/hayes.jpg
-sort: 6
+photo_path: /uploads/hayes.jpg
+order: 6
 ---
 
 Hayes Roth serves as an Executive Advisor to PS212 and frequent strategic partner on select programs including Fluor and Catholic Medical Mission Board (CMMB).

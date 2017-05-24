@@ -1,17 +1,21 @@
 main {
-  text-align: left; 
-  section.hero { 
+  text-align: left;
+  section.hero {
     @include hero;
-  } 
+  }
 
   section.body {
     @include media($s-up){
       @include span-columns(2);
-      margin-top: 1rem;
+      // margin-top: 1rem;
     }
     @include media($l-up) {
-      @include span-columns(4); 
-      margin-top: 1.5rem;
+      @include span-columns(4);
+      // margin-top: 1.5rem;
+      h1 {
+        margin-top: 3rem;
+        margin-bottom: 2.75rem;
+      }
     }
     .wide-index {
       @include wide-index();
@@ -21,6 +25,9 @@ main {
     }
     .square {
       @include square-index();
+    }
+    h1 {
+      color: $text;
     }
 
   }

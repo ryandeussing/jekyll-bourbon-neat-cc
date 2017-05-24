@@ -16,7 +16,6 @@ collections:
   people:
     output: true
     permalink: /about/:slug/
-
 defaults:
   -
     scope:
@@ -39,6 +38,13 @@ defaults:
       layout: "cms"
       permalink: "/cms/"
       _hide_content: true
+  -
+    scope:
+      path: "about.html"
+    values:
+      class: about
+      layout: default
+      permalink: "/about/"
 
 
 # Extending Jekyll
