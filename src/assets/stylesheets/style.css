@@ -764,7 +764,7 @@ main {
       main section.body .square-index a p {
         transition: all 0.4s ease;
         color: #335769; }
-      main section.body .square-index a:hover h2, main section.body .square-index a:hover h5, main section.body .square-index a:hover p {
+      main section.body .square-index a:hover h2, main section.body .square-index a:hover p {
         transition: all 0.4s ease;
         color: white; }
       main section.body .square-index a:hover p.more {
@@ -780,7 +780,7 @@ main {
     main section.body .square-index p {
       transition: all 0.4s ease;
       color: #335769; }
-    main section.body .square-index:hover h2, main section.body .square-index:hover h5, main section.body .square-index:hover p {
+    main section.body .square-index:hover h2, main section.body .square-index:hover p {
       transition: all 0.4s ease;
       color: white; }
     main section.body .square-index:before {
@@ -883,13 +883,16 @@ main {
           margin-top: .5em; } }
       @media (min-width: 500px) and (max-width: 767px) {
         main section.body .square-index .block-inner h2 {
-          font-size: 1.1rem; } }
+          font-size: 1.1rem;
+          margin-top: .75rem; } }
       @media (min-width: 769px) and (max-width: 999px) {
         main section.body .square-index .block-inner h2 {
-          font-size: 1rem; } }
+          font-size: 1rem;
+          margin-top: .75rem; } }
       @media (min-width: 1000px) {
         main section.body .square-index .block-inner h2 {
-          font-size: 1.1rem; } }
+          font-size: 1.1rem;
+          margin-top: .75rem; } }
       main section.body .square-index .block-inner p {
         margin-top: 0;
         margin-bottom: 0; }
@@ -1053,7 +1056,7 @@ main {
     .about .square-index a p {
       transition: all 0.4s ease;
       color: #335769; }
-    .about .square-index a:hover h2, .about .square-index a:hover h5, .about .square-index a:hover p {
+    .about .square-index a:hover h2, .about .square-index a:hover p {
       transition: all 0.4s ease;
       color: white; }
     .about .square-index a:hover p.more {
@@ -1069,7 +1072,7 @@ main {
   .about .square-index p {
     transition: all 0.4s ease;
     color: #335769; }
-  .about .square-index:hover h2, .about .square-index:hover h5, .about .square-index:hover p {
+  .about .square-index:hover h2, .about .square-index:hover p {
     transition: all 0.4s ease;
     color: white; }
   .about .square-index:before {
@@ -1172,13 +1175,16 @@ main {
         margin-top: .5em; } }
     @media (min-width: 500px) and (max-width: 767px) {
       .about .square-index .block-inner h2 {
-        font-size: 1.1rem; } }
+        font-size: 1.1rem;
+        margin-top: .75rem; } }
     @media (min-width: 769px) and (max-width: 999px) {
       .about .square-index .block-inner h2 {
-        font-size: 1rem; } }
+        font-size: 1rem;
+        margin-top: .75rem; } }
     @media (min-width: 1000px) {
       .about .square-index .block-inner h2 {
-        font-size: 1.1rem; } }
+        font-size: 1.1rem;
+        margin-top: .75rem; } }
     .about .square-index .block-inner p {
       margin-top: 0;
       margin-bottom: 0; }
@@ -1466,7 +1472,7 @@ main {
     .clients .square-index a p {
       transition: all 0.4s ease;
       color: #335769; }
-    .clients .square-index a:hover h2, .clients .square-index a:hover h5, .clients .square-index a:hover p {
+    .clients .square-index a:hover h2, .clients .square-index a:hover p {
       transition: all 0.4s ease;
       color: white; }
     .clients .square-index a:hover p.more {
@@ -1482,7 +1488,7 @@ main {
   .clients .square-index p {
     transition: all 0.4s ease;
     color: #335769; }
-  .clients .square-index:hover h2, .clients .square-index:hover h5, .clients .square-index:hover p {
+  .clients .square-index:hover h2, .clients .square-index:hover p {
     transition: all 0.4s ease;
     color: white; }
   .clients .square-index:before {
@@ -1585,13 +1591,16 @@ main {
         margin-top: .5em; } }
     @media (min-width: 500px) and (max-width: 767px) {
       .clients .square-index .block-inner h2 {
-        font-size: 1.1rem; } }
+        font-size: 1.1rem;
+        margin-top: .75rem; } }
     @media (min-width: 769px) and (max-width: 999px) {
       .clients .square-index .block-inner h2 {
-        font-size: 1rem; } }
+        font-size: 1rem;
+        margin-top: .75rem; } }
     @media (min-width: 1000px) {
       .clients .square-index .block-inner h2 {
-        font-size: 1.1rem; } }
+        font-size: 1.1rem;
+        margin-top: .75rem; } }
     .clients .square-index .block-inner p {
       margin-top: 0;
       margin-bottom: 0; }
@@ -1746,7 +1755,7 @@ main {
     .category .square-index a p {
       transition: all 0.4s ease;
       color: #335769; }
-    .category .square-index a:hover h2, .category .square-index a:hover h5, .category .square-index a:hover p {
+    .category .square-index a:hover h2, .category .square-index a:hover p {
       transition: all 0.4s ease;
       color: white; }
     .category .square-index a:hover p.more {
@@ -1762,7 +1771,7 @@ main {
   .category .square-index p {
     transition: all 0.4s ease;
     color: #335769; }
-  .category .square-index:hover h2, .category .square-index:hover h5, .category .square-index:hover p {
+  .category .square-index:hover h2, .category .square-index:hover p {
     transition: all 0.4s ease;
     color: white; }
   .category .square-index:before {
@@ -1865,13 +1874,16 @@ main {
         margin-top: .5em; } }
     @media (min-width: 500px) and (max-width: 767px) {
       .category .square-index .block-inner h2 {
-        font-size: 1.1rem; } }
+        font-size: 1.1rem;
+        margin-top: .75rem; } }
     @media (min-width: 769px) and (max-width: 999px) {
       .category .square-index .block-inner h2 {
-        font-size: 1rem; } }
+        font-size: 1rem;
+        margin-top: .75rem; } }
     @media (min-width: 1000px) {
       .category .square-index .block-inner h2 {
-        font-size: 1.1rem; } }
+        font-size: 1.1rem;
+        margin-top: .75rem; } }
     .category .square-index .block-inner p {
       margin-top: 0;
       margin-bottom: 0; }
@@ -2036,7 +2048,7 @@ main {
     .project .square-index a p {
       transition: all 0.4s ease;
       color: #335769; }
-    .project .square-index a:hover h2, .project .square-index a:hover h5, .project .square-index a:hover p {
+    .project .square-index a:hover h2, .project .square-index a:hover p {
       transition: all 0.4s ease;
       color: white; }
     .project .square-index a:hover p.more {
@@ -2052,7 +2064,7 @@ main {
   .project .square-index p {
     transition: all 0.4s ease;
     color: #335769; }
-  .project .square-index:hover h2, .project .square-index:hover h5, .project .square-index:hover p {
+  .project .square-index:hover h2, .project .square-index:hover p {
     transition: all 0.4s ease;
     color: white; }
   .project .square-index:before {
@@ -2155,13 +2167,16 @@ main {
         margin-top: .5em; } }
     @media (min-width: 500px) and (max-width: 767px) {
       .project .square-index .block-inner h2 {
-        font-size: 1.1rem; } }
+        font-size: 1.1rem;
+        margin-top: .75rem; } }
     @media (min-width: 769px) and (max-width: 999px) {
       .project .square-index .block-inner h2 {
-        font-size: 1rem; } }
+        font-size: 1rem;
+        margin-top: .75rem; } }
     @media (min-width: 1000px) {
       .project .square-index .block-inner h2 {
-        font-size: 1.1rem; } }
+        font-size: 1.1rem;
+        margin-top: .75rem; } }
     .project .square-index .block-inner p {
       margin-top: 0;
       margin-bottom: 0; }
@@ -2406,7 +2421,7 @@ main {
     .work .square-index a p {
       transition: all 0.4s ease;
       color: #335769; }
-    .work .square-index a:hover h2, .work .square-index a:hover h5, .work .square-index a:hover p {
+    .work .square-index a:hover h2, .work .square-index a:hover p {
       transition: all 0.4s ease;
       color: white; }
     .work .square-index a:hover p.more {
@@ -2422,7 +2437,7 @@ main {
   .work .square-index p {
     transition: all 0.4s ease;
     color: #335769; }
-  .work .square-index:hover h2, .work .square-index:hover h5, .work .square-index:hover p {
+  .work .square-index:hover h2, .work .square-index:hover p {
     transition: all 0.4s ease;
     color: white; }
   .work .square-index:before {
@@ -2525,13 +2540,16 @@ main {
         margin-top: .5em; } }
     @media (min-width: 500px) and (max-width: 767px) {
       .work .square-index .block-inner h2 {
-        font-size: 1.1rem; } }
+        font-size: 1.1rem;
+        margin-top: .75rem; } }
     @media (min-width: 769px) and (max-width: 999px) {
       .work .square-index .block-inner h2 {
-        font-size: 1rem; } }
+        font-size: 1rem;
+        margin-top: .75rem; } }
     @media (min-width: 1000px) {
       .work .square-index .block-inner h2 {
-        font-size: 1.1rem; } }
+        font-size: 1.1rem;
+        margin-top: .75rem; } }
     .work .square-index .block-inner p {
       margin-top: 0;
       margin-bottom: 0; }
@@ -2813,7 +2831,12 @@ body.grid:before {
   display: block; }
 
 .load {
-  opacity: 0; }
+  opacity: 0;
+  transition: 0.6s opacity; }
+
+.loaded {
+  opacity: 1;
+  transition: 0.6s opacity; }
 
 @media screen and (min-width: 6.25em) {
   main {

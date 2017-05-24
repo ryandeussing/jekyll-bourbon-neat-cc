@@ -140,15 +140,8 @@
       @include transition(all .4s ease);
       color: $text;
     }
-    @include media(100px, 768px) {
-    }
-    @include media(769px, 895px) {
-
-    }
-    @include breakpoint(895px) {
-    }
     &:hover {
-      h2, h5, p {
+      h2, p {
         @include transition(all .4s ease);
         color: white;
       }
@@ -171,7 +164,7 @@
       color: $text;
     }
     &:hover {
-      h2, h5, p {
+      h2, p {
         @include transition(all .4s ease);
         color: white;
       }
@@ -286,12 +279,15 @@
       }
       @include breakpoint(500px, 767px) {
         font-size: 1.1rem;
+        margin-top: .75rem;
       }
       @include breakpoint(769px, 999px) {
         font-size: 1rem;
+        margin-top: .75rem;
       }
       @include breakpoint(1000px) {
         font-size: 1.1rem;
+        margin-top: .75rem;
       }
     }
     p {

@@ -56,8 +56,14 @@ body.grid:before {
   display: block;
 }
 
-.load { // js fade in dynamically sized content
+.load {
   opacity: 0;
+  transition: 0.6s opacity;
+}
+
+.loaded {
+  opacity: 1;
+  transition: 0.6s opacity;
 }
 
 main {

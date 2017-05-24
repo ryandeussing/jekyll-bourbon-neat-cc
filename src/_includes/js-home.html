@@ -1,36 +1,6 @@
 <script>
   $(function() {
 
-    window.onload = function(){
-      var windowWidth = $(window).width();
-
-      // on load
-      var singleHeight = $('.square').first().outerHeight();
-      $('.featured, .featured .item, .flickity-viewport').outerHeight(singleHeight);
-
-      var main = $('main');
-      setTimeout(function(){
-        $(main).fadeIn().removeClass('load').addClass('loaded');
-      }, 250);
-    }
-
-
-    // on resize
-    window.onresize = function(){
-      // actual resize? http://tinyurl.com/qaoajzu
-      if ($(window).width() != windowWidth) {
-
-        var main = $('main');
-        $(main).removeClass('loaded').addClass('load');
-        setTimeout(function(){
-          var singleHeight = $('.square').first().outerHeight();
-          $('.featured, .featured .item, .flickity-viewport').outerHeight(singleHeight);
-          $(main).fadeIn().removeClass('load').addClass('loaded');
-        }, 250);
-      }
-
-    }
-
 
   });
 

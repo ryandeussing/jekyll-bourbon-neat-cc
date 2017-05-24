@@ -11800,10 +11800,12 @@ module.exports = {
   });
 
   // fade-in content
-  var main = $('main');
-  setTimeout(function(){
-    $(main).fadeIn().removeClass('load').addClass('loaded');
-  }, 250);
+  $(document).ready(function() {
+     var main = $('main');
+     setTimeout(function(){
+       $(main).removeClass('load').addClass('loaded');
+     }, 250);
+  });
 
   // Google Analytics
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
