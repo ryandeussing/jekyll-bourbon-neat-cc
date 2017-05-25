@@ -928,6 +928,22 @@ main {
         main section.body .square-index .block-inner p.more {
           left: 1.5rem;
           bottom: 1.5rem; } }
+      @media (min-width: 1200px) {
+        main section.body .square-index .block-inner {
+          padding: 1.5rem; }
+          main section.body .square-index .block-inner h2 {
+            font-size: 1.1rem;
+            margin-top: .35em; }
+          main section.body .square-index .block-inner p {
+            font-size: 1rem;
+            margin-top: 0; }
+            main section.body .square-index .block-inner p.more {
+              margin-bottom: 0;
+              position: absolute; } }
+      @media screen and (min-width: 1200px) and (min-width: 6.25em) {
+        main section.body .square-index .block-inner p.more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
     @media screen and (min-width: 6.25em) {
       main section.body .square-index {
         float: left;
@@ -1217,6 +1233,22 @@ main {
             margin-bottom: 0;
             position: absolute; } }
       @media screen and (min-width: 961px) and (max-width: 1199px) and (min-width: 6.25em) {
+        .about .square-index .block-inner p.more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
+    @media (min-width: 1200px) {
+      .about .square-index .block-inner {
+        padding: 1.5rem; }
+        .about .square-index .block-inner h2 {
+          font-size: 1.1rem;
+          margin-top: .35em; }
+        .about .square-index .block-inner p {
+          font-size: 1rem;
+          margin-top: 0; }
+          .about .square-index .block-inner p.more {
+            margin-bottom: 0;
+            position: absolute; } }
+      @media screen and (min-width: 1200px) and (min-width: 6.25em) {
         .about .square-index .block-inner p.more {
           left: 1.5rem;
           bottom: 1.5rem; } }
@@ -1636,6 +1668,22 @@ main {
         .clients .square-index .block-inner p.more {
           left: 1.5rem;
           bottom: 1.5rem; } }
+    @media (min-width: 1200px) {
+      .clients .square-index .block-inner {
+        padding: 1.5rem; }
+        .clients .square-index .block-inner h2 {
+          font-size: 1.1rem;
+          margin-top: .35em; }
+        .clients .square-index .block-inner p {
+          font-size: 1rem;
+          margin-top: 0; }
+          .clients .square-index .block-inner p.more {
+            margin-bottom: 0;
+            position: absolute; } }
+      @media screen and (min-width: 1200px) and (min-width: 6.25em) {
+        .clients .square-index .block-inner p.more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
   @media screen and (min-width: 6.25em) {
     .clients .square-index {
       float: left;
@@ -1916,6 +1964,22 @@ main {
             margin-bottom: 0;
             position: absolute; } }
       @media screen and (min-width: 961px) and (max-width: 1199px) and (min-width: 6.25em) {
+        .category .square-index .block-inner p.more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
+    @media (min-width: 1200px) {
+      .category .square-index .block-inner {
+        padding: 1.5rem; }
+        .category .square-index .block-inner h2 {
+          font-size: 1.1rem;
+          margin-top: .35em; }
+        .category .square-index .block-inner p {
+          font-size: 1rem;
+          margin-top: 0; }
+          .category .square-index .block-inner p.more {
+            margin-bottom: 0;
+            position: absolute; } }
+      @media screen and (min-width: 1200px) and (min-width: 6.25em) {
         .category .square-index .block-inner p.more {
           left: 1.5rem;
           bottom: 1.5rem; } }
@@ -2209,6 +2273,22 @@ main {
             margin-bottom: 0;
             position: absolute; } }
       @media screen and (min-width: 961px) and (max-width: 1199px) and (min-width: 6.25em) {
+        .project .square-index .block-inner p.more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
+    @media (min-width: 1200px) {
+      .project .square-index .block-inner {
+        padding: 1.5rem; }
+        .project .square-index .block-inner h2 {
+          font-size: 1.1rem;
+          margin-top: .35em; }
+        .project .square-index .block-inner p {
+          font-size: 1rem;
+          margin-top: 0; }
+          .project .square-index .block-inner p.more {
+            margin-bottom: 0;
+            position: absolute; } }
+      @media screen and (min-width: 1200px) and (min-width: 6.25em) {
         .project .square-index .block-inner p.more {
           left: 1.5rem;
           bottom: 1.5rem; } }
@@ -2582,6 +2662,22 @@ main {
             margin-bottom: 0;
             position: absolute; } }
       @media screen and (min-width: 961px) and (max-width: 1199px) and (min-width: 6.25em) {
+        .work .square-index .block-inner p.more {
+          left: 1.5rem;
+          bottom: 1.5rem; } }
+    @media (min-width: 1200px) {
+      .work .square-index .block-inner {
+        padding: 1.5rem; }
+        .work .square-index .block-inner h2 {
+          font-size: 1.1rem;
+          margin-top: .35em; }
+        .work .square-index .block-inner p {
+          font-size: 1rem;
+          margin-top: 0; }
+          .work .square-index .block-inner p.more {
+            margin-bottom: 0;
+            position: absolute; } }
+      @media screen and (min-width: 1200px) and (min-width: 6.25em) {
         .work .square-index .block-inner p.more {
           left: 1.5rem;
           bottom: 1.5rem; } }
