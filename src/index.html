@@ -19,6 +19,7 @@ class: home
           <div class="block-inner">
             <p>{{ project.client }}</p>
             <h2>{{ project.title }}</h2>
+            <h2 class="info">{{ project.project_info }}</h2>
             {% if project.link %}<p class="more">Read more</p>{% endif %}
           </div>
         {% if project.link %}</a>{% endif %}
