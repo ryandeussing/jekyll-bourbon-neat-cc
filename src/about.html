@@ -2,19 +2,9 @@
 
 ---
 
-{% assign people = site.people | sort:"order" %}
 
 <main class="load">
 
-{% for person in people %}
-  <div class="square-index" style="background-image:url({{ person.photo_path }});background-size:cover">
-    <div class="block-inner">
-      <a href="{{ person.url }}">
-      <h2>{{ person.name }}</h2>
-      <h2 class="title">{{ person.title }}</h2>
-      </a>
-    </div>
-  </div>
-{% endfor %}
+<h1>About</h1>
 
 </main>

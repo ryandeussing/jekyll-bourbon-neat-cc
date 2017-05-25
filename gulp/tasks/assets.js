@@ -30,7 +30,6 @@ gulp.task('scripts', () =>
     'node_modules/jquery/dist/jquery.js',
     'src/assets/javascript/imagesloaded.js',
     'src/assets/javascript/enquire.js',
-    'src/assets/javascript/flickity.min.js',
     'src/assets/javascript/kibo.js',
     'node_modules/imgix.js/dist/imgix.js',
     'src/assets/javascript/main.js'

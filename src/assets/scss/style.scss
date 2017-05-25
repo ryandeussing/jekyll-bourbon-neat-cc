@@ -37,7 +37,7 @@ $visual-grid-opacity: 0.2;
 ;
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
   @include media($s-up) {
     // display: none;
     // background-color: red;
@@ -81,6 +81,7 @@ main {
 
 h1 {
   @include media($s-up) {
+    font-weight: 300;
     font-size: rem(24);
     line-height: 1.4em;
   }

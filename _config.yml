@@ -1,42 +1,19 @@
 # Title, decription, tagline and URL for your site
 # Can be used in your theme by calling 'site.title' and so on
-title: PS212
-description: We are a strategic brand consultancy with big agency experience, operating at start-up speed.
-url: http://www.ps212.com
+title: Boilerplate
+description: This is zombocom. You can do anything at zombocom, anything at all.
+url: http://www.example.com
 
 # CloudCannon uses these:
 source: src
 destination: dist
 exclude:
 
-project_types:
-  - Design
-  - Naming
-  - Naming and Design
-  - Strategy and Design
+
 
 collections:
-  projects:
-    output: true
-    permalink: /work/:slug/
-  people:
-    output: true
-    permalink: /about/:slug/
+
 defaults:
-  -
-    scope:
-      path: ""
-      type: projects
-    values:
-      class: project
-      layout: project
-  -
-    scope:
-      path: ""
-      type: people
-    values:
-      class: about
-      layout: about
   -
     scope:
       path: "cms.md"
@@ -51,13 +28,6 @@ defaults:
       class: about
       layout: default
       permalink: "/about/"
-  -
-    scope:
-      path: "work.html"
-    values:
-      class: work
-      layout: default
-      permalink: "/work/"
 
 
 # Extending Jekyll

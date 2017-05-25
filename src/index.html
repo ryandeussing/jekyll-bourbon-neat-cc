@@ -3,29 +3,11 @@ layout: default
 class: home
 ---
 
-  <section class="hero">
-    <h1 class="editable">We are a strategic brand consultancy with big agency experience, operating at start-up speed.</h1>
-  </section>
-
-
   <section class="body">
 
-    <h1>Latest</h1>
+    <h1>Hello World.</h1>
 
-    {% for project in site.projects limit:4 %}
 
-      <div class="square-index" style="background-image:url({{ project.thumbnail_image }});background-size:cover">
-        {% if project.link %}<a href="#">{% endif %}
-          <div class="block-inner">
-            <p>{{ project.project_type }}</p>
-            <h2>{{ project.client }}</h2>
-            <h2 class="info">{{ project.title }}</h2>
-            {% if project.link %}<p class="more">Read more</p>{% endif %}
-          </div>
-        {% if project.link %}</a>{% endif %}
-      </div>
-
-    {% endfor %}
 
   </section>
 
