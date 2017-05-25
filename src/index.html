@@ -17,9 +17,9 @@ class: home
       <div class="square-index" style="background-image:url({{ project.thumbnail_image }});background-size:cover">
         {% if project.link %}<a href="#">{% endif %}
           <div class="block-inner">
-            <p>{{ project.client }}</p>
-            <h2>{{ project.title }}</h2>
-            <h2 class="info">{{ project.project_info }}</h2>
+            <p>{{ project.project_type }}</p>
+            <h2>{{ project.client }}</h2>
+            <h2 class="info">{{ project.title }}</h2>
             {% if project.link %}<p class="more">Read more</p>{% endif %}
           </div>
         {% if project.link %}</a>{% endif %}

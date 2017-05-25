@@ -2,7 +2,6 @@
 title: Integrated Platform Service Naming and Design
 client: KPMG
 project_type: Design
-project_info: Badge System for Microsoft Rewards Program
 link: false
 order: 6
 thumbnail_image: 'https://images.unsplash.com/photo-1423775162340-fc7066ace5be?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=500&h=500&fit=crop&s=723bab64906cf8f53b8cbd98a2403b35'

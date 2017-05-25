@@ -1,5 +1,28 @@
 <script>
-    $(function() {
+  $(function() {
+    var windowWidth = $(window).width();
 
+    // on load
+    var margin = $('.square-index').first().css('margin-right');
+    var squares = $('.square-index');
+
+    $(squares).each( function( index, element ){
+      $(this).css('margin-bottom', margin);
     });
-  </script>
+
+    // on resize
+    window.onresize = function(){
+
+      var margin = $('.square-index').first().css('margin-right');
+      var squares = $('.square-index');
+
+      $(squares).each( function( index, element ){
+        $(this).css('margin-bottom', margin);
+      });
+
+
+    }
+  });
+</script>
+
+

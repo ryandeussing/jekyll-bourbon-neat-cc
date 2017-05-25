@@ -739,7 +739,7 @@ main {
       margin-bottom: .5rem; } }
   @media screen and (min-width: 48.0625em) {
     main section.body h1 {
-      margin-top: 3rem;
+      margin-top: 1.75rem;
       margin-bottom: 2.75rem; } }
   main section.body .square-index {
     transition: all 0.2s ease;
